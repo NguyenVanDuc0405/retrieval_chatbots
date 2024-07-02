@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "tieuDe": "B1: Đăng ký tài khoản",
+            "chiTiet":"Đăng ký tài khoản trên hệ thống https://xettuyen.ptit.edu.vn với địa chỉ email hoặc tài khoản Google, Facebook"
+        },
+        {
+            "tieuDe": "B2: Khai báo thông tin",
+            "chiTiet": "Thí sinh thực hiện khai báo hồ sơ xét tuyển theo Đề án tuyển sinh của Học viện với 3 phương thức xét tuyển: Xét tuyển tài năng, Xét tuyển kết hợp, Xét tuyển dựa vào kết quả bài thi đánh giá năng lực hoặc đánh giá tư duy."
+          
+        },
+        {
+            "tieuDe": "B3: Đăng ký nguyện vọng",
+            "chiTiet": "Thí sinh thực hiện đăng ký nguyện vọng xét tuyển trên hệ thống. Mỗi thí sinh được đăng ký tối đa 2 nguyện vọng."
+          
+        },
+        {
+            "tieuDe": "B4: Thanh toán trực tuyến",
+            "chiTiet": "Thí sinh thực hiện thanh toán Lệ phí xét tuyển. Thí sinh có thể sử dụng phương thức thanh toán qua Mã định danh hoặc Mã QR."
+          
+        },
+        {
+            "tieuDe": "B5: Nộp hồ sơ về Học viện",
+            "chiTiet": "Thí sinh nộp bộ hồ sơ đăng ký xét tuyển về Học viện (bao gồm phiếu đăng ký xét tuyển in từ hệ thống và các giấy tờ cần thiết khác)."
+          
+        },
+        {
+            "tieuDe": "B6: Nhận thông tin kết quả",
+            "chiTiet": "Thí sinh nhận thông tin kết quả trúng tuyển của Học viện qua địa chỉ email đã đăng ký."
+          
+        }
+    ]
+    
+}

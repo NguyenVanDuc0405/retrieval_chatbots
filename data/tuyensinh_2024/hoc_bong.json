@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "_id": "5ed86138bee5917e5a9ac454",
+            "loaiHocBong": "học bổng đặc biệt",
+            "chiTiet": "Năm 2024, Học viện Công nghệ Bưu chính Viễn thông cấp tối đa 30 suất học bổng đặc biệt, giá trị mỗi suất tới 500 triệu đồng cho các thí sinh xuất sắc (gồm miễn học phí toàn thời gian học, chi phí ăn ở, kinh phí nghiên cứu khoa học, thực tập ở nước ngoài, kinh phí hỗ trợ từ doanh nghiệp đối tác và các hỗ trợ khác).\nĐối tượng xét cấp học bổng đặc biệt là các thí sinh tham dự kỳ thi chọn đội tuyển quốc gia dự thi Olympic quốc tế, thí sinh đạt giải Nhất, Nhì, Ba trong kỳ thi chọn học sinh giỏi quốc gia các môn Toán, Lý và Tin học; thí sinh có điểm thi tốt nghiệp THPT từ 29,0 điểm trở lên. Ngoài ra, người được nhận học bổng còn phải đảm bảo điểm trung bình chung tích lũy năm học liên tục đạt từ loại Giỏi trở lên.",
+            "createdAt": "2020-06-04T02:49:28.170Z",
+            "updatedAt": "2024-04-11T04:37:58.305Z",
+            "__v": 0,
+            "thuTu": 1
+        },
+        {
+            "_id": "5ed8615dbee5917e5a9ac456",
+            "loaiHocBong": "học bổng cho thí sinh đạt thành tích cao",
+            "chiTiet": "Học viện tiếp tục duy trì chính sách học bổng cho các thí sinh đạt thành tích cao:\n+ Học bổng miễn 100% học phí trong năm học thứ nhất với tối đa 100 suất cho các thí sinh đạt giải trong kỳ thi học sinh giỏi quốc tế, quốc gia hoặc thí sinh đạt giải Nhất, Nhì trong kỳ thi học sinh giải cấp Tỉnh, Thành phố trực thuộc TW các môn Toán, Lý, Hóa và Tin học hoặc đạt kết quả cao trong kỳ thi tốt nghiệp THPT.\n+ Học bổng miễn 50% học phí trong năm học thứ nhất với tối đa 300 suất cho các thí sinh đạt giải trong các kỳ thi học sinh giỏi và các thí sinh đạt kết quả cao trong kỳ thi tốt nghiệp THPT.\nGhi chú: Thí sinh chỉ được xét và cấp một Loại học bổng trong chính sách học bổng nêu trên; xét cấp học bổng thực hiện xét từ trên xuống cho đến hết số suất học bổng.\nNgoài ra, sinh viên còn có nhiều cơ hội để được nhận các xuất học bổng của các doanh nghiệp hàng đầu như VNPT, Mobifone, Viettel, Samsung, FPT, AGR, …",
+            "createdAt": "2020-06-04T02:50:05.348Z",
+            "updatedAt": "2024-04-13T16:56:49.627Z",
+            "__v": 0,
+            "thuTu": 2
+        },
+        {
+            "_id": "5ed86148bee5917e5a9ac455",
+            "loaiHocBong": "học bổng toàn phần",
+            "chiTiet": "Năm 2024, Học viện Công nghệ Bưu chính Viễn thông cấp tối đa 50 suất học bổng toàn phần với giá trị học bổng tới 250 triệu đồng (tương đương học phí toàn khóa học của chương trình chất lượng cao) cho các thí sinh đoạt giải Nhất trong kỳ thi học sinh giỏi cấp Tỉnh/Thành phố trực thuộc TW các môn Toán, Lý và Tin học. Người được nhận học bổng toàn phần phải đảm bảo điểm trung bình chung tích lũy năm học liên tục đạt từ loại Giỏi trở lên trong thời gian học tập.",
+            "createdAt": "2020-06-04T02:49:44.158Z",
+            "updatedAt": "2024-04-13T16:56:58.675Z",
+            "__v": 0,
+            "thuTu": 3
+        }
+    ],
+    "total": 3,
+    "message": "GET OK",
+    "statusCode": 200
+}
