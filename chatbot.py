@@ -1,12 +1,12 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from pyvi import ViTokenizer
 import numpy as np
 import pandas as pd
 import re
 import string
 import torch
 from transformers import AutoModel, AutoTokenizer
+from underthesea import word_tokenize
 
 
 def jaccard_similarity(query, document):
@@ -42,6 +42,7 @@ abbreviation_dict = {
     "khmt": "khoa học máy tính",
     "clc": "chất lượng cao",
     "trường": "học viện",
+    "bạn": "bot",
 
 
 }
@@ -74,7 +75,7 @@ def replace_text(text, text_dict):
 
 
 def tokenizerText(text):
-    return ViTokenizer.tokenize(text)
+    return word_tokenize(text, format="text")
 
 
 # Khởi tạo tập hợp để lưu trữ các từ dừng
@@ -152,6 +153,8 @@ for question in questions:
 df['processed_question'] = processed_questions
 
 df['question_vector'] = df['processed_question'].apply(encode_question)
+global previous_questions
+previous_questions = []
 
 
 def get_response(user_query):
@@ -177,6 +180,7 @@ def get_response(user_query):
     best_match_index = np.argmax(combined_scores)
     if np.max(combined_scores) > 0.7:
         print(np.max(combined_scores))
+        print(len(previous_questions))
         print(processed_query)
         print(processed_questions[best_match_index])
         print(questions[best_match_index])
@@ -188,74 +192,59 @@ def get_response(user_query):
 
 
 # Khởi tạo một danh sách để lưu trữ các câu hỏi người dùng trước đó
-previous_questions = []
 
 
 def handle_user_question(question):
-    global previous_questions
-    if (get_response(question) == "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."):
-        # Lấy câu hỏi người dùng trước đó
-        last_question = previous_questions[-1]
-        # Kết hợp câu hỏi trước đó và câu hỏi hiện tại
-        combined_question = last_question + " " + question
-        # Gọi hàm xử lý và trả lời ở đây cho câu hỏi kết hợp
-        response = get_response(combined_question)
-        if (response == "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."):
-            # Lấy câu hỏi người dùng trước đó
-            last_question = previous_questions[-2]
-            # Kết hợp câu hỏi trước đó và câu hỏi hiện tại
-            combined_question = last_question + " " + question
-            # Gọi hàm xử lý và trả lời ở đây cho câu hỏi kết hợp
-            response = get_response(combined_question)
-            if (response == "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."):
-                # Lấy câu hỏi người dùng trước đó
-                last_question = previous_questions[-3]
-                # Kết hợp câu hỏi trước đó và câu hỏi hiện tại
-                combined_question = last_question + " " + question
-                # Gọi hàm xử lý và trả lời ở đây cho câu hỏi kết hợp
-                response = get_response(combined_question)
-    else:
-        # Gọi hàm xử lý và trả lời ở đây cho câu hỏi hiện tại
+    try:
         response = get_response(question)
+        if response == "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.":
+            for i in range(1, min(3, len(previous_questions) + 1)):
+                last_question = previous_questions[-i]
+                combined_question = last_question + " " + question
+                response = get_response(combined_question)
+                if response != "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.":
+                    return response
 
-    # Thêm câu hỏi hiện tại vào danh sách câu hỏi trước đó
-    previous_questions.append(question)
-    return response
+        # Thêm câu hỏi hiện tại vào danh sách câu hỏi trước đó
+        previous_questions.append(question)
+        return response
+    except (Exception):
+        return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."
+
+        # if (get_response(question) == "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."):
+        #     last_question = previous_questions[-1]
+        #     combined_question = last_question + " " + question
+        #     response = get_response(combined_question)
+        #     previous_questions.append(question)
+
+        #     if (response == "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."):
+        #         last_question = previous_questions[-2]
+        #         combined_question = last_question + " " + question
+        #         response = get_response(combined_question)
+        #         previous_questions.append(question)
+
+        #         if (response == "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."):
+        #             last_question = previous_questions[-3]
+        #             combined_question = last_question + " " + question
+        #             previous_questions.append(question)
+
+        #             # Gọi hàm xử lý và trả lời ở đây cho câu hỏi kết hợp
+        #             response = get_response(combined_question)
+        #         else:
+        #             return response
+        #     else:
+        #         return response
+        # else:
+        #     # Gọi hàm xử lý và trả lời ở đây cho câu hỏi hiện tại
+        #     response = get_response(question)
+        #     previous_questions.append(question)
+        #     return response
+
 
 # Vector hóa câu hỏi
 # vectorizer = TfidfVectorizer()
 # question_vectors = vectorizer.fit_transform(questions)
 
-
-# def get_response(user_query):
-#     # vector hóa câu truy vấn
-#     user_query_vector = vectorizer.transform([user_query])
-
-#     cosine_similarities = cosine_similarity(
-#         user_query_vector, question_vectors).flatten()
-
-#     # # Tính toán độ tương đồng cosine giữa câu truy vấn của người dùng và các câu hỏi trong database
-#     # cosine_similarities = [cosine_similarity(
-#     #     user_query_vector.toarray()[0], qv.toarray()[0]) for qv in question_vectors]
-#     jaccard_similarities = [jaccard_similarity(
-#         user_query, q) for q in questions]
-
-#     # Kết hợp kết quả từ hai độ tương đồng
-#     alpha = 0.6
-#     beta = 0.4
-#     combined_scores = alpha * \
-#         np.array(cosine_similarities) + beta * np.array(jaccard_similarities)
-
-#     best_match_index = np.argmax(combined_scores)
-
-#     if np.max(combined_scores) > 0.7:
-#         print(np.max(combined_scores))
-#         print(questions[best_match_index])
-#         return answers[best_match_index]
-
-#     else:
-#         print(np.max(combined_scores))
-#         return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."
 
 # Chạy chatbot
 while True:
@@ -265,6 +254,3 @@ while True:
         break
     response = handle_user_question(user_input)
     print(f"Bot: {response}")
-
-
-# xử lý chỗ phương thức xét tuyển đang bị trl sai câu hỏi

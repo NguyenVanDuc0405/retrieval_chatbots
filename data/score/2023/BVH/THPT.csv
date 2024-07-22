@@ -7,7 +7,7 @@ STT,Mã ngành,Tên ngành,Tổ hợp môn,Điểm chuẩn,Ghi chú
 6,7480101,Khoa học máy tính (định hướng Khoa học dữ liệu),A00; A01,26.55,TTNV <= 4
 7,7480102,Mạng máy tính và truyền thông dữ liệu (CT Kỹ thuật dữ liệu),A00; A01,24.88,TTNV <= 3
 8,7480201 _UDU,Công nghệ thông tin (định hướng ứng dụng),A00; A01,23.76,TTNV <= 4
-9,7480201 _CLC,Công nghệ thông tin (CLC),A00; A01,25.38,TTNV <= 2
+9,7480201 _CLC,Công nghệ thông tin chất lượng cao,A00; A01,25.38,TTNV <= 2
 10,7329001,Công nghệ đa phương tiện,A00; A01; D01,25.89,TTNV = 1
 11,7320104,Truyền thông đa phương tiện,A00; A01; D01,26.33,TTNV = 1
 12,7320101,Báo chí,A00; A01; D01,25.36,TTNV <= 4
