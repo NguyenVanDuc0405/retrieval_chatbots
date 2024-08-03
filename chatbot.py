@@ -1,12 +1,23 @@
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
+from preprocess import processing_text_for_query, processing_text_for_db_rerank, processing_text_for_query_rerank
 import pandas as pd
-import re
-import string
+import numpy as np
 import torch
 from transformers import AutoModel, AutoTokenizer
-from underthesea import word_tokenize
+from transformers import pipeline
+from transformers import AutoModelForSequenceClassification
+from sklearn.metrics.pairwise import cosine_similarity
+import re
+import json
+
+
+model = AutoModelForSequenceClassification.from_pretrained(
+    'jinaai/jina-reranker-v2-base-multilingual',
+    torch_dtype="auto",
+    trust_remote_code=True,
+)
+
+phobert = AutoModel.from_pretrained("vinai/phobert-base-v2")
+tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base-v2")
 
 
 def jaccard_similarity(query, document):
@@ -17,181 +28,86 @@ def jaccard_similarity(query, document):
     return len(intersection) / len(union)
 
 
-def remove_punctuation(text):
-    return text.translate(str.maketrans('', '', string.punctuation))
-
-
-def to_lowercase(text):
-    return text.lower()
-
-
-def replace_comma(text):
-    return " ".join(text.split(","))
-
-
-# Tạo bộ từ điển các từ viết tắt
-abbreviation_dict = {
-    "cntt": "công nghệ thông tin",
-    "attt": "an toàn thông tin",
-    "iot": "công nghệ internet vạn vật",
-    "fintech": "công nghệ tài chính",
-    "cndpt": "công nghệ đa phương tiện",
-    "ttdpt": "truyền thông đa phương tiện",
-    "qtkd": "quản trị kinh doanh",
-    "tmdt": "thương mại điện tử",
-    "khmt": "khoa học máy tính",
-    "clc": "chất lượng cao",
-    "trường": "học viện",
-    "bạn": "bot",
-
-
-}
-
-# Hàm để thay thế các từ viết tắt trong câu bằng từ đầy đủ
-
-
-def replace_abbreviations(text, abbreviation_dict):
-    words = text.split()
-    new_words = []
-    for word in words:
-        if word in abbreviation_dict:
-            new_words.append(abbreviation_dict[word])
-        else:
-            new_words.append(word)
-    return ' '.join(new_words)
-
-
-text_dict = {
-    "năm nay": "năm 2024",
-    "hiện nay": "năm 2024",
-}
-
-
-def replace_text(text, text_dict):
-    for key, value in text_dict.items():
-        text = re.sub(r'\b{}\b'.format(re.escape(key)),
-                      value, text, flags=re.IGNORECASE)
-    return text
-
-
-def tokenizerText(text):
-    return word_tokenize(text, format="text")
-
-
-# Khởi tạo tập hợp để lưu trữ các từ dừng
-stopwords = set()
-# Đọc từng hàng trong file stopwords.txt
-with open('stopwords.txt', 'r', encoding='utf-8') as fp:
-    for line in fp:
-        word = line.strip()  # Loại bỏ khoảng trắng đầu và cuối dòng
-        if word:  # Kiểm tra xem dòng không rỗng
-            stopwords.add(word)
-
-
-def remove_stopwords(line):
-    words = []
-    for word in line.split():
-        if word not in stopwords:
-            words.append(word)
-    return ' '.join(words)
-
-
-def processing_text_for_db(text):
-    text = remove_punctuation(text)
-    text = to_lowercase(text)
-    text = replace_comma(text)
-    text = tokenizerText(text)
-    text = remove_stopwords(text)
-    return text
-
-
-def processing_text_for_query(text):
-    text = remove_punctuation(text)
-    text = to_lowercase(text)
-    text = replace_comma(text)
-    text = replace_abbreviations(text, abbreviation_dict)
-    text = replace_text(text, text_dict)
-    text = tokenizerText(text)
-    text = remove_stopwords(text)
-    return text
-
-
-# # Function to encode each question into vector representation
-phobert = AutoModel.from_pretrained("vinai/phobert-base-v2")
-tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base-v2")
-
-
-def encode_question(question):
-
+def embeddings_model(question):
    # Tokenize và chuyển đổi câu văn bản thành tensor
     tokens = tokenizer(question, return_tensors='pt',
-                       padding=True, truncation=True, max_length=512)
-
+                       padding=True, truncation=True)
     # Sử dụng model để mã hóa câu văn bản thành vector
     with torch.no_grad():
         output = phobert(**tokens)
-
     # Lấy vector biểu diễn từ outputs của model
     # Trung bình các vector token
     return output.last_hidden_state.mean(dim=1).numpy()
 
 
-df = pd.read_csv('questions_answers.csv')
-# Tách câu hỏi và câu trả lời
-questions = df['question']
-answers = df['answer']
+corrector = pipeline("text2text-generation",
+                     model="bmd1905/vietnamese-correction")
 
-processed_questions = []
-for question in questions:
-    # Áp dụng các hàm tiền xử lý
-    processed_text = processing_text_for_db(question)
 
-    # Lưu kết quả vào list processed_questions
-    processed_questions.append(processed_text)
+def correction_model(texts):
+    return corrector(texts, max_length=512)
 
-# Thêm cột mới vào DataFrame hoặc ghi đè lên cột 'question' hiện tại
-df['processed_question'] = processed_questions
 
-df['question_vector'] = df['processed_question'].apply(encode_question)
-global previous_questions
-previous_questions = []
+# Đọc DataFrame từ file CSV
+dataFrame = pd.read_csv('embeddings.csv')
+# Chuyển đổi chuỗi JSON trở lại danh sách và sau đó thành mảng NumPy
+dataFrame['vector_embeddings'] = dataFrame['vector_embeddings'].apply(
+    lambda x: np.array(json.loads(x)))
+questions_vector = dataFrame['vector_embeddings']
+processed_questions = dataFrame['processed_question']
+questions = dataFrame['question']
+answers = dataFrame['answer']
 
 
 def get_response(user_query):
     processed_query = processing_text_for_query(user_query)
-    query_vector = encode_question(processed_query)
+    query_vector = embeddings_model(processed_query)
     # Tính toán độ tương đồng cosine giữa câu truy vấn của người dùng và các câu hỏi trong database
     cosine_similarities = [cosine_similarity(
-        query_vector, qv).flatten() for qv in df['question_vector']]
+        query_vector, qv).flatten() for qv in questions_vector]
     jaccard_similarities = [jaccard_similarity(
-        processed_query, q) for q in df['processed_question']]
+        processed_query, q) for q in dataFrame['processed_question']]
 
     # Kết hợp kết quả từ hai độ tương đồng
     alpha = 0.6
     beta = 0.4
     # Chuyển đổi jaccard_similarities thành mảng một chiều
     jaccard_array = np.array(jaccard_similarities).reshape(
-        len(df['processed_question']), 1)
+        len(dataFrame['processed_question']), 1)
 
     # Kết hợp điểm số từ hai độ tương đồng
     combined_scores = alpha * \
         np.array(cosine_similarities) + beta * jaccard_array
+    sorted_indices = np.argsort(combined_scores, axis=0)
 
-    best_match_index = np.argmax(combined_scores)
-    if np.max(combined_scores) > 0.7:
-        print(np.max(combined_scores))
-        print(len(previous_questions))
-        print(processed_query)
-        print(processed_questions[best_match_index])
-        print(questions[best_match_index])
-        return answers[best_match_index]
+    documents = []
+    pos = []
+    n = 10
+    largest_indices = sorted_indices[::-1][:n]
+    for i in largest_indices:
+        documents.append(processing_text_for_db_rerank(questions[int(i)]))
+        pos.append([int(i)])
+    print(documents)
+    query_rerank = processing_text_for_query_rerank(user_query)
+
+    result = model.rerank(
+        query_rerank,
+        documents,
+        max_query_length=512,
+        max_length=1024,
+        top_n=3
+    )
+    print(result)
+    if result[0]['relevance_score'] > 0.6:
+        print((result[0]['relevance_score']))
+        print(pos[result[0]['index']][0])
+        return answers[pos[result[0]['index']][0]]
     else:
-        print(processed_query)
-        print(np.max(combined_scores))
         return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."
 
 
-# Khởi tạo một danh sách để lưu trữ các câu hỏi người dùng trước đó
+global previous_questions
+previous_questions = []
 
 
 def handle_user_question(question):
@@ -210,40 +126,6 @@ def handle_user_question(question):
         return response
     except (Exception):
         return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."
-
-        # if (get_response(question) == "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."):
-        #     last_question = previous_questions[-1]
-        #     combined_question = last_question + " " + question
-        #     response = get_response(combined_question)
-        #     previous_questions.append(question)
-
-        #     if (response == "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."):
-        #         last_question = previous_questions[-2]
-        #         combined_question = last_question + " " + question
-        #         response = get_response(combined_question)
-        #         previous_questions.append(question)
-
-        #         if (response == "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."):
-        #             last_question = previous_questions[-3]
-        #             combined_question = last_question + " " + question
-        #             previous_questions.append(question)
-
-        #             # Gọi hàm xử lý và trả lời ở đây cho câu hỏi kết hợp
-        #             response = get_response(combined_question)
-        #         else:
-        #             return response
-        #     else:
-        #         return response
-        # else:
-        #     # Gọi hàm xử lý và trả lời ở đây cho câu hỏi hiện tại
-        #     response = get_response(question)
-        #     previous_questions.append(question)
-        #     return response
-
-
-# Vector hóa câu hỏi
-# vectorizer = TfidfVectorizer()
-# question_vectors = vectorizer.fit_transform(questions)
 
 
 # Chạy chatbot
