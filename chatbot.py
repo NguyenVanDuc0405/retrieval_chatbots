@@ -87,7 +87,6 @@ def get_response(user_query):
     for i in largest_indices:
         documents.append(processing_text_for_db_rerank(questions[int(i)]))
         pos.append([int(i)])
-    print(documents)
     query_rerank = processing_text_for_query_rerank(user_query)
 
     result = model.rerank(
@@ -97,8 +96,10 @@ def get_response(user_query):
         max_length=1024,
         top_n=3
     )
+    print(query_rerank)
+    print(documents)
     print(result)
-    if result[0]['relevance_score'] > 0.6:
+    if result[0]['relevance_score'] > 0.7:
         print((result[0]['relevance_score']))
         print(pos[result[0]['index']][0])
         return answers[pos[result[0]['index']][0]]
@@ -129,10 +130,10 @@ def handle_user_question(question):
 
 
 # Chạy chatbot
-while True:
-    user_input = input("You: ")
+# while True:
+#     user_input = input("You: ")
 
-    if user_input.lower() == "exit":
-        break
-    response = handle_user_question(user_input)
-    print(f"Bot: {response}")
+#     if user_input.lower() == "exit":
+#         break
+#     response = handle_user_question(user_input)
+#     print(f"Bot: {response}")

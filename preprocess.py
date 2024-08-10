@@ -3,14 +3,6 @@ import string
 from underthesea import word_tokenize
 
 
-def jaccard_similarity(query, document):
-    query_words = set(re.split(r'\s+', query.lower().strip()))
-    doc_words = set(re.split(r'\s+', document.lower().strip()))
-    intersection = query_words.intersection(doc_words)
-    union = query_words.union(doc_words)
-    return len(intersection) / len(union)
-
-
 def remove_punctuation(text):
     return text.translate(str.maketrans('', '', string.punctuation))
 
@@ -36,7 +28,8 @@ abbreviation_dict = {
     "khmt": "khoa học máy tính",
     "clc": "chất lượng cao",
     "trường": "học viện",
-    "bạn": "bot",
+    "tuyển sinh": "xét tuyển",
+    "khối": "tổ hợp",
 
 }
 
