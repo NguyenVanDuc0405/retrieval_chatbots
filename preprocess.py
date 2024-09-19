@@ -30,6 +30,16 @@ abbreviation_dict = {
     "trường": "học viện",
     "tuyển sinh": "xét tuyển",
     "khối": "tổ hợp",
+    "ny": "người yêu",
+    "ptit": "học viện",
+    "hcm": "hồ chí minh",
+    "tp": "thành phố",
+    "clb": "câu lạc bộ",
+    "website": "trang web",
+    "đk": "đăng ký",
+    "nvqs": "nghĩa vụ quân sự",
+    "ktx": "ký túc xá",
+
 
 }
 
@@ -116,7 +126,3 @@ def processing_text_for_query_rerank(text):
     text = replace_abbreviations(text, abbreviation_dict)
     text = replace_text(text, text_dict)
     return text
-
-
-# print(processing_text_for_query_rerank(
-#     "trường có các phương thức xét tuyển  nào"))

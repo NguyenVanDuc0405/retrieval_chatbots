@@ -1,11 +1,8 @@
 import streamlit as st
 from chatbot import handle_user_question
-import requests
 import time
-# # Địa chỉ của Flask API
-# API_URL = 'http://localhost:5000/query'
 
-st.title("Chatbot Demo")
+st.title("Admissions Chatbot")
 
 # Initialize chat history
 if "messages" not in st.session_state:

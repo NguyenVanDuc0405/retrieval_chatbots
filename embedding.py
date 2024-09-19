@@ -24,4 +24,4 @@ df['vector_embeddings'] = df['vector_embeddings'].apply(
     lambda x: json.dumps(x.tolist()))
 
 # Lưu DataFrame thành file CSV
-df.to_csv('embeddings.csv', index=False)
+df.to_csv('embeddings_ver2.csv', index=False)

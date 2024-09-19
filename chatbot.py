@@ -49,7 +49,7 @@ def correction_model(texts):
 
 
 # Đọc DataFrame từ file CSV
-dataFrame = pd.read_csv('embeddings.csv')
+dataFrame = pd.read_csv('embeddings_ver2.csv')
 # Chuyển đổi chuỗi JSON trở lại danh sách và sau đó thành mảng NumPy
 dataFrame['vector_embeddings'] = dataFrame['vector_embeddings'].apply(
     lambda x: np.array(json.loads(x)))

@@ -1,51 +1,51 @@
-# import requests
-# from bs4 import BeautifulSoup
-# import json
-# import csv
-# # URL của trang web bạn muốn crawl
-# url = 'https://diemthi.tuyensinh247.com/diem-chuan/hoc-vien-cong-nghe-buu-chinh-vien-thong-phia-nam-BVS.html'
+import requests
+from bs4 import BeautifulSoup
+import json
+import csv
+# URL của trang web bạn muốn crawl
+url = 'https://diemthi.tuyensinh247.com/diem-chuan/hoc-vien-cong-nghe-buu-chinh-vien-thong-phia-nam-BVS.html'
 
-# # Gửi yêu cầu GET tới trang web
-# response = requests.get(url)
+# Gửi yêu cầu GET tới trang web
+response = requests.get(url)
 
-# # Kiểm tra xem yêu cầu có thành công hay không
-# if response.status_code == 200:
-#     # Lấy nội dung của trang web
-#     page_content = response.content
+# Kiểm tra xem yêu cầu có thành công hay không
+if response.status_code == 200:
+    # Lấy nội dung của trang web
+    page_content = response.content
 
-#     # Phân tích nội dung bằng BeautifulSoup
-#     soup = BeautifulSoup(page_content, 'html.parser')
+    # Phân tích nội dung bằng BeautifulSoup
+    soup = BeautifulSoup(page_content, 'html.parser')
 
-#     # Tìm thẻ div có id = 'tab_1'
-#     div_tab_1 = soup.find('div', {'id': 'tab_7'})
+    # Tìm thẻ div có id = 'tab_1'
+    div_tab_1 = soup.find('div', {'id': 'tab_1'})
 
-#     if div_tab_1:
-#         # Tìm bảng dữ liệu bên trong thẻ div này
-#         # Giả sử bảng là thẻ table đầu tiên trong div
-#         table = div_tab_1.find('table')
+    if div_tab_1:
+        # Tìm bảng dữ liệu bên trong thẻ div này
+        # Giả sử bảng là thẻ table đầu tiên trong div
+        table = div_tab_1.find('table')
 
-#         if table:
-#             # Lấy tất cả các hàng trong bảng
-#             rows = table.find_all('tr')
+        if table:
+            # Lấy tất cả các hàng trong bảng
+            rows = table.find_all('tr')
 
-#             # Mở file CSV để ghi dữ liệu
-#             with open('data/score/2024/BVS/DGNL.csv', 'w', newline='', encoding='utf-8') as file:
-#                 writer = csv.writer(file)
+            # Mở file CSV để ghi dữ liệu
+            with open('data/score/2024/BVS/THPT.csv', 'w', newline='', encoding='utf-8') as file:
+                writer = csv.writer(file)
 
-#                 # Duyệt qua từng hàng và ghi dữ liệu vào file CSV
-#                 for row in rows:
-#                     cells = row.find_all('td')
-#                     cell_data = [cell.text.strip() for cell in cells]
-#                     print(cell_data)
-#                     writer.writerow(cell_data)
+                # Duyệt qua từng hàng và ghi dữ liệu vào file CSV
+                for row in rows:
+                    cells = row.find_all('td')
+                    cell_data = [cell.text.strip() for cell in cells]
+                    print(cell_data)
+                    writer.writerow(cell_data)
 
-#             print("Dữ liệu đã được lưu vào file output.csv.")
-#         else:
-#             print("Không tìm thấy bảng dữ liệu trong thẻ div.")
-#     else:
-#         print("Không tìm thấy thẻ div với id='tab_1'.")
-# else:
-#     print(f"Không thể truy cập trang web. Mã lỗi: {response.status_code}")
+            print("Dữ liệu đã được lưu vào file output.csv.")
+        else:
+            print("Không tìm thấy bảng dữ liệu trong thẻ div.")
+    else:
+        print("Không tìm thấy thẻ div với id='tab_1'.")
+else:
+    print(f"Không thể truy cập trang web. Mã lỗi: {response.status_code}")
 
 
 # # dùng selenium để click button crawl score before 2024
@@ -135,51 +135,51 @@
 # driver.quit()
 
 # crawl pt XTKH
-import requests
-from bs4 import BeautifulSoup
-import csv
-# URL của trang web bạn muốn crawl
-url = 'https://thptquocgia.org/diem-chuan-xet-tuyen-ket-hop-hv-cong-nghe-buu-chinh-vien-thong-nam-2021'
+# import requests
+# from bs4 import BeautifulSoup
+# import csv
+# # URL của trang web bạn muốn crawl
+# url = 'https://thptquocgia.org/diem-chuan-xet-tuyen-ket-hop-hv-cong-nghe-buu-chinh-vien-thong-nam-2021'
 
-# Gửi yêu cầu GET tới trang web
-response = requests.get(url)
+# # Gửi yêu cầu GET tới trang web
+# response = requests.get(url)
 
-# Kiểm tra xem yêu cầu có thành công hay không
-if response.status_code == 200:
-    # Lấy nội dung của trang web
-    page_content = response.content
+# # Kiểm tra xem yêu cầu có thành công hay không
+# if response.status_code == 200:
+#     # Lấy nội dung của trang web
+#     page_content = response.content
 
-    # Phân tích nội dung bằng BeautifulSoup
-    soup = BeautifulSoup(page_content, 'html.parser')
+#     # Phân tích nội dung bằng BeautifulSoup
+#     soup = BeautifulSoup(page_content, 'html.parser')
 
-    # Tìm thẻ div có id = 'tab_1'
-    div_tab_1 = soup.find('div', {'class': 'entry-content single-page'})
+#     # Tìm thẻ div có id = 'tab_1'
+#     div_tab_1 = soup.find('div', {'class': 'entry-content single-page'})
 
-    if div_tab_1:
-        # Tìm bảng dữ liệu bên trong thẻ div này
-        # Giả sử bảng là thẻ table đầu tiên trong div
-        tables = div_tab_1.find_all('table')
-        table = tables[0]
+#     if div_tab_1:
+#         # Tìm bảng dữ liệu bên trong thẻ div này
+#         # Giả sử bảng là thẻ table đầu tiên trong div
+#         tables = div_tab_1.find_all('table')
+#         table = tables[0]
 
-        if table:
-            # Lấy tất cả các hàng trong bảng
-            rows = table.find_all('tr')
+#         if table:
+#             # Lấy tất cả các hàng trong bảng
+#             rows = table.find_all('tr')
 
-            # Mở file CSV để ghi dữ liệu
-            with open('data/score/2021/BVH/XTKH.csv', 'w', newline='', encoding='utf-8') as file:
-                writer = csv.writer(file)
+#             # Mở file CSV để ghi dữ liệu
+#             with open('data/score/2021/BVH/XTKH.csv', 'w', newline='', encoding='utf-8') as file:
+#                 writer = csv.writer(file)
 
-                # Duyệt qua từng hàng và ghi dữ liệu vào file CSV
-                for row in rows:
-                    cells = row.find_all('td')
-                    cell_data = [cell.text.strip() for cell in cells]
-                    print(cell_data)
-                    writer.writerow(cell_data)
+#                 # Duyệt qua từng hàng và ghi dữ liệu vào file CSV
+#                 for row in rows:
+#                     cells = row.find_all('td')
+#                     cell_data = [cell.text.strip() for cell in cells]
+#                     print(cell_data)
+#                     writer.writerow(cell_data)
 
-            print("Dữ liệu đã được lưu vào file output.csv.")
-        else:
-            print("Không tìm thấy bảng dữ liệu trong thẻ div.")
-    else:
-        print("Không tìm thấy thẻ div với id='tab_1'.")
-else:
-    print(f"Không thể truy cập trang web. Mã lỗi: {response.status_code}")
+#             print("Dữ liệu đã được lưu vào file output.csv.")
+#         else:
+#             print("Không tìm thấy bảng dữ liệu trong thẻ div.")
+#     else:
+#         print("Không tìm thấy thẻ div với id='tab_1'.")
+# else:
+#     print(f"Không thể truy cập trang web. Mã lỗi: {response.status_code}")
