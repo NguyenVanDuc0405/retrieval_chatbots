@@ -99,7 +99,7 @@ def get_response(user_query):
     print(query_rerank)
     print(documents)
     print(result)
-    if result[0]['relevance_score'] > 0.7:
+    if result[0]['relevance_score'] > 0.55:
         print((result[0]['relevance_score']))
         print(pos[result[0]['index']][0])
         return answers[pos[result[0]['index']][0]]
