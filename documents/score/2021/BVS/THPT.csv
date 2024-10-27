@@ -1,0 +1,10 @@
+STT,Mã ngành,Tên ngành,Tổ hợp môn,Điểm chuẩn,Ghi chú
+1,7520207,Kỹ thuật Điện tử viễn thông,A00;A01,22.7,TTNV <= 3
+2,7510301,"Công nghệ KT Điện, điện tử",A00;A01,19.3,TTNV <= 2
+3,7520216,Kỹ thuật Điều khiển và tự động hóa,A00;A01,19.4,TTNV <= 4
+4,7480201,Công nghệ thông tin,A00;A01,25.9,TTNV <= 9
+5,7480202,An toàn thông tin,A00;A01,25.4,TTNV <= 11
+6,7329001,Công nghệ đa phương tiện,A00;A01;D01,25.05,TTNV <= 20
+7,7340101,Quản trị kinh doanh,A00;A01;D01,25,TTNV <= 11
+8,7340115,Marketing,A00;A01;D01,25.65,TTNV <= 6
+9,7340301,Kế toán,A00;A01;D01,23.95,TTNV <= 7

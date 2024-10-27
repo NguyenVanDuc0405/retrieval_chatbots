@@ -1,0 +1,123 @@
+{
+    "data": [
+        {
+            "maLoaiBaiViet": [
+                "PHUONG_AN_XET_TUYEN"
+            ],
+            "hienThi": true,
+            "thuTu": 1,
+            "urlFileDinhKem": [],
+            "urlTaiLieuDinhKem": [],
+            "_id": "5ede747dca549883a6142648",
+            "tieuDe": "Phương thức 1 - Xét tuyển tài năng",
+            "noiDung": "<ul>\r\n<li class=\"ql-align-justify\"><strong style=\"background-color: #ffffff; color: #000000;\">X&eacute;t tuyển thẳng v&agrave; ưu ti&ecirc;n x&eacute;t tuyển:</strong><span style=\"background-color: #ffffff; color: #000000;\"> Học viện thực hiện x&eacute;t tuyển thẳng v&agrave; ưu ti&ecirc;n x&eacute;t tuyển theo Quy chế tuyển sinh đại học của Bộ Gi&aacute;o dục v&agrave; Đ&agrave;o tạo (c&oacute; th&ocirc;ng b&aacute;o chi tiết ri&ecirc;ng);</span></li>\r\n<li class=\"ql-align-justify\"><span style=\"background-color: #ffffff; color: #000000;\"><span style=\"background-color: #ffffff; color: #000000;\"><strong>X&eacute;t tuyển dựa v&agrave;o hồ sơ năng lực&nbsp;</strong>đối với c&aacute;c th&iacute; sinh c&oacute; Th&agrave;nh t&iacute;ch đoạt <strong>giải </strong><strong>trong kỳ thi chọn học sinh giỏi</strong> THPT cấp quốc gia (giải Khuyến kh&iacute;ch), cấp Tỉnh/Th&agrave;nh phố trực thuộc TW (Nhất, Nh&igrave;, Ba v&agrave; Khuyến kh&iacute;ch), thời gian đoạt giải kh&ocirc;ng qu&aacute; 3 năm t&iacute;nh tới thời điểm x&eacute;t tuyển <em>hoặc</em> l&agrave; <strong>học sinh tại c&aacute;c trường THPT chuy&ecirc;n.</strong></span></span></li>\r\n</ul>",
+            "contents":["Xét tuyển thẳng và ưu tiên xét tuyển: Học viện thực hiện xét tuyển thẳng và ưu tiên xét tuyển theo Quy chế tuyển sinh đại học của Bộ Giáo dục và Đào tạo (có thông báo chi tiết riêng)","Xét tuyển dựa vào hồ sơ năng lực đối với các thí sinh có Thành tích đoạt giải trong kỳ thi chọn học sinh giỏi THPT cấp quốc gia (giải Khuyến khích), cấp Tỉnh/Thành phố trực thuộc TW (Nhất, Nhì, Ba và Khuyến khích), thời gian đoạt giải không quá 3 năm tính tới thời điểm xét tuyển hoặc là học sinh tại các trường THPT chuyên."],
+            "moTa": "Phương thức 1",
+            "nguoiDang": null,
+            "slug": "phuong-thuc-1-xet-tuyen-tai-nang-1712853038066",
+            "ngayDang": "2020-06-08T17:25:17.494Z",
+            "createdAt": "2020-06-08T17:25:17.495Z",
+            "updatedAt": "2024-04-11T16:30:38.066Z",
+            "__v": 0,
+            "anhDaiDien": "https://apiquanlydaotao.ptit.edu.vn/images/anhDaiDien-1593404690267-ch__th_ch_2020_06_29_095358.png",
+            "doUuTien": []
+        },
+        {
+            "maLoaiBaiViet": [
+                "PHUONG_AN_XET_TUYEN"
+            ],
+            "hienThi": true,
+            "thuTu": 2,
+            "urlFileDinhKem": [],
+            "urlTaiLieuDinhKem": [],
+            "_id": "5ede752fca549883a6142649",
+            "tieuDe": "Phương thức 2 - Xét tuyển dựa vào kết quả thi THPT",
+            "noiDung": "<ul>\r\n<li>X&eacute;t tuyển theo ng&agrave;nh v&agrave; theo tổ hợp b&agrave;i thi/m&ocirc;n thi x&eacute;t tuyển;</li>\r\n<li>Điểm tr&uacute;ng tuyển của c&aacute;c tổ hợp b&agrave;i thi/m&ocirc;n thi trong c&ugrave;ng một ng&agrave;nh l&agrave; bằng nhau (kh&ocirc;ng c&oacute; điểm ch&ecirc;nh lệch giữa c&aacute;c tổ hợp trong c&ugrave;ng một ng&agrave;nh);</li>\r\n<li>X&eacute;t tr&uacute;ng tuyển từ th&iacute; sinh c&oacute; kết quả cao xuống v&agrave; đảm bảo chất lượng tuyển sinh;</li>\r\n<li>X&eacute;t tuyển c&aacute;c nguyện vọng b&igrave;nh đẳng <strong><em>(kh&ocirc;ng c&oacute; điểm ch&ecirc;nh lệch giữa c&aacute;c nguyện vọng trong c&ugrave;ng một ng&agrave;nh)</em></strong>, nếu th&iacute; sinh kh&ocirc;ng tr&uacute;ng tuyển nguyện vọng ở thứ tự ưu ti&ecirc;n thứ nhất (nguyện vọng 1) th&igrave; sẽ được tự động x&eacute;t tuyển ở nguyện vọng ưu ti&ecirc;n thứ hai (nguyện vọng 2) v&agrave; kế tiếp;</li>\r\n<li>Th&iacute; sinh chỉ tr&uacute;ng tuyển v&agrave;o 1 nguyện vọng ưu ti&ecirc;n cao nhất trong danh s&aacute;ch c&aacute;c nguyện vọng đ&atilde; đăng k&yacute;, khi đ&atilde; tr&uacute;ng tuyển ở nguyện vọng n&agrave;o th&igrave; kh&ocirc;ng được x&eacute;t tuyển tiếp ở nguyện vọng sau;</li>\r\n<li>Điểm tr&uacute;ng tuyển được t&iacute;nh theo thang điểm 10 tr&ecirc;n tổng điểm tối đa của 3 m&ocirc;n thi trong tổ hợp x&eacute;t tuyển l&agrave; 30 điểm;</li>\r\n<li>Đối với c&aacute;c th&iacute; sinh bằng điểm x&eacute;t tuyển ở cuối danh s&aacute;ch, nếu vẫn c&ograve;n vượt chỉ ti&ecirc;u th&igrave; ưu ti&ecirc;n th&iacute; sinh c&oacute; nguyện vọng cao hơn theo Quy chế tuyển sinh của Bộ Gi&aacute;o dục &amp; Đ&agrave;o tạo, Học viện <strong><em>kh&ocirc;ng sử dụng ti&ecirc;u ch&iacute; phụ ri&ecirc;ng </em></strong>để x&eacute;t tuyển;</li>\r\n<li>Th&iacute; sinh tr&uacute;ng tuyển phải x&aacute;c nhận nhập học trong thời gian quy định của Học viện. Nếu qu&aacute; thời hạn n&agrave;y, th&iacute; sinh kh&ocirc;ng x&aacute;c nhận nhập học được xem l&agrave; từ chối nhập học.</li>\r\n<li>C&aacute;c điều kiện kh&aacute;c thực hiện theo Quy chế tuyển sinh đại học hệ ch&iacute;nh quy hiện h&agrave;nh của Bộ Gi&aacute;o dục v&agrave; Đ&agrave;o tạo v&agrave; của Học viện.</li>\r\n</ul>",
+            "contents":["Xét tuyển theo ngành và theo tổ hợp bài thi/môn thi xét tuyển","Điểm trúng tuyển của các tổ hợp bài thi/môn thi trong cùng một ngành là bằng nhau (không có điểm chênh lệch giữa các tổ hợp trong cùng một ngành)","Xét trúng tuyển từ thí sinh có kết quả cao xuống và đảm bảo chất lượng tuyển sinh","Xét tuyển các nguyện vọng bình đẳng (không có điểm chênh lệch giữa các nguyện vọng trong cùng một ngành), nếu thí sinh không trúng tuyển nguyện vọng ở thứ tự ưu tiên thứ nhất (nguyện vọng 1) thì sẽ được tự động xét tuyển ở nguyện vọng ưu tiên thứ hai (nguyện vọng 2) và kế tiếp","Thí sinh chỉ trúng tuyển vào 1 nguyện vọng ưu tiên cao nhất trong danh sách các nguyện vọng đã đăng ký, khi đã trúng tuyển ở nguyện vọng nào thì không được xét tuyển tiếp ở nguyện vọng sau","Điểm trúng tuyển được tính theo thang điểm 10 trên tổng điểm tối đa của 3 môn thi trong tổ hợp xét tuyển là 30 điểm","Đối với các thí sinh bằng điểm xét tuyển ở cuối danh sách, nếu vẫn còn vượt chỉ tiêu thì ưu tiên thí sinh có nguyện vọng cao hơn theo Quy chế tuyển sinh của Bộ Giáo dục & Đào tạo, Học viện không sử dụng tiêu chí phụ riêng để xét tuyển","Thí sinh trúng tuyển phải xác nhận nhập học trong thời gian quy định của Học viện. Nếu quá thời hạn này, thí sinh không xác nhận nhập học được xem là từ chối nhập học. Các điều kiện khác thực hiện theo Quy chế tuyển sinh đại học hệ chính quy hiện hành của Bộ Giáo dục và Đào tạo và của Học viện."],
+            "moTa": "Phương thức 2",
+            "nguoiDang": null,
+            "slug": "phuong-thuc-2-phuong-thuc-xet-tuyen-dua-vao-ket-qua-thi-tot-nghiep-thpt-nam-2024-1712853024564",
+            "ngayDang": "2020-06-08T17:28:15.378Z",
+            "createdAt": "2020-06-08T17:28:15.379Z",
+            "updatedAt": "2024-04-11T16:30:24.564Z",
+            "__v": 0,
+            "doUuTien": []
+        },
+        {
+            "maLoaiBaiViet": [
+                "PHUONG_AN_XET_TUYEN"
+            ],
+            "hienThi": true,
+            "thuTu": 3,
+            "urlFileDinhKem": [],
+            "urlTaiLieuDinhKem": [],
+            "_id": "5ede757bca549883a614264a",
+            "tieuDe": "Phương thức 3 - Xét tuyển kết hợp",
+            "noiDung": "<ul>\r\n<li>Th&iacute; sinh c&oacute; <strong>Chứng chỉ quốc tế SAT</strong>, trong thời hạn 02 năm (t&iacute;nh đến ng&agrave;y x&eacute;t tuyển) <strong>từ 1130/1600 </strong>trở l&ecirc;n hoặc <strong>ACT từ 25/36 </strong>trở l&ecirc;n; <strong>v&agrave; </strong>c&oacute; kết quả điểm trung b&igrave;nh chung học tập lớp 10, 11, 12 hoặc học kỳ 1 lớp 12 <em>(nếu chưa c&oacute; kết quả năm học lớp 12) </em>đạt từ 7,5 trở l&ecirc;n v&agrave; c&oacute; hạnh kiểm Kh&aacute; trở l&ecirc;n;</li>\r\n<li>Th&iacute; sinh c&oacute; <strong>Chứng chỉ tiếng Anh quốc tế </strong>trong thời hạn (t&iacute;nh đến ng&agrave;y x&eacute;t tuyển) đạt <strong>IELTS 5.5 </strong>trở l&ecirc;n hoặc <strong>TOEFL iBT 65 </strong>trở l&ecirc;n hoặc <strong>TOEFL ITP 513 </strong>trở l&ecirc;n; <strong>v&agrave; </strong>c&oacute; kết quả điểm trung b&igrave;nh chung học tập lớp 10, 11, 12 hoặc học kỳ 1 lớp 12 <em>(nếu chưa c&oacute; kết quả năm học lớp 12) </em>đạt từ 7,5 trở l&ecirc;n v&agrave; c&oacute; hạnh kiểm Kh&aacute; trở l&ecirc;n;&nbsp;</li>\r\n</ul>",
+            "contents":["Thí sinh có Chứng chỉ quốc tế SAT, trong thời hạn 02 năm (tính đến ngày xét tuyển) từ 1130/1600 trở lên hoặc ACT từ 25/36 trở lên và có kết quả điểm trung bình chung học tập lớp 10, 11, 12 hoặc học kỳ 1 lớp 12 (nếu chưa có kết quả năm học lớp 12) đạt từ 7,5 trở lên và có hạnh kiểm Khá trở lên","Thí sinh có Chứng chỉ tiếng Anh quốc tế trong thời hạn (tính đến ngày xét tuyển) đạt IELTS 5.5 trở lên hoặc TOEFL iBT 65 trở lên hoặc TOEFL ITP 513 trở lên và có kết quả điểm trung bình chung học tập lớp 10, 11, 12 hoặc học kỳ 1 lớp 12 (nếu chưa có kết quả năm học lớp 12) đạt từ 7,5 trở lên và có hạnh kiểm Khá trở lên"],
+            "moTa": "Phương thức 3",
+            "nguoiDang": null,
+            "slug": "phuong-thuc-3-xet-tuyen-ket-hop-1712853009908",
+            "ngayDang": "2020-06-08T17:29:31.193Z",
+            "createdAt": "2020-06-08T17:29:31.194Z",
+            "updatedAt": "2024-04-11T16:30:09.909Z",
+            "__v": 0,
+            "doUuTien": []
+        },
+        {
+            "maLoaiBaiViet": [
+                "PHUONG_AN_XET_TUYEN"
+            ],
+            "hienThi": true,
+            "thuTu": 4,
+            "urlFileDinhKem": [],
+            "urlTaiLieuDinhKem": [],
+            "_id": "62a16714dbd927b6a11eb3d2",
+            "tieuDe": "Phương thức 4 - Xét tuyển dựa vào kết quả thi đánh giá năng lực",
+            "noiDung": "<ul>\r\n<li>Th&iacute; sinh c&oacute; điểm thi đ&aacute;nh gi&aacute; năng lực của Đại học quốc gia H&agrave; Nội năm 2024 <strong>từ 75 điểm trở l&ecirc;n</strong>;</li>\r\n<li>Th&iacute; sinh c&oacute; điểm thi đ&aacute;nh gi&aacute; năng lực của Đại học quốc gia Hồ Ch&iacute; Minh năm 2024 <strong>từ 600 điểm trở l&ecirc;n</strong>;</li>\r\n<li>Th&iacute; sinh c&oacute; điểm thi đ&aacute;nh gi&aacute; tư duy của Đại học B&aacute;ch khoa H&agrave; Nội năm 2024 <strong>từ 50 điểm trở l&ecirc;n.</strong></li>\r\n</ul>\r\n<p>&nbsp;</p>",
+            "contents":["Thí sinh có điểm thi đánh giá năng lực của Đại học quốc gia Hà Nội năm 2024 từ 75 điểm trở lên","Thí sinh có điểm thi đánh giá năng lực của Đại học quốc gia Hồ Chí Minh năm 2024 từ 600 điểm trở lên","Thí sinh có điểm thi đánh giá tư duy của Đại học Bách khoa Hà Nội năm 2024 từ 50 điểm trở lên."],
+            "nguoiDang": {
+                "_id": "5eed88ffbf2f39144342aa65",
+                "username": "admin",
+                "hoTen": "Quản Trị",
+                "id": "5eed88ffbf2f39144342aa65"
+            },
+            "slug": "phuong-thuc-4-xet-tuyen-dua-vao-ket-qua-bai-thi-danh-gia-nang-luc-hoac-danh-gia-tu-duy-1712852989577",
+            "ngayDang": "2022-06-09T03:20:52.426Z",
+            "doUuTien": [],
+            "createdAt": "2022-06-09T03:20:52.433Z",
+            "updatedAt": "2024-04-11T16:29:56.783Z",
+            "__v": 0,
+            "moTa": "Phương thức 4"
+        },
+        {
+            "maLoaiBaiViet": [
+                "PHUONG_AN_XET_TUYEN"
+            ],
+            "hienThi": true,
+            "thuTu": 4,
+            "urlFileDinhKem": [],
+            "urlTaiLieuDinhKem": [],
+            "_id": "62a16714dbd927b6a11eb3d2",
+            "tieuDe": "Phương thức 4 - Xét tuyển dựa vào kết quả thi đánh giá tư duy",
+            "noiDung": "<ul>\r\n<li>Th&iacute; sinh c&oacute; điểm thi đ&aacute;nh gi&aacute; năng lực của Đại học quốc gia H&agrave; Nội năm 2024 <strong>từ 75 điểm trở l&ecirc;n</strong>;</li>\r\n<li>Th&iacute; sinh c&oacute; điểm thi đ&aacute;nh gi&aacute; năng lực của Đại học quốc gia Hồ Ch&iacute; Minh năm 2024 <strong>từ 600 điểm trở l&ecirc;n</strong>;</li>\r\n<li>Th&iacute; sinh c&oacute; điểm thi đ&aacute;nh gi&aacute; tư duy của Đại học B&aacute;ch khoa H&agrave; Nội năm 2024 <strong>từ 50 điểm trở l&ecirc;n.</strong></li>\r\n</ul>\r\n<p>&nbsp;</p>",
+            "contents":["Thí sinh có điểm thi đánh giá năng lực của Đại học quốc gia Hà Nội năm 2024 từ 75 điểm trở lên","Thí sinh có điểm thi đánh giá năng lực của Đại học quốc gia Hồ Chí Minh năm 2024 từ 600 điểm trở lên","Thí sinh có điểm thi đánh giá tư duy của Đại học Bách khoa Hà Nội năm 2024 từ 50 điểm trở lên."],
+            "nguoiDang": {
+                "_id": "5eed88ffbf2f39144342aa65",
+                "username": "admin",
+                "hoTen": "Quản Trị",
+                "id": "5eed88ffbf2f39144342aa65"
+            },
+            "slug": "phuong-thuc-4-xet-tuyen-dua-vao-ket-qua-bai-thi-danh-gia-nang-luc-hoac-danh-gia-tu-duy-1712852989577",
+            "ngayDang": "2022-06-09T03:20:52.426Z",
+            "doUuTien": [],
+            "createdAt": "2022-06-09T03:20:52.433Z",
+            "updatedAt": "2024-04-11T16:29:56.783Z",
+            "__v": 0,
+            "moTa": "Phương thức 4"
+        }
+    ],
+    "total": 4,
+    "message": "GET OK",
+    "statusCode": 200
+}

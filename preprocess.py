@@ -77,7 +77,7 @@ def tokenizerText(text):
 # Khởi tạo tập hợp để lưu trữ các từ dừng
 stopwords = set()
 # Đọc từng hàng trong file stopwords.txt
-with open('stopwords.txt', 'r', encoding='utf-8') as fp:
+with open('data/stopwords.txt', 'r', encoding='utf-8') as fp:
     for line in fp:
         word = line.strip()  # Loại bỏ khoảng trắng đầu và cuối dòng
         if word:  # Kiểm tra xem dòng không rỗng

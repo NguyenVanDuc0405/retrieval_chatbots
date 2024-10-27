@@ -1,0 +1,361 @@
+{
+    "data": [
+        {
+            "_id": "5ee3452e8f95f30cbc9df851",
+            "kyHieuTruong": "BVS",
+            "namHoc": 2024,
+            "maNganh": "7480201",
+            "chiTieuTheoKetQuaThiTHPT": 90,
+            "chiTieuTheoPhuongThucKetHop": 45,
+            "createdAt": "2020-06-12T09:04:46.452Z",
+            "updatedAt": "2024-04-11T10:13:40.323Z",
+            "__v": 0,
+            "phanTramTroi": 35,
+            "thuTu": 11,
+            "diemSanTheoPhuongThucKetHop": 24.2,
+            "chiTieuTheoDGNL": 30,
+            "chiTieuTheoXetTuyenTaiNang": 15,
+            "chiTieu": 135,
+            "nganhHoc": {
+                "toHop": [
+                    "A00",
+                    "A01"
+                ],
+                "_id": "5edb1aaca01f004b8ad7859f",
+                "maNganh": "7480201",
+                "tenNganh": "Ngành Công nghệ thông tin",
+                "moTa": "<p></p>",
+                "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7480201",
+                "urlAnhDaiDien": "https://apituyensinhptit.aisenote.com/images/anhDaiDien-1591417516745-cntt.png"
+            },
+            "id": "5ee3452e8f95f30cbc9df851"
+        },
+        {
+            "_id": "5ee3453f8f95f30cbc9df852",
+            "kyHieuTruong": "BVS",
+            "namHoc": 2024,
+            "maNganh": "7480202",
+            "chiTieuTheoKetQuaThiTHPT": 40,
+            "chiTieuTheoPhuongThucKetHop": 20,
+            "createdAt": "2020-06-12T09:05:03.020Z",
+            "updatedAt": "2024-04-11T10:14:31.739Z",
+            "__v": 0,
+            "phanTramTroi": 100,
+            "thuTu": 12,
+            "diemSanTheoPhuongThucKetHop": 23.4,
+            "chiTieuTheoDGNL": 10,
+            "chiTieuTheoXetTuyenTaiNang": 10,
+            "chiTieu": 60,
+            "nganhHoc": {
+                "toHop": [
+                    "A00",
+                    "A01"
+                ],
+                "_id": "5edb1b78a01f004b8ad785a0",
+                "maNganh": "7480202",
+                "tenNganh": "Ngành An toàn thông tin",
+                "moTa": "<p></p>",
+                "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7480202",
+                "urlAnhDaiDien": "https://apituyensinhptit.aisenote.com/images/anhDaiDien-1591417720436-attt.png"
+            },
+            "id": "5ee3453f8f95f30cbc9df852"
+        },
+        {
+            "_id": "5ee345228f95f30cbc9df850",
+            "kyHieuTruong": "BVS",
+            "namHoc": 2024,
+            "maNganh": "7510301",
+            "chiTieuTheoKetQuaThiTHPT": 45,
+            "chiTieuTheoPhuongThucKetHop": 20,
+            "createdAt": "2020-06-12T09:04:34.431Z",
+            "updatedAt": "2024-04-11T10:11:37.581Z",
+            "__v": 0,
+            "phanTramTroi": 100,
+            "thuTu": 13,
+            "diemSanTheoPhuongThucKetHop": 1,
+            "chiTieuTheoDGNL": 15,
+            "chiTieuTheoXetTuyenTaiNang": 10,
+            "chiTieu": 65,
+            "nganhHoc": {
+                "toHop": [
+                    "A00",
+                    "A01"
+                ],
+                "_id": "5edb1d64a01f004b8ad785a7",
+                "maNganh": "7510301",
+                "tenNganh": "Ngành Công nghệ kỹ thuật Điện điện tử",
+                "moTa": "<p></p>",
+                "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7510301",
+                "urlAnhDaiDien": "https://apituyensinhptit.aisenote.com/images/anhDaiDien-1591418212667-cn.png"
+            },
+            "id": "5ee345228f95f30cbc9df850"
+        },
+        {
+            "_id": "5ee345158f95f30cbc9df84f",
+            "kyHieuTruong": "BVS",
+            "namHoc": 2024,
+            "maNganh": "7520207",
+            "chiTieuTheoKetQuaThiTHPT": 50,
+            "chiTieuTheoPhuongThucKetHop": 25,
+            "createdAt": "2020-06-12T09:04:21.202Z",
+            "updatedAt": "2024-04-11T10:14:12.924Z",
+            "__v": 0,
+            "phanTramTroi": 100,
+            "thuTu": 14,
+            "diemSanTheoPhuongThucKetHop": 22.6,
+            "chiTieuTheoDGNL": 15,
+            "chiTieuTheoXetTuyenTaiNang": 10,
+            "chiTieu": 75,
+            "nganhHoc": {
+                "toHop": [
+                    "A00",
+                    "A01"
+                ],
+                "_id": "5edb1d0ea01f004b8ad785a6",
+                "maNganh": "7520207",
+                "tenNganh": "Ngành Kỹ thuật Điện tử viễn thông",
+                "moTa": "<p></p>",
+                "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7520207",
+                "urlAnhDaiDien": "https://apituyensinhptit.aisenote.com/images/anhDaiDien-1591418126335-attt.png"
+            },
+            "id": "5ee345158f95f30cbc9df84f"
+        },
+        {
+            "_id": "5ee3454b8f95f30cbc9df853",
+            "kyHieuTruong": "BVS",
+            "namHoc": 2024,
+            "maNganh": "7329001",
+            "chiTieuTheoKetQuaThiTHPT": 60,
+            "chiTieuTheoPhuongThucKetHop": 30,
+            "createdAt": "2020-06-12T09:05:15.100Z",
+            "updatedAt": "2024-04-11T10:18:25.662Z",
+            "__v": 0,
+            "phanTramTroi": 100,
+            "thuTu": 15,
+            "diemSanTheoPhuongThucKetHop": 22.43,
+            "chiTieuTheoDGNL": 20,
+            "chiTieuTheoXetTuyenTaiNang": 10,
+            "chiTieu": 90,
+            "nganhHoc": {
+                "toHop": [
+                    "A00",
+                    "A01",
+                    "D01"
+                ],
+                "_id": "5edb1de1a01f004b8ad785a8",
+                "maNganh": "7329001",
+                "tenNganh": "Ngành Công nghệ đa phương tiện",
+                "moTa": "<p></p>",
+                "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7329001",
+                "urlAnhDaiDien": "https://apituyensinhptit.aisenote.com/images/anhDaiDien-1591418337536-download.png"
+            },
+            "id": "5ee3454b8f95f30cbc9df853"
+        },
+        {
+            "_id": "5ee345688f95f30cbc9df855",
+            "kyHieuTruong": "BVS",
+            "namHoc": 2024,
+            "maNganh": "7340115",
+            "chiTieuTheoKetQuaThiTHPT": 45,
+            "chiTieuTheoPhuongThucKetHop": 20,
+            "createdAt": "2020-06-12T09:05:44.044Z",
+            "updatedAt": "2024-04-11T10:17:17.383Z",
+            "__v": 0,
+            "phanTramTroi": 100,
+            "thuTu": 16,
+            "diemSanTheoPhuongThucKetHop": 21.6,
+            "chiTieuTheoDGNL": 15,
+            "chiTieuTheoXetTuyenTaiNang": 10,
+            "chiTieu": 65,
+            "nganhHoc": {
+                "toHop": [
+                    "A00",
+                    "A01",
+                    "D01"
+                ],
+                "_id": "5edb1fa3a01f004b8ad785b2",
+                "maNganh": "7340115",
+                "tenNganh": "Ngành Marketing",
+                "moTa": "<p></p>",
+                "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7340115",
+                "urlAnhDaiDien": "https://apituyensinhptit.aisenote.com/images/anhDaiDien-1591418787350-mar.png"
+            },
+            "id": "5ee345688f95f30cbc9df855"
+        },
+        {
+            "_id": "5ee3455a8f95f30cbc9df854",
+            "kyHieuTruong": "BVS",
+            "namHoc": 2024,
+            "maNganh": "7340101",
+            "chiTieuTheoKetQuaThiTHPT": 50,
+            "chiTieuTheoPhuongThucKetHop": 25,
+            "createdAt": "2020-06-12T09:05:30.176Z",
+            "updatedAt": "2024-04-11T10:17:46.921Z",
+            "__v": 0,
+            "phanTramTroi": 100,
+            "thuTu": 17,
+            "diemSanTheoPhuongThucKetHop": 1,
+            "chiTieuTheoDGNL": 15,
+            "chiTieuTheoXetTuyenTaiNang": 10,
+            "chiTieu": 75,
+            "nganhHoc": {
+                "toHop": [
+                    "A00",
+                    "A01",
+                    "D01"
+                ],
+                "_id": "5edb1f17a01f004b8ad785b0",
+                "maNganh": "7340101",
+                "tenNganh": "Ngành Quản trị kinh doanh",
+                "moTa": "<p></p>",
+                "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7340101",
+                "urlAnhDaiDien": "https://apituyensinhptit.aisenote.com/images/anhDaiDien-1591418647310-qt.png"
+            },
+            "id": "5ee3455a8f95f30cbc9df854"
+        },
+        {
+            "_id": "5ee345758f95f30cbc9df856",
+            "kyHieuTruong": "BVS",
+            "namHoc": 2024,
+            "maNganh": "7340301",
+            "chiTieuTheoKetQuaThiTHPT": 45,
+            "chiTieuTheoPhuongThucKetHop": 20,
+            "createdAt": "2020-06-12T09:05:57.345Z",
+            "updatedAt": "2024-04-11T10:17:00.812Z",
+            "__v": 0,
+            "phanTramTroi": 100,
+            "thuTu": 18,
+            "diemSanTheoPhuongThucKetHop": 1,
+            "chiTieuTheoDGNL": 15,
+            "chiTieuTheoXetTuyenTaiNang": 10,
+            "chiTieu": 65,
+            "nganhHoc": {
+                "toHop": [
+                    "A00",
+                    "A01",
+                    "D01"
+                ],
+                "_id": "5edb1f4fa01f004b8ad785b1",
+                "maNganh": "7340301",
+                "tenNganh": "Ngành Kế toán",
+                "moTa": "<p></p>",
+                "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7340301",
+                "urlAnhDaiDien": "https://apituyensinhptit.aisenote.com/images/anhDaiDien-1591418703356-kt.png"
+            },
+            "id": "5ee345758f95f30cbc9df856"
+        },
+        {
+            "_id": "6065edb4a538412521c7a0c9",
+            "kyHieuTruong": "BVS",
+            "namHoc": 2024,
+            "maNganh": "7520216",
+            "chiTieuTheoKetQuaThiTHPT": 40,
+            "chiTieuTheoPhuongThucKetHop": 20,
+            "thuTu": 19,
+            "createdAt": "2021-04-01T15:58:44.983Z",
+            "updatedAt": "2024-04-11T10:15:06.487Z",
+            "__v": 0,
+            "phanTramTroi": 100,
+            "diemSanTheoPhuongThucKetHop": 23.78,
+            "chiTieuTheoDGNL": 15,
+            "chiTieuTheoXetTuyenTaiNang": 10,
+            "chiTieu": 60,
+            "nganhHoc": {
+                "toHop": [
+                    "A00",
+                    "A01"
+                ],
+                "_id": "6065ed96a538412521c7a0c8",
+                "maNganh": "7520216",
+                "tenNganh": "Ngành Kỹ thuật Điều khiển và Tự động hoá",
+                "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7520216",
+                "urlAnhDaiDien": "https://apiquanlydaotao.ptit.edu.vn/images/anhDaiDien-1620814196904-avatar.jpg"
+            },
+            "id": "6065edb4a538412521c7a0c9"
+        },
+        {
+            "_id": "62cbce4551b67b921ae061e9",
+            "kyHieuTruong": "BVS",
+            "namHoc": 2024,
+            "maNganh": "7520208",
+            "chiTieuTheoKetQuaThiTHPT": 40,
+            "chiTieuTheoPhuongThucKetHop": 20,
+            "chiTieuTheoDGNL": 15,
+            "thuTu": 22,
+            "createdAt": "2022-07-11T07:16:21.810Z",
+            "updatedAt": "2024-04-11T10:13:08.155Z",
+            "__v": 0,
+            "chiTieuTheoXetTuyenTaiNang": 10,
+            "chiTieu": 60,
+            "nganhHoc": {
+                "toHop": [
+                    "A00",
+                    "A01"
+                ],
+                "_id": "62cbc807a2172792573eed26",
+                "maNganh": "7520208",
+                "tenNganh": "Ngành Công nghệ Internet vạn vật (IoT)",
+                "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn",
+                "urlAnhDaiDien": "https://apiquanlydaotao.ptit.edu.vn/images/anhDaiDien-1657522183813-anhdaidien_1657093779161__nh_ch_nh_quy.jpg"
+            },
+            "id": "62cbce4551b67b921ae061e9"
+        },
+        {
+            "_id": "6618a219999c0aa38257ba9e",
+            "kyHieuTruong": "BVS",
+            "namHoc": 2024,
+            "maNganh": "7480201_CLC",
+            "chiTieuTheoKetQuaThiTHPT": 50,
+            "chiTieuTheoPhuongThucKetHop": 25,
+            "chiTieuTheoDGNL": 15,
+            "chiTieuTheoXetTuyenTaiNang": 10,
+            "thuTu": 100,
+            "createdAt": "2024-04-12T02:53:13.432Z",
+            "updatedAt": "2024-04-12T02:58:00.119Z",
+            "__v": 0,
+            "chiTieu": 75,
+            "nganhHoc": {
+                "toHop": [
+                    "A00",
+                    "A01"
+                ],
+                "_id": "64b7b7d4334062c1c9a5a882",
+                "maNganh": "7480201_CLC",
+                "tenNganh": "Công nghệ thông tin (chất lượng cao)",
+                "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7480201(CLC)",
+                "urlAnhDaiDien": "https://apiquanlydaotao.ptit.edu.vn/images/anhDaiDien-1689761748801-2.png"
+            },
+            "id": "6618a219999c0aa38257ba9e"
+        },
+        {
+            "_id": "6618a22eb899dfa381520218",
+            "kyHieuTruong": "BVS",
+            "namHoc": 2024,
+            "maNganh": "7340115_CLC",
+            "chiTieuTheoKetQuaThiTHPT": 20,
+            "chiTieuTheoPhuongThucKetHop": 10,
+            "chiTieuTheoDGNL": 5,
+            "chiTieuTheoXetTuyenTaiNang": 5,
+            "thuTu": 100,
+            "createdAt": "2024-04-12T02:53:34.154Z",
+            "updatedAt": "2024-04-12T02:53:34.154Z",
+            "__v": 0,
+            "chiTieu": 30,
+            "nganhHoc": {
+                "toHop": [
+                    "A00",
+                    "A01",
+                    "D01"
+                ],
+                "_id": "66176d9b1c9f276ee800723e",
+                "maNganh": "7340115_CLC",
+                "tenNganh": "Marketing chất lượng cao",
+                "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7340115_CLC",
+                "urlAnhDaiDien": "https://apiquanlydaotao.ptit.edu.vn/images/anhDaiDien-1712811419662-2.png"
+            },
+            "id": "6618a22eb899dfa381520218"
+        }
+    ],
+    "message": "GET OK",
+    "statusCode": 200
+}

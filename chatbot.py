@@ -2,6 +2,8 @@ from preprocess import processing_text_for_query, processing_text_for_db_rerank,
 import pandas as pd
 import numpy as np
 import torch
+from pymongo import MongoClient
+
 from transformers import AutoModel, AutoTokenizer
 from transformers import pipeline
 from transformers import AutoModelForSequenceClassification
@@ -48,9 +50,16 @@ def correction_model(texts):
     return corrector(texts, max_length=512)
 
 
-# Đọc DataFrame từ file CSV
-dataFrame = pd.read_csv('embeddings_ver2.csv')
-# Chuyển đổi chuỗi JSON trở lại danh sách và sau đó thành mảng NumPy
+# Kết nối tới MongoDB
+client = MongoClient("mongodb://localhost:27017/")
+db = client["chatbot"]
+collection = db["q&a"]
+
+cursor = collection.find(
+    {}, {"question": 1, "answer": 1, "processed_question": 1, "vector_embeddings": 1, "_id": 0})
+
+# Chuyển dữ liệu từ MongoDB thành DataFrame
+dataFrame = pd.DataFrame(list(cursor))
 dataFrame['vector_embeddings'] = dataFrame['vector_embeddings'].apply(
     lambda x: np.array(json.loads(x)))
 questions_vector = dataFrame['vector_embeddings']
@@ -62,15 +71,15 @@ answers = dataFrame['answer']
 def get_response(user_query):
     processed_query = processing_text_for_query(user_query)
     query_vector = embeddings_model(processed_query)
-    # Tính toán độ tương đồng cosine giữa câu truy vấn của người dùng và các câu hỏi trong database
+
     cosine_similarities = [cosine_similarity(
         query_vector, qv).flatten() for qv in questions_vector]
     jaccard_similarities = [jaccard_similarity(
         processed_query, q) for q in dataFrame['processed_question']]
 
     # Kết hợp kết quả từ hai độ tương đồng
-    alpha = 0.6
-    beta = 0.4
+    alpha = 0.7
+    beta = 0.3
     # Chuyển đổi jaccard_similarities thành mảng một chiều
     jaccard_array = np.array(jaccard_similarities).reshape(
         len(dataFrame['processed_question']), 1)
@@ -79,6 +88,10 @@ def get_response(user_query):
     combined_scores = alpha * \
         np.array(cosine_similarities) + beta * jaccard_array
     sorted_indices = np.argsort(combined_scores, axis=0)
+
+    # cosine_similarities = [cosine_similarity(
+    #     query_vector, qv).flatten() for qv in questions_vector]
+    # sorted_indices = np.argsort(cosine_similarities, axis=0)
 
     documents = []
     pos = []
@@ -99,9 +112,7 @@ def get_response(user_query):
     print(query_rerank)
     print(documents)
     print(result)
-    if result[0]['relevance_score'] > 0.55:
-        print((result[0]['relevance_score']))
-        print(pos[result[0]['index']][0])
+    if result[0]['relevance_score'] > 0.7:
         return answers[pos[result[0]['index']][0]]
     else:
         return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."
