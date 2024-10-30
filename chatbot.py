@@ -10,7 +10,9 @@ from transformers import AutoModelForSequenceClassification
 from sklearn.metrics.pairwise import cosine_similarity
 import re
 import json
-
+import requests
+API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+headers = {"Authorization": "Bearer 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"}
 
 model = AutoModelForSequenceClassification.from_pretrained(
     'jinaai/jina-reranker-v2-base-multilingual',
@@ -40,6 +42,17 @@ def embeddings_model(question):
     # Lấy vector biểu diễn từ outputs của model
     # Trung bình các vector token
     return output.last_hidden_state.mean(dim=1).numpy()
+
+
+def reranker(query_rerank, documents):
+    payload = {
+        "inputs": {
+            "source_sentence": query_rerank,
+            "sentences": documents
+        }
+    }
+    response = requests.post(API_URL, headers=headers, json=payload)
+    return response.json()
 
 
 corrector = pipeline("text2text-generation",
@@ -72,26 +85,26 @@ def get_response(user_query):
     processed_query = processing_text_for_query(user_query)
     query_vector = embeddings_model(processed_query)
 
-    cosine_similarities = [cosine_similarity(
-        query_vector, qv).flatten() for qv in questions_vector]
-    jaccard_similarities = [jaccard_similarity(
-        processed_query, q) for q in dataFrame['processed_question']]
-
-    # Kết hợp kết quả từ hai độ tương đồng
-    alpha = 0.7
-    beta = 0.3
-    # Chuyển đổi jaccard_similarities thành mảng một chiều
-    jaccard_array = np.array(jaccard_similarities).reshape(
-        len(dataFrame['processed_question']), 1)
-
-    # Kết hợp điểm số từ hai độ tương đồng
-    combined_scores = alpha * \
-        np.array(cosine_similarities) + beta * jaccard_array
-    sorted_indices = np.argsort(combined_scores, axis=0)
-
     # cosine_similarities = [cosine_similarity(
     #     query_vector, qv).flatten() for qv in questions_vector]
-    # sorted_indices = np.argsort(cosine_similarities, axis=0)
+    # jaccard_similarities = [jaccard_similarity(
+    #     processed_query, q) for q in dataFrame['processed_question']]
+
+    # # Kết hợp kết quả từ hai độ tương đồng
+    # alpha = 0.7
+    # beta = 0.3
+    # # Chuyển đổi jaccard_similarities thành mảng một chiều
+    # jaccard_array = np.array(jaccard_similarities).reshape(
+    #     len(dataFrame['processed_question']), 1)
+
+    # # Kết hợp điểm số từ hai độ tương đồng
+    # combined_scores = alpha * \
+    #     np.array(cosine_similarities) + beta * jaccard_array
+    # sorted_indices = np.argsort(combined_scores, axis=0)
+
+    cosine_similarities = [cosine_similarity(
+        query_vector, qv).flatten() for qv in questions_vector]
+    sorted_indices = np.argsort(cosine_similarities, axis=0)
 
     documents = []
     pos = []
@@ -101,7 +114,6 @@ def get_response(user_query):
         documents.append(processing_text_for_db_rerank(questions[int(i)]))
         pos.append([int(i)])
     query_rerank = processing_text_for_query_rerank(user_query)
-
     result = model.rerank(
         query_rerank,
         documents,
@@ -112,10 +124,49 @@ def get_response(user_query):
     print(query_rerank)
     print(documents)
     print(result)
-    if result[0]['relevance_score'] > 0.7:
+    if result[0]['relevance_score'] > 0.67:
         return answers[pos[result[0]['index']][0]]
     else:
         return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."
+
+    # result = model.rerank(
+    #     query_rerank,
+    #     documents,
+    #     max_query_length=512,
+    #     max_length=1024,
+    #     top_n=3
+    # )
+    # print(query_rerank)
+    # print(documents)
+    # print(result)
+
+    # result = reranker(query_rerank, documents)
+    # # In ra câu hỏi và tài liệu
+    # print(result)
+    # print(query_rerank)
+    # print(documents)
+
+    # # Xử lý kết quả từ API
+    # # Kiểm tra xem result có phải là list không và không rỗng
+    # if isinstance(result, list) and result:
+    #     # Tìm score cao nhất và chỉ số tương ứng
+    #     # Tìm phần tử có score cao nhất
+    #     # Tìm độ tương đồng cao nhất và chỉ số tương ứng
+    #     max_score = max(result)  # Độ tương đồng cao nhất
+    #     # Chỉ số của độ tương đồng cao nhất
+    #     max_index = result.index(max_score)
+    #     # Chỉ số tương ứng trong documents
+    #     print(max_score)
+    #     print(max_index)
+
+    #     # Kiểm tra xem score có đủ điều kiện không
+    #     if max_score > 0.7:
+    #         # Trả về câu trả lời tương ứng
+    #         return answers[pos[max_index][0]]
+    #     else:
+    #         return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."
+    # else:
+    #     return "Đã xảy ra lỗi khi gọi API."
 
 
 global previous_questions
@@ -140,7 +191,7 @@ def handle_user_question(question):
         return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."
 
 
-# Chạy chatbot
+# # Chạy chatbot
 # while True:
 #     user_input = input("You: ")
 

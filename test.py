@@ -1,18 +1,30 @@
-from pymongo import MongoClient
-import pandas as pd
+import time
+import requests
 
-# Kết nối tới MongoDB
-client = MongoClient("mongodb://localhost:27017/")
-db = client["chatbot"]  # Thay thế 'ten_database' bằng tên database bạn đã lưu
-# Thay thế 'ten_collection' bằng tên collection bạn đã lưu
-collection = db["q&a"]
+API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/all-mpnet-base-v2"
+headers = {"Authorization": "Bearer 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"}
 
-# Lấy các cột mong muốn, ví dụ: 'processed_question' và 'vector_embeddings'
-cursor = collection.find(
-    {}, {"question": 1, "answer": 1, "processed_question": 1, "vector_embeddings": 1, "_id": 0})
 
-# Chuyển dữ liệu từ MongoDB thành DataFrame
-df_selected_columns = pd.DataFrame(list(cursor))
+def query(payload):
+    while True:
+        response = requests.post(API_URL, headers=headers, json=payload)
+        result = response.json()
+        if 'error' in result and 'loading' in result['error']:
+            print("Model is loading, waiting 20 seconds...")
+            time.sleep(20)
+        else:
+            return result
 
-# Hiển thị DataFrame
-print(df_selected_columns)
+
+output = query({
+    "inputs": {
+        "source_sentence": "That is a happy person",
+        "sentences": [
+            "3",
+            "1",
+            "2"
+        ]
+    },
+})
+
+print(output)

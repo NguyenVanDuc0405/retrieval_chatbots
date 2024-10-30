@@ -60,6 +60,8 @@ def replace_abbreviations(text, abbreviation_dict):
 text_dict = {
     "năm nay": "năm 2024",
     "hiện nay": "năm 2024",
+    "điểm đầu vào": "điểm chuẩn",
+    "vị trí": "địa chỉ",
 }
 
 
@@ -67,6 +69,12 @@ def replace_text(text, text_dict):
     for key, value in text_dict.items():
         text = re.sub(r'\b{}\b'.format(re.escape(key)),
                       value, text, flags=re.IGNORECASE)
+    return text
+
+
+def replace_key(text):
+    if "hình ảnh" in text:
+        return "Những câu hỏi liên quan đến hình ảnh"
     return text
 
 
@@ -124,5 +132,6 @@ def processing_text_for_query_rerank(text):
     text = to_lowercase(text)
     text = replace_comma(text)
     text = replace_abbreviations(text, abbreviation_dict)
+    text = replace_key(text)
     text = replace_text(text, text_dict)
     return text
