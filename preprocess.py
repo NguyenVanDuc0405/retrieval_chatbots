@@ -75,6 +75,8 @@ def replace_text(text, text_dict):
 def replace_key(text):
     if "hình ảnh" in text:
         return "Những câu hỏi liên quan đến hình ảnh"
+    if "cảm ơn" in text:
+        return "Những câu hỏi liên quan đến cảm ơn"
     return text
 
 
@@ -114,6 +116,7 @@ def processing_text_for_query(text):
     text = to_lowercase(text)
     text = replace_comma(text)
     text = replace_abbreviations(text, abbreviation_dict)
+    text = replace_key(text)
     text = replace_text(text, text_dict)
     text = tokenizerText(text)
     text = remove_stopwords(text)
