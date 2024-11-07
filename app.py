@@ -121,7 +121,6 @@ NGROK_TOKEN = "2KXuaD0CZC1wD6xl0aycvptytsm_dVtVE8o12y5JeGw55HoQ"
 ngrok.set_auth_token(NGROK_TOKEN)
 ngrok_tunnel = ngrok.connect(5000)
 print("Public URL:", ngrok_tunnel.public_url)
-# Áp dụng nest_asyncio để hỗ trợ vòng lặp lồng nhau
 nest_asyncio.apply()
 
 if __name__ == '__main__':

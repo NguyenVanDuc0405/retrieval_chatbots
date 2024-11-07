@@ -1,0 +1,9 @@
+pandas
+numpy
+torch
+pymongo
+transformers
+scikit-learn
+underthesea
+nest_asyncio
+pyngrok
