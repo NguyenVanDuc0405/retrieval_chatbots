@@ -41,6 +41,7 @@ async def embeddings_model(question):
 client = MongoClient("mongodb://localhost:27017/")
 db = client["chatbot"]
 collection = db["q&a"]
+collection_feedback = db["feedback"]
 
 cursor = collection.find(
     {}, {"question": 1, "answer": 1, "processed_question": 1, "vector_embeddings": 1, "_id": 0})
@@ -117,10 +118,28 @@ async def chatbot_response():
     response = await handle_user_question(query)
     return jsonify(response)
 
-NGROK_TOKEN = "2KXuaD0CZC1wD6xl0aycvptytsm_dVtVE8o12y5JeGw55HoQ"
-ngrok.set_auth_token(NGROK_TOKEN)
-ngrok_tunnel = ngrok.connect(5000)
-print("Public URL:", ngrok_tunnel.public_url)
+
+@app.route('/api/save_feedback', methods=['POST'])
+async def save_feedback():
+    data = await request.json
+    email = data.get('email')
+    message = data.get('message')
+
+    if email and message:
+        feedback_data = {
+            "email": email,
+            "message": message
+        }
+        # Lưu dữ liệu vào MongoDB
+        result = collection_feedback.insert_one(feedback_data)
+        return jsonify({"success": True, "feedback_id": str(result.inserted_id)}), 201
+    else:
+        return jsonify({"error": "Invalid data"}), 400
+
+# NGROK_TOKEN = "2KXuaD0CZC1wD6xl0aycvptytsm_dVtVE8o12y5JeGw55HoQ"
+# ngrok.set_auth_token(NGROK_TOKEN)
+# ngrok_tunnel = ngrok.connect(5000)
+# print("Public URL:", ngrok_tunnel.public_url)
 nest_asyncio.apply()
 
 if __name__ == '__main__':
