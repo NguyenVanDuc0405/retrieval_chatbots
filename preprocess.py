@@ -63,6 +63,10 @@ text_dict = {
     "hiện nay": "năm 2024",
     "điểm đầu vào": "điểm chuẩn",
     "vị trí": "địa chỉ",
+    "năng lực": "đánh giá năng lực, tư duy",
+    "nam": "miền nam",
+    "bắc": "miền bắc",
+
 }
 
 

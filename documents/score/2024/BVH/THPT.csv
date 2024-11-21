@@ -4,7 +4,7 @@ STT,Mã ngành,Tên ngành,Tổ hợp môn,Điểm chuẩn,Ghi chú
 3,7520216,Kỹ thuật Điều khiển và tự động hóa,A00; A01,26.08,TTNV<=3
 4,7480201,Công nghệ thông tin,A00; A01,26.4,TTNV<=5
 5,7480202,An toàn thông tin,A00; A01,25.85,TTNV<=2
-6,7480101,Khoa học máy tính (định hướng Khoa học dữ liệu),A00; A01,26.31,TTNV=1
+6,7480101,Khoa học máy tính,A00; A01,26.31,TTNV=1
 7,7480102,Kỹ thuật dữ liệu (ngành Mạng máy tính và truyền thông dữ liệu),A00; A01,25.59,TTNV<=11
 8,7480201_VNH,Công nghệ thông tin Việt Nhật,A00; A01,24.25,TTNV=1
 9,7480201_UDU,Công nghệ thông tin (Cử nhân định hướng ứng dụng),A00; A01,24.87,TTNV<=4
@@ -16,8 +16,8 @@ STT,Mã ngành,Tên ngành,Tổ hợp môn,Điểm chuẩn,Ghi chú
 15,7340115,Marketing,A00; A01; D01,25.85,TTNV<=3
 16,7340301,Kế toán,A00; A01; D01,25.29,TTNV<=16
 17,7340205,Công nghệ tài chính (Fintech),A00; A01; D01,25.61,TTNV<=10
-18,7340115_QHC,Quan hệ công chúng (ngành Marketing),A00; A01; D01,25.15,TTNV<=4
-19,7329001_GAM,Thiết kế và phát triển Game (ngành Công nghệ đa phương tiện),A00; A01; D01,24.97,TTNV<=2
-20,7480201_CLC,Công nghệ thông tin chất lượng cao,A00; A01; D01,25.43,TTNV=1
-21,7340301_CLC,Kế toán chất lượng cao (chuẩn quốc tế ACCA),A00; A01; D01,22.5,TTNV=1
-22,7340115_CLC,Marketing chất lượng cao,A00; A01; D01,24.25,TTNV=1
+18,7340115_QHC,Quan hệ công chúng,A00; A01; D01,25.15,TTNV<=4
+19,7329001_GAM,Thiết kế và phát triển Game,A00; A01; D01,24.97,TTNV<=2
+20,7480201_CLC,Công nghệ thông tin chương trình chất lượng cao,A00; A01; D01,25.43,TTNV=1
+21,7340301_CLC,Kế toán chương trình chất lượng cao,A00; A01; D01,22.5,TTNV=1
+22,7340115_CLC,Marketing chương trình chất lượng cao,A00; A01; D01,24.25,TTNV=1

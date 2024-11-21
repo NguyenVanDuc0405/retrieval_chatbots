@@ -4,7 +4,7 @@ STT,Mã ngành,Tên ngành,Tổ hợp môn,Điểm chuẩn,Ghi chú
 3,7510301,"Công nghệ kỹ thuật Điện, điện tử",A00; A01,25.07,Học bạ và CCQT
 4,7480201,Công nghệ thông tin,A00; A01,27.01,Học bạ và CCQT
 5,7480202,An toàn thông tin,A00; A01,26.8,Học bạ và CCQT
-6,7480101,Khoa học máy tính (định hướng Khoa học dữ liệu),A00; A01,28,Học bạ và CCQT
+6,7480101,Khoa học máy tính,A00; A01,28,Học bạ và CCQT
 7,7480102,Kỹ thuật dữ liệu (ngành Mạng máy tính và truyên thông dừ liệu),A00; A01,23.74,Học bạ và CCQT
 8,7480201_UDU,"Công nghệ thông tin (Cử nhân, định hướng ứng dụng)",A00; A01,25.5,Học bạ và CCQT
 9,7329001,Công nghệ đa phương tiện,A00; A01; D01,27,Học bạ và CCQT
@@ -15,9 +15,9 @@ STT,Mã ngành,Tên ngành,Tổ hợp môn,Điểm chuẩn,Ghi chú
 14,7340122,Thương mại điện tử,A00; A01; D01,27.26,Học bạ và CCQT
 15,7340301,Kế toán,A00; A01; D01,25.77,Học bạ và CCQT
 16,7340205,Công nghệ tài chính (Fintech),A00; A01; D01,26.7,Học bạ và CCQT
-17,7480201 _CLC,Công nghệ thông tin chất lượng cao,A00; A01,25.64,"Học bạ và CCQT, CT chất lượng cao"
-18,7340115 _CLC,Marketing chất lượng cao,A00; A01; D01,25.51,"Học bạ và CCQT, CT chất lượng cao"
-19,7340301 _CLC,Kế toán chất lượng cao (chuẩn quốc tế ACCA),A00; A01; D01,23.36,"Học bạ và CCQT, CT chất lượng cao"
+17,7480201 _CLC,Công nghệ thông tin chương trình chất lượng cao,A00; A01,25.64,"Học bạ và CCQT, CT chất lượng cao"
+18,7340115 _CLC,Marketing chương trình chất lượng cao,A00; A01; D01,25.51,"Học bạ và CCQT, CT chất lượng cao"
+19,7340301 _CLC,Kế toán chương trình chất lượng cao,A00; A01; D01,23.36,"Học bạ và CCQT, CT chất lượng cao"
 20,7480201 _LK,Công nghệ thông tin (Liên kết với Đại học La Trobe. Austraha),A00; A01,23.67,"Học bạ và CCQT, CT Liên kết quốc tế"
 21,7340205 _LK,Cổng nghệ tài chính (Liên kết với Đại học Hudderssield. Vương quốc Anh),A00; A01; D01,22.83,"Học bạ và CCQT, CT Liên kết quốc tế"
 22,7329001 _LK,Công nghệ đa phương tiện (Liên kết với Đại học Canberra. Australia),A00; A01; D01,24.3,"Học bạ và CCQT, CT Liên kết quốc tế"
