@@ -64,12 +64,30 @@ answers = dataFrame['answer']
 
 
 def get_response(user_query):
+    # user_query = correction_text(user_query)
     processed_query = processing_text_for_query(user_query)
     query_vector = embeddings_model(processed_query)
 
     cosine_similarities = [cosine_similarity(
         query_vector, qv).flatten() for qv in questions_vector]
-    sorted_indices = np.argsort(cosine_similarities, axis=0)
+    jaccard_similarities = [jaccard_similarity(
+        processed_query, q) for q in dataFrame['processed_question']]
+
+    # Kết hợp kết quả từ hai độ tương đồng
+    alpha = 0.8
+    beta = 0.2
+    # Chuyển đổi jaccard_similarities thành mảng một chiều
+    jaccard_array = np.array(jaccard_similarities).reshape(
+        len(dataFrame['processed_question']), 1)
+
+    # Kết hợp điểm số từ hai độ tương đồng
+    combined_scores = alpha * \
+        np.array(cosine_similarities) + beta * jaccard_array
+    sorted_indices = np.argsort(combined_scores, axis=0)
+
+    # cosine_similarities = [cosine_similarity(
+    #     query_vector, qv).flatten() for qv in questions_vector]
+    # sorted_indices = np.argsort(cosine_similarities, axis=0)
 
     documents = []
     pos = []
@@ -79,6 +97,7 @@ def get_response(user_query):
         documents.append(processing_text_for_db_rerank(questions[int(i)]))
         pos.append([int(i)])
     query_rerank = processing_text_for_query_rerank(user_query)
+
     result = model.rerank(
         query_rerank,
         documents,
@@ -89,10 +108,16 @@ def get_response(user_query):
     print(query_rerank)
     print(documents)
     print(result)
-    if result[0]['relevance_score'] > 0.67:
-        return answers[pos[result[0]['index']][0]]
+    if result[0]['relevance_score'] > 0.74:
+        return {
+            "response": answers[pos[result[0]['index']][0]],
+            "result": result
+        }
     else:
-        return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."
+        return {
+            "response": "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.",
+            "result": None
+        }
 
 
 global previous_questions
@@ -101,16 +126,21 @@ previous_questions = []
 
 def handle_user_question(question):
     try:
-        response = get_response(question)
+        response_data = get_response(question)
+        response = response_data["response"]
+        result = response_data["result"]
         if response == "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.":
             for i in range(1, min(3, len(previous_questions) + 1)):
                 last_question = previous_questions[-i]
                 combined_question = last_question + " " + question
-                response = get_response(combined_question)
+                combined_response_data = get_response(combined_question)
+                response = combined_response_data["response"]
                 if response != "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.":
                     return response
 
-        previous_questions.append(question)
+        # Thêm câu hỏi hiện tại vào danh sách câu hỏi trước đó
+        if result:
+            previous_questions.append(result[0]['document'])
         return response
     except (Exception):
         return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."

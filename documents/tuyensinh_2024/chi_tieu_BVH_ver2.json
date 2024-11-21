@@ -423,7 +423,7 @@
                 ],
                 "_id": "62cbcb3951b67b921ae061e8",
                 "maNganh": "7480101",
-                "tenNganh": "Ngành Khoa học máy tính (định hướng Khoa học dữ liệu)",
+                "tenNganh": "Ngành Khoa học máy tính",
                 "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7480101",
                 "urlAnhDaiDien": "https://apiquanlydaotao.ptit.edu.vn/images/anhDaiDien-1657523001006-anhdaidien_1657093779161__nh_ch_nh_quy.jpg"
             },
@@ -478,7 +478,7 @@
                 ],
                 "_id": "64b7b7d4334062c1c9a5a882",
                 "maNganh": "7480201_CLC",
-                "tenNganh": "Ngành Công nghệ thông tin (chất lượng cao)",
+                "tenNganh": "Ngành Công nghệ thông tin (chương trình chất lượng cao)",
                 "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7480201(CLC)",
                 "urlAnhDaiDien": "https://apiquanlydaotao.ptit.edu.vn/images/anhDaiDien-1689761748801-2.png"
             },
@@ -533,7 +533,7 @@
                 ],
                 "_id": "66176d9b1c9f276ee800723e",
                 "maNganh": "7340115_CLC",
-                "tenNganh": "Ngành Marketing chất lượng cao",
+                "tenNganh": "Ngành Marketing chương trình chất lượng cao",
                 "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7340115_CLC",
                 "urlAnhDaiDien": "https://apiquanlydaotao.ptit.edu.vn/images/anhDaiDien-1712811419662-2.png"
             },
@@ -561,7 +561,7 @@
                 ],
                 "_id": "66176e651c9f276ee800723f",
                 "maNganh": "7340301_CLC",
-                "tenNganh": "Ngành Kế toán chất lượng cao (chuẩn quốc tế ACCA)",
+                "tenNganh": "Ngành Kế toán chương trình chất lượng cao",
                 "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc",
                 "urlAnhDaiDien": "https://apiquanlydaotao.ptit.edu.vn/images/anhDaiDien-1712811621721-2.png"
             },
@@ -589,7 +589,7 @@
                 ],
                 "_id": "667b7a479fe58f99fd13e234",
                 "maNganh": "7329001_GAM",
-                "tenNganh": "Ngành Thiết kế và phát triển Game (ngành Công nghệ đa phương tiện)",
+                "tenNganh": "Ngành Thiết kế và phát triển Game",
                 "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7329001_GAM",
                 "urlAnhDaiDien": "https://apiquanlydaotao.ptit.edu.vn/images/anhDaiDien-1719368263653-2.png"
             },
@@ -644,7 +644,7 @@
                 ],
                 "_id": "667b7b3aa634ca99fcef609b",
                 "maNganh": "7340115_QHC",
-                "tenNganh": "Ngành Quan hệ công chúng (ngành Marketing)",
+                "tenNganh": "Ngành Quan hệ công chúng",
                 "urlChuongTrinhDaoTao": "https://daotao.ptit.edu.vn/nganhhoc/7320108",
                 "urlAnhDaiDien": "https://apiquanlydaotao.ptit.edu.vn/images/anhDaiDien-1719368506627-2.png"
             },

@@ -1,44 +1,28 @@
-from flask import Flask, request, jsonify
-from preprocess import processing_text_for_query, processing_text_for_db_rerank, processing_text_for_query_rerank
-import pandas as pd
-import numpy as np
-import torch
-from pymongo import MongoClient
-from flask_cors import CORS
-from transformers import AutoModel, AutoTokenizer
-from transformers import pipeline
-from transformers import AutoModelForSequenceClassification
-from sklearn.metrics.pairwise import cosine_similarity
-import nest_asyncio
-from pyngrok import ngrok
+from sentence_transformers import CrossEncoder
 
-import json
-app = Flask(__name__)
-CORS(app)
+model = CrossEncoder(
+    "jinaai/jina-reranker-v2-base-multilingual",
+    automodel_args={"torch_dtype": "auto"},
+    trust_remote_code=True,
+)
 
-# Kết nối tới MongoDB
-client = MongoClient("mongodb://localhost:27017/")
-db = client["chatbot"]
-collection_feedback = db["feedback"]
+# Example query and documents
+query = "điểm chuẩn của ngành công nghệ thông tin chất lượng cao năm 2024 thpt miền bắc"
+documents = [
+    "điểm chuẩn ngành công nghệ thông tin chất lượng cao theo phương thức thi thpt năm 2024 cơ sở miền bắc",
+    "điểm chuẩn ngành công nghệ thông tin chương trình chất lượng cao theo phương thức thi thpt năm 2024 cơ sở miền bắc",
+    "điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm 2024 cơ sở miền bắc",
+    "điểm chuẩn của ngành công nghệ thông tin năm 2024 thpt miền bắc",
+]
 
+# construct sentence pairs
+sentence_pairs = [[query, doc] for doc in documents]
 
-@app.route('/api/save_feedback', methods=['POST'])
-def save_feedback():
-    data = request.json
-    email = data.get('email')
-    message = data.get('message')
+scores = model.predict(sentence_pairs, convert_to_tensor=True).tolist()
 
-    if email and message:
-        feedback_data = {
-            "email": email,
-            "message": message
-        }
-        # Lưu dữ liệu vào MongoDB
-        result = collection_feedback.insert_one(feedback_data)
-        return jsonify({"success": True, "feedback_id": str(result.inserted_id)}), 201
-    else:
-        return jsonify({"error": "Invalid data"}), 400
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
+rankings = model.rank(
+    query, documents, return_documents=True, convert_to_tensor=True)
+print(f"Query: {query}")
+for ranking in rankings:
+    print(
+        f"ID: {ranking['corpus_id']}, Score: {ranking['score']:.4f}, Text: {ranking['text']}")
