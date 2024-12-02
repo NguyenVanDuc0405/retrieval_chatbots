@@ -12,6 +12,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import nest_asyncio
 from pyngrok import ngrok
 import re
+import joblib
 
 import json
 app = Flask(__name__)
@@ -31,6 +32,12 @@ tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base-v2")
 
 # def correction_text(texts):
 #     return corrector(texts, max_length=512)
+
+# Tải lại mô hình
+loaded_model = joblib.load("test_model/logistic_regression_model.pkl")
+# Tải lại encoder
+loaded_encoder = joblib.load("test_model/label_encoder.pkl")
+
 
 def jaccard_similarity(query, document):
     query_words = set(re.split(r'\s+', query.lower().strip()))
@@ -75,6 +82,10 @@ async def get_response(user_query):
     # user_query = correction_text(user_query)
     processed_query = processing_text_for_query(user_query)
     query_vector = await embeddings_model(processed_query)
+    # Sử dụng mô hình đã tải để dự đoán
+    predicted_label = loaded_model.predict(query_vector)
+    predicted_label_string = loaded_encoder.inverse_transform(predicted_label)
+    print(f"Dự đoán nhãn: {predicted_label_string[0]}")
 
     cosine_similarities = [cosine_similarity(
         query_vector, qv).flatten() for qv in questions_vector]
