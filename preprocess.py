@@ -123,7 +123,7 @@ with open('data/vietnamese_stopwords.txt', 'r', encoding='utf-8') as fp:
 
 def remove_stopwords_VN(line):
     for word in stopwords_VN:
-        line = line.replace(word, '')
+        line = re.sub(r'\b' + re.escape(word) + r'\b', '', line)
     line = ' '.join(line.split())
     return line.strip()
 

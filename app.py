@@ -66,7 +66,7 @@ collection = db["q&a"]
 collection_feedback = db["feedback"]
 
 cursor = collection.find(
-    {}, {"question": 1, "answer": 1, "processed_question": 1, "vector_embeddings": 1, "_id": 0})
+    {}, {"question": 1, "answer": 1, "processed_question": 1, "vector_embeddings": 1, "tag": 1, "_id": 0})
 
 # Chuyển dữ liệu từ MongoDB thành DataFrame
 dataFrame = pd.DataFrame(list(cursor))
@@ -76,6 +76,7 @@ questions_vector = dataFrame['vector_embeddings']
 processed_questions = dataFrame['processed_question']
 questions = dataFrame['question']
 answers = dataFrame['answer']
+tags = dataFrame['tag']
 
 
 async def get_response(user_query):
@@ -85,7 +86,6 @@ async def get_response(user_query):
     # Sử dụng mô hình đã tải để dự đoán
     predicted_label = loaded_model.predict(query_vector)
     predicted_label_string = loaded_encoder.inverse_transform(predicted_label)
-    print(f"Dự đoán nhãn: {predicted_label_string[0]}")
 
     cosine_similarities = [cosine_similarity(
         query_vector, qv).flatten() for qv in questions_vector]
@@ -130,12 +130,20 @@ async def get_response(user_query):
     if result[0]['relevance_score'] > 0.74:
         return {
             "response": answers[pos[result[0]['index']][0]],
-            "result": result
+            "result": result,
+            "tag": tags[pos[result[0]['index']][0]],
+            "tag_predict": predicted_label_string[0],
+            "query": user_query,
+
         }
     else:
         return {
             "response": "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.",
-            "result": None
+            "result": None,
+            "tag": tags[pos[result[0]['index']][0]],
+            "tag_predict": predicted_label_string[0],
+            "query": user_query,
+
         }
 
 
@@ -148,34 +156,69 @@ async def handle_user_question(question):
         response_data = await get_response(question)
         response = response_data["response"]
         result = response_data["result"]
+        tag = response_data['tag']
+        tag_predict = response_data['tag_predict']
+        query = response_data['query']
         if response == "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.":
             for i in range(1, min(3, len(previous_questions) + 1)):
                 last_question = previous_questions[-i]
                 combined_question = last_question + " " + question
                 combined_response_data = await get_response(combined_question)
                 response = combined_response_data["response"]
+                tag = combined_response_data['tag']
+                tag_predict = combined_response_data['tag_predict']
+                query = combined_response_data['query']
                 if response != "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.":
-                    return response
+                    return {
+                        "response": response,
+                        "tag": tag,
+                        "tag_predict": tag_predict,
+                        "query": query,
+                    }
+                    # return response
 
         # Thêm câu hỏi hiện tại vào danh sách câu hỏi trước đó
         if result:
             previous_questions.append(result[0]['document'])
-        return response
+        return {
+            "response": response,
+            "tag": tag,
+            "tag_predict": tag_predict,
+            "query": query,
+        }
+        # return response
+
     except (Exception):
         return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."
+
+
+def convert_to_serializable(data):
+    if isinstance(data, dict):
+        return {key: convert_to_serializable(value) for key, value in data.items()}
+    elif isinstance(data, list):
+        return [convert_to_serializable(item) for item in data]
+    elif isinstance(data, (np.integer, int)):  # Chuyển kiểu numpy.int64
+        return int(data)
+    elif isinstance(data, (np.floating, float)):  # Chuyển kiểu numpy.float64
+        return float(data)
+    else:
+        return data
 
 
 @app.route('/api/chatbot', methods=['GET'])
 async def chatbot_response():
     # Lấy tham số query từ URL
     query = request.args.get('q')
-    response = await handle_user_question(query)
-    return jsonify(response)
+    response_data = await handle_user_question(query)
+    # Chuyển đổi dữ liệu
+    serializable_data = convert_to_serializable(response_data)
+    print(serializable_data)
+    return jsonify(serializable_data)
 
 
 @app.route('/api/save_feedback', methods=['POST'])
-async def save_feedback():
-    data = await request.json
+def save_feedback():
+    data = request.json
     email = data.get('email')
     message = data.get('message')
 
@@ -189,6 +232,7 @@ async def save_feedback():
         return jsonify({"success": True, "feedback_id": str(result.inserted_id)}), 201
     else:
         return jsonify({"error": "Invalid data"}), 400
+
 
 # NGROK_TOKEN = "2KXuaD0CZC1wD6xl0aycvptytsm_dVtVE8o12y5JeGw55HoQ"
 # ngrok.set_auth_token(NGROK_TOKEN)

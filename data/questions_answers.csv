@@ -1644,6 +1644,11 @@ chào bạn!,Tôi có thể giúp gì được cho bạn?,chào hỏi
 Hello!,Tôi có thể giúp gì được cho bạn?,chào hỏi
 Hi!,Tôi có thể giúp gì được cho bạn?,chào hỏi
 Bạn là ai?,Tôi là chatbot hỗ trợ trả lời các câu hỏi liên quan đến tuyển sinh của Học Viện.,chào hỏi
+Học phí chương trình đại trà là bao nhiêu, Học phí trình độ đại học hệ chính quy chương trình đại trà năm học 2024-2025: từ 27 triệu đồng đến 34 triệu đồng/năm tùy theo ngành học.,học phí
+Học phí bình thường là bao nhiêu, Học phí trình độ đại học hệ chính quy chương trình đại trà năm học 2024-2025: từ 27 triệu đồng đến 34 triệu đồng/năm tùy theo ngành học. Học phí chương trình chất lượng cao năm học 2024-2025: từ 39 triệu đồng đến 55 triệu đồng/năm tùy theo ngành học.,học phí
+Học phí chất lượng thường là bao nhiêu, Học phí trình độ đại học hệ chính quy chương trình đại trà năm học 2024-2025: từ 27 triệu đồng đến 34 triệu đồng/năm tùy theo ngành học.,học phí
+Học phí chất lượng cao là bao nhiêu,Học phí chương trình chất lượng cao năm học 2024-2025: từ 39 triệu đồng đến 55 triệu đồng/năm tùy theo ngành học.,học phí
+Chất lượng cao có học phí như nào,Học phí chương trình chất lượng cao năm học 2024-2025: từ 39 triệu đồng đến 55 triệu đồng/năm tùy theo ngành học.,học phí
 Làm sao để kiếm người yêu khi học đại học,"Việc tìm kiếm người yêu khi đang học đại học có thể là một trải nghiệm thú vị, nhưng đôi khi cũng có thể gặp khó khăn. Đây là vài gợi ý:
 1. Tham gia các hoạt động ngoại khóa: Tham gia câu lạc bộ, tổ chức hoặc các hoạt động ngoại khóa khác giúp bạn gặp gỡ nhiều người mới, có cơ hội tìm kiếm những người có sở thích chung.
 2. Kết bạn qua học tập: Tạo dựng mối quan hệ với các bạn cùng lớp hoặc nhóm học tập. Bạn có thể gặp gỡ người khác qua các buổi học nhóm, dự án chung, hoặc các hoạt động học tập khác.
@@ -1716,6 +1721,15 @@ Cho mình hỏi là có cần nộp giấy giới thiệu di chuyển đăng ký
 Mình đóng tiền có cần ghi nội dung không ạ?,Bạn không cần phải ghi nội dung chuyển khoản vì mỗi người đã được gán 1 mã thanh toán riêng rồi.,tuyển sinh
 Mình muốn đăng ký ký túc xá thì như nào?,Bạn đăng ký ký túc xá trong ngày nhập học luôn nhé! Liên hệ với ban quản lý của ký túc xá để làm việc.,học viện
 Cho em hỏi học viện đóng dấu chuyển cơ sở đoàn về xã xong mình có phải ra xã chuyển về học viện ko ạ?,Cần học viện đóng dấu là được em nhé!,tuyển sinh
+"Quy định, quy chế tuyển sinh của học viện?","Quy chế 1: Xét tuyển theo ngành và theo tổ hợp môn thi xét tuyển.
+Quy chế 2: Điểm trúng tuyển của các tổ hợp môn thi trong cùng một ngành là bằng nhau.
+Quy chế 3: Xét trúng tuyển từ thí sinh có kết quả cao xuống và đảm bảo chất lượng tuyển sinh.
+Quy chế 4: Điểm trúng tuyển được tính theo thang điểm 10, tổng điểm tối đa của 3 bài thi trong tổ hợp xét tuyển là 30 điểm.
+Quy chế 5: Xét tuyển các nguyện vọng bình đẳng theo kết quả thi (điểm trúng tuyển giữa các nguyện vọng là bằng nhau), nếu thí sinh không trúng tuyển nguyện vọng ở thứ tự ưu tiên thứ nhất (nguyện vọng 1) thì sẽ được tự động xét tuyển ở nguyện vọng ưu tiên thứ hai (nguyện vọng 2) và kế tiếp.
+Quy chế 6: Học viện không sử dụng kết quả miễn thi bài thi môn ngoại ngữ và điểm thi được bảo lưu để xét tuyển.
+Quy chế 7: Thí sinh chỉ trúng tuyển vào 1 nguyện vọng ưu tiên cao nhất trong danh sách các nguyện vọng đã đăng ký, khi đã trúng tuyển ở nguyện vọng nào thì không được xét tuyển tiếp ở nguyện vọng sau.
+Quy chế 8: Đối với các thí sinh bằng điểm xét tuyển ở cuối danh sách, nếu vẫn còn vượt chỉ tiêu thì ưu tiên thí sinh có nguyện vọng cao hơn theo Quy chế tuyển sinh của Bộ Giáo dục và Đào tạo, Học viện không sử dụng tiêu chí phụ riêng để xét tuyển.
+Quy chế 9: Các điều kiện khác thực hiện theo Quy chế tuyển sinh đại học hệ chính quy hiện hành của Bộ Giáo dục và Đào tạo.",tuyển sinh
 Tôi yêu thích bảo mật thì nên học ngành nào?,Bạn yêu thích bảo mật thì ngành phù hợp với bạn nhất là ngành An toàn thông tin. Ngành này cung cấp cho sinh viên những kiến thức chuyên sâu về bảo mật thông tin và an ninh mạng.,ngành đào tạo
 Các phương thức đào tạo tại học viện?,"Hiện tại học viện đang đào tạo các phương thức như đại học chính quy, đào tạo sau đại học, hệ vừa học vừa làm và hệ từ xa.",tuyển sinh
 Học viện đào tạo các phương thức nào?,"Hiện tại học viện đang đào tạo các phương thức như đại học chính quy, đào tạo sau đại học, hệ vừa học vừa làm và hệ từ xa.",tuyển sinh
@@ -1878,11 +1892,10 @@ Học viện có tổ chức các buổi chiếu phim không?,"Buổi chiếu ph
 Học viện có cung cấp dịch vụ y tế cho sinh viên không?,Dịch vụ y tế được cung cấp tại Học viện để hỗ trợ sinh viên về sức khỏe và phòng ngừa bệnh tật.,học viện
 Sinh viên có thể tham gia nghiên cứu khoa học không?,Sinh viên có thể tham gia vào các dự án nghiên cứu khoa học dưới sự hướng dẫn của giảng viên.,học viện
 Ngành công nghệ internet vạn vật được đào tạo ở miền bắc không không?,Ngành công nghệ internet vạn vật chỉ đào tạo ở cơ sở miền nam của Học Viện.,học viện
-Học phí chương trình đại trà là bao nhiêu, Học phí trình độ đại học hệ chính quy chương trình đại trà năm học 2024-2025: từ 27 triệu đồng đến 34 triệu đồng/năm tùy theo ngành học.,học phí
-Học phí bình thường là bao nhiêu, Học phí trình độ đại học hệ chính quy chương trình đại trà năm học 2024-2025: từ 27 triệu đồng đến 34 triệu đồng/năm tùy theo ngành học. Học phí chương trình chất lượng cao năm học 2024-2025: từ 39 triệu đồng đến 55 triệu đồng/năm tùy theo ngành học.,học phí
-Học phí chất lượng thường là bao nhiêu, Học phí trình độ đại học hệ chính quy chương trình đại trà năm học 2024-2025: từ 27 triệu đồng đến 34 triệu đồng/năm tùy theo ngành học.,học phí
-Học phí chất lượng cao là bao nhiêu,Học phí chương trình chất lượng cao năm học 2024-2025: từ 39 triệu đồng đến 55 triệu đồng/năm tùy theo ngành học.,học phí
-Chất lượng cao có học phí như nào,Học phí chương trình chất lượng cao năm học 2024-2025: từ 39 triệu đồng đến 55 triệu đồng/năm tùy theo ngành học.,học phí
+Ý nghĩa logo của học viện?,"Hình khối của logo
+Logo của Học viện thể hiện hình ảnh cô đọng nhất về Học viện. Khối Logo của Học viện bao gồm hình tròn và hình vuông. Theo quan niệm Á Đông, hình tròn tượng trưng cho sự sinh tồn vĩnh cửu của tự nhiên, nói lên sự đầy đủ, thịnh vượng và phát triển. Cũng theo ý nghĩa triết học Phương Đông, logo Học viện thể hiện mối quan hệ cơ bản: Thiên (tròn) – Địa (vuông) – Nhân (Học viện); trong đó Học viện là trung tâm. Cấu trúc logo mở thể hiện Học viện gắn liền với thực tiễn, với xã hội và luôn phát triển không ngừng. Ba vòng tròn quyện vào nhau và chuyển hóa sang nhau thể hiện 3 gắn kết: Đào tạo – Nghiên cứu – Sản xuất Kinh doanh. Hình ảnh quyển sách mở rộng và mô hình cấu trúc nguyên tử: biểu tượng 2 hoạt động chính của Học viện là đào tạo và nghiên cứu Chữ PTIT (tên viết tắt tiếng Anh của Học viện – Posts & Telecoms Institute of Technology) đồng thời là Bưu chính (P), Viễn thông (T) và Công nghệ thông tin (IT) – 3 lĩnh vực nghiên cứu và đào tạo của Học viện
+Màu sắc logo
+Logo Học viện lấy màu đỏ làm chủ đạo và ngôi sao vàng biểu trưng cho cờ Tổ quốc Việt Nam.",học viện
  Thời gian đào tạo được quy định như thế nào?,"Thời gian đào tạo được quy định bởi kế hoạch học tập chuẩn toàn khóa, thích ứng với hình thức đào tạo cụ thể như đào tạo chính quy, vừa làm vừa học, và đảm bảo tuân thủ khung cơ cấu hệ thống giáo dục quốc dân.",học viện
 Thời gian theo kế hoạch học tập chuẩn toàn khóa đối với hình thức đào tạo chính quy?,Thời gian theo kế hoạch học tập chuẩn toàn khóa đối với hình thức đào tạo chính quy được quy định và công bố bởi Hiệu trưởng của Học Viện.,học viện
  Sinh viên có được phép dừng học trong quá trình đào tạo không?,Sinh viên được phép dừng học trong quá trình đào tạo vì nhu cầu cá nhân hoặc lý do chính đáng.,học viện

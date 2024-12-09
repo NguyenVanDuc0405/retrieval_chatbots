@@ -7,10 +7,10 @@ model = CrossEncoder(
 )
 
 # Example query and documents
-query = "điểm chuẩn của ngành công nghệ thông tin chất lượng cao năm 2024 thpt miền bắc"
+query = "những ngành học mới trong học viện năm 2024 tại sao phần ở sau này lại không quan trọng, độ chính xác cao như thế, không ổn tí nào"
 documents = [
-    "điểm chuẩn ngành công nghệ thông tin chất lượng cao theo phương thức thi thpt năm 2024 cơ sở miền bắc",
-    "điểm chuẩn ngành công nghệ thông tin chương trình chất lượng cao theo phương thức thi thpt năm 2024 cơ sở miền bắc",
+    "những ngành học mới trong học viện năm 2024",
+    "những ngành học mới trong học viện",
     "điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm 2024 cơ sở miền bắc",
     "điểm chuẩn của ngành công nghệ thông tin năm 2024 thpt miền bắc",
 ]
