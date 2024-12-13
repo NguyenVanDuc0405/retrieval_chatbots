@@ -13,7 +13,7 @@ import nest_asyncio
 from pyngrok import ngrok
 import re
 import joblib
-
+import requests
 import json
 app = Flask(__name__)
 CORS(app)
@@ -81,6 +81,7 @@ tags = dataFrame['tag']
 
 async def get_response(user_query):
     # user_query = correction_text(user_query)
+    query = user_query
     processed_query = processing_text_for_query(user_query)
     query_vector = await embeddings_model(processed_query)
     # Sử dụng mô hình đã tải để dự đoán
@@ -127,22 +128,24 @@ async def get_response(user_query):
     print(query_rerank)
     print(documents)
     print(result)
-    if result[0]['relevance_score'] > 0.74:
+    if result[0]['relevance_score'] > 0.67:
         return {
             "response": answers[pos[result[0]['index']][0]],
-            "result": result,
+            "question": questions[pos[result[0]['index']][0]],
             "tag": tags[pos[result[0]['index']][0]],
             "tag_predict": predicted_label_string[0],
-            "query": user_query,
+            "query": query,
+            "result": result,
 
         }
     else:
         return {
             "response": "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.",
-            "result": None,
-            "tag": tags[pos[result[0]['index']][0]],
+            "question": questions[pos[result[0]['index']][0]],
+            "tag":  tags[pos[result[0]['index']][0]],
             "tag_predict": predicted_label_string[0],
-            "query": user_query,
+            "query": query,
+            "result": None,
 
         }
 
@@ -151,7 +154,87 @@ global previous_questions
 previous_questions = []
 
 
+async def send_to_google_sheet(response_data):
+    try:
+        # Lấy dữ liệu từ response_data
+        response = response_data["response"]
+        tag = response_data['tag']
+        tag_predict = response_data['tag_predict']
+        query = response_data['query']
+        question = response_data['question']
+
+        # Dữ liệu cần gửi
+        data = {
+            "query": query,
+            "question": question,
+            "answer": response,
+            "tag": tag,
+            "tag_predict": tag_predict,
+        }
+
+        # Gửi POST request đến SheetBest API
+        url = "https://api.sheetbest.com/sheets/740ee395-c884-4476-85d0-27b094b0b5c4"
+        headers = {
+            "Content-Type": "application/json",
+        }
+        response = requests.post(url, json=data, headers=headers)
+        # Kiểm tra kết quả trả về
+        if response.status_code == 200:
+            print("Dữ liệu đã được gửi thành công!")
+        else:
+            print(
+                f"Lỗi khi gửi dữ liệu: {response.status_code}, {response.text}")
+    except Exception as e:
+        print(f"Lỗi: {e}")
+
+
 async def handle_user_question(question):
+    # try:
+    #     response_data = await get_response(question)
+    #     response = response_data["response"]
+    #     result = response_data["result"]
+    #     tag = response_data['tag']
+    #     tag_predict = response_data['tag_predict']
+    #     query = response_data['query']
+    #     # Kiểm tra câu đầu tiên với ngưỡng 0.6
+    #     if result and result[0]['relevance_score'] >= 0.6:
+    #         await send_to_google_sheet(response_data)
+    #     else:
+    #         for i in range(1, min(2, len(previous_questions) + 1)):
+    #             last_question = previous_questions[-i]
+    #             combined_question = last_question + " " + question
+    #             combined_response_data = await get_response(combined_question)
+    #             combined_result = combined_response_data["result"]
+    #             response = combined_response_data["response"]
+    #             tag = combined_response_data['tag']
+    #             tag_predict = combined_response_data['tag_predict']
+    #             query = combined_response_data['query']
+    #             if combined_result and combined_result[0]['relevance_score'] >= 0.85:
+    #                 await send_to_google_sheet(combined_response_data)
+    #                 return {
+    #                     "response": response,
+    #                     "tag": tag,
+    #                     "tag_predict": tag_predict,
+    #                     "query": query,
+    #                 }
+    #                 # return response
+
+    #         # Nếu không tìm được phản hồi hợp lệ, gửi dữ liệu ban đầu
+    #         await send_to_google_sheet(response_data)
+
+    #     # Thêm câu hỏi hiện tại vào danh sách câu hỏi trước đó
+    #     if result:
+    #         previous_questions.append(result[0]['document'])
+    #     return {
+    #         "response": response,
+    #         "tag": tag,
+    #         "tag_predict": tag_predict,
+    #         "query": query,
+    #     }
+    #     # return response
+
+    # except (Exception):
+    #     return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."
     try:
         response_data = await get_response(question)
         response = response_data["response"]
@@ -159,37 +242,49 @@ async def handle_user_question(question):
         tag = response_data['tag']
         tag_predict = response_data['tag_predict']
         query = response_data['query']
-        if response == "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.":
-            for i in range(1, min(3, len(previous_questions) + 1)):
+
+        # Kiểm tra câu đầu tiên với ngưỡng 0.6
+        if result and result[0]['relevance_score'] > 0.67:
+            await send_to_google_sheet(response_data)
+            previous_questions.append(result[0]['document'])
+            return {
+                "response": response,
+                "tag": tag,
+                "tag_predict": tag_predict,
+                "query": query,
+            }
+        else:
+            for i in range(1, min(2, len(previous_questions) + 1)):
                 last_question = previous_questions[-i]
                 combined_question = last_question + " " + question
                 combined_response_data = await get_response(combined_question)
-                response = combined_response_data["response"]
-                tag = combined_response_data['tag']
-                tag_predict = combined_response_data['tag_predict']
-                query = combined_response_data['query']
-                if response != "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.":
-                    return {
-                        "response": response,
-                        "tag": tag,
-                        "tag_predict": tag_predict,
-                        "query": query,
-                    }
-                    # return response
+                combined_result = combined_response_data["result"]
 
-        # Thêm câu hỏi hiện tại vào danh sách câu hỏi trước đó
-        if result:
-            previous_questions.append(result[0]['document'])
+                if combined_result and combined_result[0]['relevance_score'] > 0.85:
+                    await send_to_google_sheet(combined_response_data)
+                    return {
+                        "response": combined_response_data["response"],
+                        "tag": combined_response_data["tag"],
+                        "tag_predict": combined_response_data["tag_predict"],
+                        "query": combined_response_data["query"],
+                    }
+
+            await send_to_google_sheet(response_data)
+        # Nếu không tìm được phản hồi hợp lệ
         return {
-            "response": response,
-            "tag": tag,
-            "tag_predict": tag_predict,
+            "response": "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.",
+            "tag": None,
+            "tag_predict": None,
             "query": query,
         }
-        # return response
 
-    except (Exception):
-        return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."
+    except Exception:
+        return {
+            "response": "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.",
+            "tag": None,
+            "tag_predict": None,
+            "query": question,
+        }
 
 
 def convert_to_serializable(data):
@@ -234,7 +329,7 @@ def save_feedback():
         return jsonify({"error": "Invalid data"}), 400
 
 
-# NGROK_TOKEN = "2KXuaD0CZC1wD6xl0aycvptytsm_dVtVE8o12y5JeGw55HoQ"
+# NGROK_TOKEN = "2q1klyCrZwPfd2cQiQX7sgapgWU_7PJ2FQmNMHsDBNpkqEK3h"
 # ngrok.set_auth_token(NGROK_TOKEN)
 # ngrok_tunnel = ngrok.connect(5000)
 # print("Public URL:", ngrok_tunnel.public_url)
