@@ -63,9 +63,12 @@ text_dict = {
     "hiện nay": "năm 2024",
     "điểm đầu vào": "điểm chuẩn",
     "vị trí": "địa chỉ",
-    "năng lực": "đánh giá năng lực, tư duy",
-    "nam": "miền nam",
-    "bắc": "miền bắc",
+    # "nam": "miền nam",
+    # "bắc": "miền bắc",
+    "cơ sở miền nam": "miền nam",
+    "cơ sở miền bắc": "miền bắc",
+    "năng lực, tư duy": "năng lực",
+
 
 }
 
@@ -123,7 +126,7 @@ with open('data/vietnamese_stopwords.txt', 'r', encoding='utf-8') as fp:
 
 def remove_stopwords_VN(line):
     for word in stopwords_VN:
-        line = line.replace(word, '')
+        line = re.sub(r'\b' + re.escape(word) + r'\b', '', line)
     line = ' '.join(line.split())
     return line.strip()
 
@@ -132,7 +135,7 @@ def processing_text_for_db(text):
     text = remove_punctuation(text)
     text = to_lowercase(text)
     text = replace_comma(text)
-    text = remove_stopwords_VN(text)
+    # text = remove_stopwords_VN(text)
     text = tokenizerText(text)
     return text
 
@@ -141,7 +144,7 @@ def processing_text_for_query(text):
     text = remove_punctuation(text)
     text = to_lowercase(text)
     text = replace_comma(text)
-    text = remove_stopwords_VN(text)
+    # text = remove_stopwords_VN(text)
     text = replace_abbreviations(text, abbreviation_dict)
     text = replace_key(text)
     text = replace_text(text, text_dict)
@@ -153,7 +156,7 @@ def processing_text_for_db_rerank(text):
     text = remove_punctuation(text)
     text = to_lowercase(text)
     text = replace_comma(text)
-    text = remove_stopwords_VN(text)
+    # text = remove_stopwords_VN(text)
     return text
 
 
@@ -161,7 +164,7 @@ def processing_text_for_query_rerank(text):
     text = remove_punctuation(text)
     text = to_lowercase(text)
     text = replace_comma(text)
-    text = remove_stopwords_VN(text)
+    # text = remove_stopwords_VN(text)
     text = replace_abbreviations(text, abbreviation_dict)
     text = replace_key(text)
     text = replace_text(text, text_dict)
