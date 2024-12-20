@@ -120,7 +120,7 @@ async def get_response(user_query):
     print(query_rerank)
     print(documents)
     print(result)
-    if result[0]['relevance_score'] > 0.67:
+    if result[0]['relevance_score'] > 0.69:
         return {
             "response": answers[pos[result[0]['index']][0]],
             "question": questions[pos[result[0]['index']][0]],
@@ -190,7 +190,7 @@ async def handle_user_question(question):
         query = response_data['query']
 
         # Kiểm tra câu đầu tiên với ngưỡng 0.6
-        if result and result[0]['relevance_score'] > 0.67:
+        if result and result[0]['relevance_score'] > 0.69:
             await send_to_google_sheet(response_data)
             previous_questions.append(result[0]['document'])
             return {

@@ -159,7 +159,7 @@ def processing_text_for_db_rerank(text):
     text = remove_punctuation(text)
     text = to_lowercase(text)
     text = replace_comma(text)
-    text = remove_stopwords_VN(text)
+    # text = remove_stopwords_VN(text)
     return text
 
 
@@ -167,7 +167,7 @@ def processing_text_for_query_rerank(text):
     text = remove_punctuation(text)
     text = to_lowercase(text)
     text = replace_comma(text)
-    text = remove_stopwords_VN(text)
+    # text = remove_stopwords_VN(text)
     text = replace_abbreviations(text, abbreviation_dict)
     text = replace_key(text)
     text = replace_text(text, text_dict)
