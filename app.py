@@ -80,7 +80,6 @@ tags = dataFrame['tag']
 
 
 async def get_response(user_query):
-    # user_query = correction_text(user_query)
     query = user_query
     processed_query = processing_text_for_query(user_query)
     query_vector = await embeddings_model(processed_query)
@@ -93,21 +92,14 @@ async def get_response(user_query):
     jaccard_similarities = [jaccard_similarity(
         processed_query, q) for q in dataFrame['processed_question']]
 
-    # Kết hợp kết quả từ hai độ tương đồng
     alpha = 0.6
     beta = 0.4
-    # Chuyển đổi jaccard_similarities thành mảng một chiều
     jaccard_array = np.array(jaccard_similarities).reshape(
         len(dataFrame['processed_question']), 1)
 
-    # Kết hợp điểm số từ hai độ tương đồng
     combined_scores = alpha * \
         np.array(cosine_similarities) + beta * jaccard_array
     sorted_indices = np.argsort(combined_scores, axis=0)
-
-    # cosine_similarities = [cosine_similarity(
-    #     query_vector, qv).flatten() for qv in questions_vector]
-    # sorted_indices = np.argsort(cosine_similarities, axis=0)
 
     documents = []
     pos = []
@@ -189,52 +181,6 @@ async def send_to_google_sheet(response_data):
 
 
 async def handle_user_question(question):
-    # try:
-    #     response_data = await get_response(question)
-    #     response = response_data["response"]
-    #     result = response_data["result"]
-    #     tag = response_data['tag']
-    #     tag_predict = response_data['tag_predict']
-    #     query = response_data['query']
-    #     # Kiểm tra câu đầu tiên với ngưỡng 0.6
-    #     if result and result[0]['relevance_score'] >= 0.6:
-    #         await send_to_google_sheet(response_data)
-    #     else:
-    #         for i in range(1, min(2, len(previous_questions) + 1)):
-    #             last_question = previous_questions[-i]
-    #             combined_question = last_question + " " + question
-    #             combined_response_data = await get_response(combined_question)
-    #             combined_result = combined_response_data["result"]
-    #             response = combined_response_data["response"]
-    #             tag = combined_response_data['tag']
-    #             tag_predict = combined_response_data['tag_predict']
-    #             query = combined_response_data['query']
-    #             if combined_result and combined_result[0]['relevance_score'] >= 0.85:
-    #                 await send_to_google_sheet(combined_response_data)
-    #                 return {
-    #                     "response": response,
-    #                     "tag": tag,
-    #                     "tag_predict": tag_predict,
-    #                     "query": query,
-    #                 }
-    #                 # return response
-
-    #         # Nếu không tìm được phản hồi hợp lệ, gửi dữ liệu ban đầu
-    #         await send_to_google_sheet(response_data)
-
-    #     # Thêm câu hỏi hiện tại vào danh sách câu hỏi trước đó
-    #     if result:
-    #         previous_questions.append(result[0]['document'])
-    #     return {
-    #         "response": response,
-    #         "tag": tag,
-    #         "tag_predict": tag_predict,
-    #         "query": query,
-    #     }
-    #     # return response
-
-    # except (Exception):
-    #     return "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn."
     try:
         response_data = await get_response(question)
         response = response_data["response"]
@@ -260,7 +206,7 @@ async def handle_user_question(question):
                 combined_response_data = await get_response(combined_question)
                 combined_result = combined_response_data["result"]
 
-                if combined_result and combined_result[0]['relevance_score'] > 0.85:
+                if combined_result and combined_result[0]['relevance_score'] > 0.84:
                     await send_to_google_sheet(combined_response_data)
                     return {
                         "response": combined_response_data["response"],
@@ -333,7 +279,7 @@ def save_feedback():
 # ngrok.set_auth_token(NGROK_TOKEN)
 # ngrok_tunnel = ngrok.connect(5000)
 # print("Public URL:", ngrok_tunnel.public_url)
-nest_asyncio.apply()
+# nest_asyncio.apply()
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=False, port=5000)

@@ -85,12 +85,6 @@ ngay thật
 ngay tức khắc
 ngay tức thì
 ngay từ
-tôi
-muốn
-hỏi
-tao
-mấy
-về
 thì sao
 thì giờ
 thì là
@@ -127,7 +121,6 @@ tuy rằng
 tuy thế
 tuy vậy
 tuy đã
-tại
 tại lòng
 tại nơi
 tại sao
@@ -164,9 +157,7 @@ ví bằng
 ví dù
 ví phỏng
 ví thử
-vẫn
 vẫn thế
-vậy
 vậy là
 vậy mà
 vậy nên
@@ -209,3 +200,4 @@ vừa vừa
 ừ thì
 ừ ào
 ừ ừ
+như nào

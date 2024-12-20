@@ -1,122 +1,264 @@
 query,question,answer,tag,tag_predict
 Câu query người dùng,Đây là câu hỏi liên quan nhất tới câu query của người dùng có trong db,Phản hồi của chatbot,Tag của câu hỏi liên quan nhất tới câu query của người dùng,Tag dự đoán của câu query
-Học viện có bao nhiêu loại học bổng?,Học viện có bao nhiêu loại học bổng,"Có 3 loại học bổng là: học bổng đặc biệt, học bổng toàn phần và học bổng cho thí sinh đạt thành tích cao",học bổng,học bổng
-Các trang web chính thức của học viện?,Các trang web chính thức của học viện?,"Các trang web chính thức của học viện là:
-1. Cổng thông tin học viện: https://portal.ptit.edu.vn/
-2. Cổng thông tin đào tạo: https://daotao.ptit.edu.vn/
-3. Cổng thông tin hợp tác quốc tế: https://htqt.ptit.edu.vn/
-4. Cổng thông tin quản lý khoa học: https://qlkh.ptit.edu.vn/
-5. Cổng thông tin tuyển sinh: https://tuyensinh.ptit.edu.vn/
-6. Fanpage: https://facebook.com/HocvienPTIT
-7. Youtube:  https://www.youtube.com/@PChannels",học viện,học viện
-Những ngành mới của học viện năm nay,Những ngành học mới trong học viện năm 2024?,Bạn muốn hỏi ngành mới của học viện ở cơ sở miền bắc hay miền nam.,ngành đào tạo,ngành đào tạo
-miền nam,Tôi muốn tìm hiểu các ngành ở cơ sở miền nam?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,chào hỏi
-những ngành học mới trong học viện năm 2024 miền nam,Ngành học mới trong học viện năm 2024 tại cơ sở miền nam?,Cơ sở miền nam có đào tạo 2 ngành mới so với năm trước là ngành công nghệ thông tin chất lượng cao và marketing chất lượng cao.,ngành đào tạo,ngành đào tạo
-cơ sở miền bắc thì sao,Miền bắc đào tạo những ngành mới nào?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,chào hỏi
-những ngành học mới trong học viện năm 2024 cơ sở miền bắc thì sao,Những ngành học mới trong học viện năm 2024 tại cơ sở miền bắc?,"Cơ sở miền bắc có đào tạo thêm các ngành mới so với năm trước là:
-1.Ngành quan hệ công chúng (Ngành Marketing)
-2.Thiết kế và phát triển Game (Ngành Công nghệ đa phương tiện)
-3.Công nghệ thông tin Việt Nhật
-Những ngành học này được thiết kế để đáp ứng như cầu ngày càng cao của thị học viện lao động và xu hướng công nghệ hiện đại.",ngành đào tạo,ngành đào tạo
-"Quy định, quy chế tuyển sinh của học viện?","Quy định, quy chế tuyển sinh của học viện?","Quy chế 1: Xét tuyển theo ngành và theo tổ hợp môn thi xét tuyển.
-Quy chế 2: Điểm trúng tuyển của các tổ hợp môn thi trong cùng một ngành là bằng nhau.
-Quy chế 3: Xét trúng tuyển từ thí sinh có kết quả cao xuống và đảm bảo chất lượng tuyển sinh.
-Quy chế 4: Điểm trúng tuyển được tính theo thang điểm 10, tổng điểm tối đa của 3 bài thi trong tổ hợp xét tuyển là 30 điểm.
-Quy chế 5: Xét tuyển các nguyện vọng bình đẳng theo kết quả thi (điểm trúng tuyển giữa các nguyện vọng là bằng nhau), nếu thí sinh không trúng tuyển nguyện vọng ở thứ tự ưu tiên thứ nhất (nguyện vọng 1) thì sẽ được tự động xét tuyển ở nguyện vọng ưu tiên thứ hai (nguyện vọng 2) và kế tiếp.
-Quy chế 6: Học viện không sử dụng kết quả miễn thi bài thi môn ngoại ngữ và điểm thi được bảo lưu để xét tuyển.
-Quy chế 7: Thí sinh chỉ trúng tuyển vào 1 nguyện vọng ưu tiên cao nhất trong danh sách các nguyện vọng đã đăng ký, khi đã trúng tuyển ở nguyện vọng nào thì không được xét tuyển tiếp ở nguyện vọng sau.
-Quy chế 8: Đối với các thí sinh bằng điểm xét tuyển ở cuối danh sách, nếu vẫn còn vượt chỉ tiêu thì ưu tiên thí sinh có nguyện vọng cao hơn theo Quy chế tuyển sinh của Bộ Giáo dục và Đào tạo, Học viện không sử dụng tiêu chí phụ riêng để xét tuyển.
-Quy chế 9: Các điều kiện khác thực hiện theo Quy chế tuyển sinh đại học hệ chính quy hiện hành của Bộ Giáo dục và Đào tạo.",tuyển sinh,tuyển sinh
+Các phương thức xét tuyển của học viện?,Các phương thức xét tuyển của học viện?," Xét tuyển tài năng
+ Xét tuyển dựa vào kết quả thi THPT
+ Xét tuyển kết hợp
+ Xét tuyển dựa vào kết quả thi đánh giá năng lực
+ Xét tuyển dựa vào kết quả thi đánh giá tư duy",tuyển sinh,tuyển sinh
+Hồ sơ nhập học cần chuẩn bị những gì?,Hồ sơ nhập học cần chuẩn bị những gì?,"Hồ sơ nhập học cần chuẩn bị các thứ sau:
+1. Bản sao hợp lệ Học bạ THPT
+2. Bản sao hợp lệ Bằng tốt nghiệp hoặc Giấy chứng nhận tốt nghiệp THPT tạm thời 
+3. Bản sao hợp lệ Giấy khai sinh
+4. Bản sao hợp lệ các giấy tờ pháp lý minh chứng đối tượng ưu tiên được hưởng (nếu có)
+5. Giấy triệu tập trúng tuyển của Học viện Công nghệ Bưu chính Viễn thông (bản gốc).
+6. Bản chính Giấy chứng nhận học sinh giỏi quốc gia hoặc cấp tỉnh, thành phố trực thuộc TW; Chứng chỉ quốc tế, Giấy chứng nhận kết quả thi đánh giá năng lực năm 2023 (đối với các thí sinh thuộc đối tượng xét trúng tuyển sớm – Xét tuyển kết hợp hoặc Đánh giá năng lực).
+7. Hồ sơ sinh viên (In từ hệ thống - đóng dấu giáp lai và xác nhận của UBND xã/phường)
+8. Giấy chuyển sinh hoạt Đảng, Đoàn (nếu là Đảng viên, Đoàn viên) về Đảng bộ hoặc Đoàn Thanh niên Cộng sản Hồ Chí Minh của Học viện Công nghệ Bưu chính Viễn thông.
+9. Giấy giới thiệu di chuyển đăng ký nghĩa vụ quân sự (đối với Nam giới) do Ban chỉ huy quân sự quận, huyện nơi đăng ký hộ khẩu thường trú cấp.
+10. Bản chụp Thẻ bảo hiểm y tế.
+11. 06 ảnh cỡ 3×4, chụp trong vòng 6 tháng trở lại đây (ghi họ tên và ngày sinh vào mặt sau).",tuyển sinh,tuyển sinh
 Những ngành học mới trong học viện năm 2024?,Những ngành học mới trong học viện năm 2024?,Bạn muốn hỏi ngành mới của học viện ở cơ sở miền bắc hay miền nam.,ngành đào tạo,ngành đào tạo
-cơ sở miền bắc,Miền bắc đào tạo những ngành mới nào?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,chào hỏi
-những ngành học mới trong học viện năm 2024 cơ sở miền bắc,Những ngành học mới trong học viện năm 2024 tại cơ sở miền bắc?,"Cơ sở miền bắc có đào tạo thêm các ngành mới so với năm trước là:
+những ngành học mới trong học viện năm 2024 miền bắc,Những ngành học mới trong học viện năm 2024 tại cơ sở miền bắc?,"Cơ sở miền bắc có đào tạo thêm các ngành mới so với năm trước là:
 1.Ngành quan hệ công chúng (Ngành Marketing)
 2.Thiết kế và phát triển Game (Ngành Công nghệ đa phương tiện)
 3.Công nghệ thông tin Việt Nhật
 Những ngành học này được thiết kế để đáp ứng như cầu ngày càng cao của thị học viện lao động và xu hướng công nghệ hiện đại.",ngành đào tạo,ngành đào tạo
-miền nam thì sao,Tôi muốn tìm hiểu các ngành ở cơ sở miền nam?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,chào hỏi
 những ngành học mới trong học viện năm 2024 miền nam thì sao,Ngành học mới trong học viện năm 2024 tại cơ sở miền nam?,Cơ sở miền nam có đào tạo 2 ngành mới so với năm trước là ngành công nghệ thông tin chất lượng cao và marketing chất lượng cao.,ngành đào tạo,ngành đào tạo
-Điểm chuẩn tất cả các ngành năm nay?,Điểm chuẩn tất cả các ngành năm 2024?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
-"miền nam, thpt",Chỉ tiêu của ngành an toàn thông tin theo phương thức thi thpt tại cơ sở miền nam là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
-"điểm chuẩn tất cả các ngành năm 2024 miền nam, thpt",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền nam?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền nam là:
-Kỹ thuật điện tử viễn thông: 23.23
-Công nghệ kỹ thuật điện, điện tử: 20.85
-Kỹ thuật điều khiển và tự động hóa: 19.65
-Công nghệ internet vạn vật (iot): 18.0
-Công nghệ thông tin: 25.17
-An toàn thông tin: 24.68
-Công nghệ đa phương tiện: 23.95
-Quản trị kinh doanh: 18.4
-Marketing: 24.24
-Kế toán: 20.95
-Công nghệ thông tin chương trình chất lượng cao: 23.25
-Marketing chương trình chất lượng cao: 18.0",điểm,điểm
-"thpt, miền nam",Chỉ tiêu của ngành công nghệ thông tin theo phương thức thi thpt tại cơ sở miền nam là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
-"điểm chuẩn tất cả các ngành năm 2024 thpt, miền nam",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền nam?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền nam là:
-Kỹ thuật điện tử viễn thông: 23.23
-Công nghệ kỹ thuật điện, điện tử: 20.85
-Kỹ thuật điều khiển và tự động hóa: 19.65
-Công nghệ internet vạn vật (iot): 18.0
-Công nghệ thông tin: 25.17
-An toàn thông tin: 24.68
-Công nghệ đa phương tiện: 23.95
-Quản trị kinh doanh: 18.4
-Marketing: 24.24
-Kế toán: 20.95
-Công nghệ thông tin chương trình chất lượng cao: 23.25
-Marketing chương trình chất lượng cao: 18.0",điểm,điểm
-"thpt, cơ sở miền nam",Chỉ tiêu của ngành công nghệ thông tin theo phương thức thi thpt tại cơ sở miền nam là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
-"điểm chuẩn tất cả các ngành năm 2024 thpt, cơ sở miền nam",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền nam?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền nam là:
-Kỹ thuật điện tử viễn thông: 23.23
-Công nghệ kỹ thuật điện, điện tử: 20.85
-Kỹ thuật điều khiển và tự động hóa: 19.65
-Công nghệ internet vạn vật (iot): 18.0
-Công nghệ thông tin: 25.17
-An toàn thông tin: 24.68
-Công nghệ đa phương tiện: 23.95
-Quản trị kinh doanh: 18.4
-Marketing: 24.24
-Kế toán: 20.95
-Công nghệ thông tin chương trình chất lượng cao: 23.25
-Marketing chương trình chất lượng cao: 18.0",điểm,điểm
-"trung học phổ thông, miền bắc thì sao",Địa chỉ của học viện tại cơ sở miền bắc ở đâu,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,địa chỉ,ngành đào tạo
-"điểm chuẩn tất cả các ngành năm 2024 trung học phổ thông, miền bắc thì sao",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền bắc?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền bắc là:
-Kỹ thuật điện tử viễn thông: 25.75
-Công nghệ kỹ thuật điện, điện tử: 25.46
-Kỹ thuật điều khiển và tự động hóa: 26.08
-Công nghệ thông tin: 26.4
-An toàn thông tin: 25.85
-Khoa học máy tính: 26.31
-Kỹ thuật dữ liệu (ngành mạng máy tính và truyền thông dữ liệu): 25.59
-Công nghệ thông tin việt nhật: 24.25
-Công nghệ thông tin (cử nhân định hướng ứng dụng): 24.87
-Công nghệ đa phương tiện: 25.75
-Truyền thông đa phương tiện: 25.94
-Báo chí: 25.29
-Quản trị kinh doanh: 25.17
-Thương mại điện tử: 26.09
-Marketing: 25.85
-Kế toán: 25.29
-Công nghệ tài chính (fintech): 25.61
-Quan hệ công chúng: 25.15
-Thiết kế và phát triển game: 24.97
-Công nghệ thông tin chương trình chất lượng cao: 25.43
-Kế toán chương trình chất lượng cao: 22.5
-Marketing chương trình chất lượng cao: 24.25",điểm,điểm
-tôi cảm ơn,Những câu hỏi liên quan đến cảm ơn,Tôi rất vui khi có thể giúp được bạn. Nếu bạn còn câu hỏi hay thắc mắc nào thì hãy cứ hỏi nhé. Chúc bạn một ngày tốt lành! 💖,học viện,học viện
-Ngành IoT có được đào tạo ở cơ sở miền bắc không?,Ngành công nghệ internet vạn vật được đào tạo ở miền bắc không không?,Ngành công nghệ internet vạn vật chỉ đào tạo ở cơ sở miền nam của Học Viện.,học viện,ngành đào tạo
-hello chào bạn,chào bạn!,Tôi có thể giúp gì được cho bạn?,chào hỏi,chào hỏi
-cung cấp cho tôi hình ảnh về csvc của trường,Những câu hỏi liên quan đến hình ảnh,Hiện tại chatbot không thể tạo ra được ảnh. Bạn vui lòng đặt câu hỏi khác.,học viện,học viện
-"Quy định, quy chế tuyển sinh của học viện?","Quy định, quy chế tuyển sinh của học viện?","Quy chế 1: Xét tuyển theo ngành và theo tổ hợp môn thi xét tuyển.
-Quy chế 2: Điểm trúng tuyển của các tổ hợp môn thi trong cùng một ngành là bằng nhau.
-Quy chế 3: Xét trúng tuyển từ thí sinh có kết quả cao xuống và đảm bảo chất lượng tuyển sinh.
-Quy chế 4: Điểm trúng tuyển được tính theo thang điểm 10, tổng điểm tối đa của 3 bài thi trong tổ hợp xét tuyển là 30 điểm.
-Quy chế 5: Xét tuyển các nguyện vọng bình đẳng theo kết quả thi (điểm trúng tuyển giữa các nguyện vọng là bằng nhau), nếu thí sinh không trúng tuyển nguyện vọng ở thứ tự ưu tiên thứ nhất (nguyện vọng 1) thì sẽ được tự động xét tuyển ở nguyện vọng ưu tiên thứ hai (nguyện vọng 2) và kế tiếp.
-Quy chế 6: Học viện không sử dụng kết quả miễn thi bài thi môn ngoại ngữ và điểm thi được bảo lưu để xét tuyển.
-Quy chế 7: Thí sinh chỉ trúng tuyển vào 1 nguyện vọng ưu tiên cao nhất trong danh sách các nguyện vọng đã đăng ký, khi đã trúng tuyển ở nguyện vọng nào thì không được xét tuyển tiếp ở nguyện vọng sau.
-Quy chế 8: Đối với các thí sinh bằng điểm xét tuyển ở cuối danh sách, nếu vẫn còn vượt chỉ tiêu thì ưu tiên thí sinh có nguyện vọng cao hơn theo Quy chế tuyển sinh của Bộ Giáo dục và Đào tạo, Học viện không sử dụng tiêu chí phụ riêng để xét tuyển.
-Quy chế 9: Các điều kiện khác thực hiện theo Quy chế tuyển sinh đại học hệ chính quy hiện hành của Bộ Giáo dục và Đào tạo.",tuyển sinh,tuyển sinh
-Học viện có bao nhiêu loại học bổng?,Học viện có bao nhiêu loại học bổng,"Có 3 loại học bổng là: học bổng đặc biệt, học bổng toàn phần và học bổng cho thí sinh đạt thành tích cao",học bổng,học bổng
+Điểm chuẩn tất cả các ngành năm 2021?,Điểm chuẩn tất cả các ngành năm 2021?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt.",điểm,điểm
+"điểm chuẩn tất cả các ngành năm 2021 miền bắc, phương thức thi thpt",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2021 tại cơ sở miền bắc?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2021 tại cơ sở miền bắc là:
+Kỹ thuật điện tử viễn thông: 25.65
+Công nghệ kỹ thuật điện, điện tử: 25.35
+Công nghệ thông tin: 26.9
+An toàn thông tin: 26.55
+Công nghệ đa phương tiện: 26.35
+Truyền thông đa phương tiện: 26.55
+Quản trị kinh doanh: 25.9
+Thương mại điện tử: 26.5
+Marketing: 26.45
+Kế toán: 25.75
+Công nghệ tài chính: 25.9",điểm,điểm
+"điểm chuẩn tất cả các ngành năm 2021 miền nam, xtkh",Điểm chuẩn tất cả các ngành theo phương thức xét tuyển kết hợp năm 2021 tại cơ sở miền nam?,"Điểm chuẩn tất cả các ngành theo phương thức xét tuyển kết hợp năm 2021 tại cơ sở miền nam là:
+Kỹ thuật điện tử viễn thông: 22.6
+Công nghệ thông tin: 24.2
+An toàn thông tin: 23.4
+Kỹ thuật điều khiển và tự động hóa: 23.78
+Công nghệ đa phương tiện: 22.43
+Marketing: 21.6",điểm,điểm
+trường có cho học song ngành không,Học viện có các chương trình học nước ngoài không?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
+trường có cho học song bằng không,Học viện cho phép đào tạo song bằng không?,Học viện cho phép đào tạo song bằng nếu bạn đáp ứng đủ điều kiện xét tuyển.,học viện,học viện
+Các mốc thời gian quan trọng trong việc tuyển sinh?,Các mốc thời gian quan trọng,"Mốc thí sinh đăng ký, điều chỉnh nguyện vọng xét tuyển diễn ra vào: 2024-07-10
+Mốc nộp lệ phí xét tuyển trực tuyến diễn ra vào: 2024-07-28
+Mốc thông báo thí sinh trúng tuyển đợt 1 diễn ra vào: 2024-08-12
+Mốc hoàn thành xác nhận nhập học trực tuyến đợt 1 trên hệ thống diễn ra vào: 2024-08-18",tuyển sinh,tuyển sinh
+Quy trình nộp hồ sơ trực tuyến như nào?,Quy trình nộp hồ sơ trực tuyến như nào?,"B1: Đăng ký tài khoản
+B2: Khai báo thông tin
+B3: Đăng ký nguyện vọng
+B4: Thanh toán trực tuyến
+B5: Nộp hồ sơ về Học viện
+B6: Nhận thông tin kết quả",tuyển sinh,tuyển sinh
+Hồ sơ nhập học cần chuẩn bị những gì?,Hồ sơ nhập học cần chuẩn bị những gì?,"Hồ sơ nhập học cần chuẩn bị các thứ sau:
+1. Bản sao hợp lệ Học bạ THPT
+2. Bản sao hợp lệ Bằng tốt nghiệp hoặc Giấy chứng nhận tốt nghiệp THPT tạm thời 
+3. Bản sao hợp lệ Giấy khai sinh
+4. Bản sao hợp lệ các giấy tờ pháp lý minh chứng đối tượng ưu tiên được hưởng (nếu có)
+5. Giấy triệu tập trúng tuyển của Học viện Công nghệ Bưu chính Viễn thông (bản gốc).
+6. Bản chính Giấy chứng nhận học sinh giỏi quốc gia hoặc cấp tỉnh, thành phố trực thuộc TW; Chứng chỉ quốc tế, Giấy chứng nhận kết quả thi đánh giá năng lực năm 2023 (đối với các thí sinh thuộc đối tượng xét trúng tuyển sớm – Xét tuyển kết hợp hoặc Đánh giá năng lực).
+7. Hồ sơ sinh viên (In từ hệ thống - đóng dấu giáp lai và xác nhận của UBND xã/phường)
+8. Giấy chuyển sinh hoạt Đảng, Đoàn (nếu là Đảng viên, Đoàn viên) về Đảng bộ hoặc Đoàn Thanh niên Cộng sản Hồ Chí Minh của Học viện Công nghệ Bưu chính Viễn thông.
+9. Giấy giới thiệu di chuyển đăng ký nghĩa vụ quân sự (đối với Nam giới) do Ban chỉ huy quân sự quận, huyện nơi đăng ký hộ khẩu thường trú cấp.
+10. Bản chụp Thẻ bảo hiểm y tế.
+11. 06 ảnh cỡ 3×4, chụp trong vòng 6 tháng trở lại đây (ghi họ tên và ngày sinh vào mặt sau).",tuyển sinh,tuyển sinh
+Những ngành học mới trong học viện năm 2024?,Những ngành học mới trong học viện năm 2024?,Bạn muốn hỏi ngành mới của học viện ở cơ sở miền bắc hay miền nam.,ngành đào tạo,ngành đào tạo
+Điểm chuẩn tất cả các ngành năm 2021?,Điểm chuẩn tất cả các ngành năm 2021?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt.",điểm,điểm
+điểm chuẩn tất cả các ngành năm 2021 miền nam,Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2021 tại cơ sở miền nam?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2021 tại cơ sở miền nam là:
+Kỹ thuật điện tử viễn thông: 22.7
+Công nghệ kt điện, điện tử: 19.3
+Kỹ thuật điều khiển và tự động hóa: 19.4
+Công nghệ thông tin: 25.9
+An toàn thông tin: 25.4
+Công nghệ đa phương tiện: 25.05
+Quản trị kinh doanh: 25.0
+Marketing: 25.65
+Kế toán: 23.95",điểm,điểm
+miền bắc thì sao,Miền bắc đào tạo những ngành mới nào?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,tuyển sinh
+PTIT có những ngành học nào?,Học viện đào tạo những ngành nào?,Bạn muốn hỏi ở cơ sở miền Bắc hay miền Nam của Học Viện?,ngành đào tạo,ngành đào tạo
+học viện đào tạo những ngành nào cả hai,Học viện đào tạo những ngành nào?,Bạn muốn hỏi ở cơ sở miền Bắc hay miền Nam của Học Viện?,ngành đào tạo,ngành đào tạo
+cả miền bắc và miền nam,Chương trình đào tạo tại miền Nam có khác với miền Bắc không?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,tuyển sinh,ngành đào tạo
+học viện đào tạo những ngành nào miền bắc,Học viện đào tạo những ngành nào ở cơ sở miền bắc?,"Miền bắc Học Viện hiện tại đào tạo các ngành như:
+Ngành Công nghệ thông tin
+Ngành An toàn thông tin
+Ngành Kỹ thuật Điện tử viễn thông
+Ngành Công nghệ kỹ thuật Điện điện tử
+Ngành Công nghệ đa phương tiện
+Ngành Truyền thông đa phương tiện
+Ngành Marketing
+Ngành Quản trị kinh doanh
+Ngành Kế toán
+Ngành Thương mại điện tử
+Ngành Công nghệ thông tin (cử nhân, định hướng ứng dụng)
+Ngành Công nghệ tài chính Fintech
+Ngành Kỹ thuật Điều khiển và Tự động hoá
+Ngành Khoa học máy tính
+Ngành Báo chí
+Ngành Công nghệ thông tin (chương trình chất lượng cao)
+Ngành Mạng máy tính và truyền thông dữ liệu (CT Kỹ thuật dữ liệu)
+Ngành Marketing chương trình chất lượng cao
+Ngành Kế toán chương trình chất lượng cao
+Ngành Thiết kế và phát triển Game
+Ngành Công nghệ thông tin Việt - Nhật
+Ngành Quan hệ công chúng",ngành đào tạo,ngành đào tạo
+Các chương trình đào tạo của trường có gì đặc biệt?,Có những kiểu đào tạo nào tại học viện?,"Hiện tại học viện đang đào tạo các phương thức như đại học chính quy, đào tạo sau đại học, hệ vừa học vừa làm và hệ từ xa.",tuyển sinh,học viện
+Học tại học viện có nhàn không?,Học tại học viện có nhàn không?,Nhàn hay không tùy bản thân bạn. Bạn chăm học thì NHÀN.,học viện,học viện
+Mình muốn đăng ký ký túc xá thì như nào?,Mình muốn đăng ký ký túc xá thì như nào?,Bạn đăng ký ký túc xá trong ngày nhập học luôn nhé! Liên hệ với ban quản lý của ký túc xá để làm việc.,học viện,học viện
+Trường có đào tạo chương trình liên kết quốc tế không?,Học viện có các chương trình học nước ngoài không?,Nhiều chương trình học nước ngoài giúp sinh viên trải nghiệm môi học viện học tập quốc tế và mở rộng kiến thức.,học viện,học viện
+học viện có các chương trình học nước ngoài không gồm những chương trình nào,Học viện có các chương trình học nước ngoài không?,Nhiều chương trình học nước ngoài giúp sinh viên trải nghiệm môi học viện học tập quốc tế và mở rộng kiến thức.,học viện,ngành đào tạo
+học viện có các chương trình học nước ngoài không ví dụ,Học viện có các chương trình học nước ngoài không?,Nhiều chương trình học nước ngoài giúp sinh viên trải nghiệm môi học viện học tập quốc tế và mở rộng kiến thức.,học viện,học viện
+Các môn học chính của ngành Công nghệ Thông tin tại PTIT là gì?,Tôi muốn tìm hiểu về các ngành học của học viện?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
+học viện có các chương trình học nước ngoài không dốt,Học viện có các chương trình học nước ngoài không?,Nhiều chương trình học nước ngoài giúp sinh viên trải nghiệm môi học viện học tập quốc tế và mở rộng kiến thức.,học viện,học viện
+Tỷ lệ sinh viên có việc làm sau khi tốt nghiệp là bao nhiêu?,Sinh viên có thể làm gì sau khi tốt nghiệp?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
+PTIT có hỗ trợ tìm kiếm thực tập hay việc làm không?,Học viện có hỗ trợ sinh viên tìm việc làm không?,Học viện có trung tâm tư vấn việc làm giúp sinh viên tìm kiếm cơ hội việc làm phù hợp với chuyên ngành học.,học viện,học viện
+là trung tâm nào hỗ trợ tư vấn,Học viện có trung tâm hỗ trợ học tập không?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
+học viện có hỗ trợ sinh viên tìm việc làm không Các doanh nghiệp nào thường hợp tác với PTIT để tuyển dụng sinh viên?,Học viện có hỗ trợ sinh viên tìm việc làm không?,Học viện có trung tâm tư vấn việc làm giúp sinh viên tìm kiếm cơ hội việc làm phù hợp với chuyên ngành học.,học viện,học viện
+Cơ sở vật chất của trường như thế nào?,Cơ sở vật chất của học viện như nào?,Cơ sở vật chất của học viện xứng danh với học viện hoàng gia.,học viện,học viện
+Các câu lạc bộ hoặc hoạt động ngoại khóa nổi bật tại PTIT là gì?,Các câu lạc bộ có ở học viện?,"Các câu lạc bộ tại học viện:
+1. CLB học thuật
+CLB Multimedia
+CLB IT - ITPTIT
+CLB Lập trình - ProPTIT
+CLB Kế toán - CLB ASC
+CLB Tiếng Anh - CLB ELFs
+CLB An toàn thông tin - CLB ISP
+CLB Điện tử PTIT - CLB EIE
+2. Hoạt động Xã hội Cộng đồng
+CLB Sinh viên tình nguyện PTIT - CLB SVTN PTIT
+Đội máu PTIT
+Đội Cờ đỏ
+3. Truyền thông Sự kiện
+CDA - CLB Những nhà quản trị năng động sáng tạo
+S4C - CLB Truyền thông & Kỹ năng mềm
+Sổ Media
+4. Thể thao
+CLB Bóng đá
+CLB Bóng chuyền
+CLB Cầu lông
+CLB Taekwondo
+CLB Võ thuật mở rộng - CLB EMA
+CLB Thể thao ngoài trời - CLB Street Workout
+CLB Thể thao điện tử
+5. Văn hoá nghệ thuật
+CLB Sách và Hành động PTIT
+CLB Guitar
+CLB Văn hoá nghệ thuật
+Nhóm nhảy MOMUS Crew
+Nhóm nhảy Dff",học viện,học viện
+các câu lạc bộ có ở học viện câu lạc bộ nào nổi nhất,Trong học viện có những câu lạc bộ nào?,"Các câu lạc bộ tại học viện:
+1. CLB học thuật
+CLB Multimedia
+CLB IT - ITPTIT
+CLB Lập trình - ProPTIT
+CLB Kế toán - CLB ASC
+CLB Tiếng Anh - CLB ELFs
+CLB An toàn thông tin - CLB ISP
+CLB Điện tử PTIT - CLB EIE
+2. Hoạt động Xã hội Cộng đồng
+CLB Sinh viên tình nguyện PTIT - CLB SVTN PTIT
+Đội máu PTIT
+Đội Cờ đỏ
+3. Truyền thông Sự kiện
+CDA - CLB Những nhà quản trị năng động sáng tạo
+S4C - CLB Truyền thông & Kỹ năng mềm
+Sổ Media
+4. Thể thao
+CLB Bóng đá
+CLB Bóng chuyền
+CLB Cầu lông
+CLB Taekwondo
+CLB Võ thuật mở rộng - CLB EMA
+CLB Thể thao ngoài trời - CLB Street Workout
+CLB Thể thao điện tử
+5. Văn hoá nghệ thuật
+CLB Sách và Hành động PTIT
+CLB Guitar
+CLB Văn hoá nghệ thuật
+Nhóm nhảy MOMUS Crew
+Nhóm nhảy Dff",học viện,học viện
+các câu lạc bộ có ở học viện điều kiện để nhận học bổng,Các câu lạc bộ có ở học viện?,"Các câu lạc bộ tại học viện:
+1. CLB học thuật
+CLB Multimedia
+CLB IT - ITPTIT
+CLB Lập trình - ProPTIT
+CLB Kế toán - CLB ASC
+CLB Tiếng Anh - CLB ELFs
+CLB An toàn thông tin - CLB ISP
+CLB Điện tử PTIT - CLB EIE
+2. Hoạt động Xã hội Cộng đồng
+CLB Sinh viên tình nguyện PTIT - CLB SVTN PTIT
+Đội máu PTIT
+Đội Cờ đỏ
+3. Truyền thông Sự kiện
+CDA - CLB Những nhà quản trị năng động sáng tạo
+S4C - CLB Truyền thông & Kỹ năng mềm
+Sổ Media
+4. Thể thao
+CLB Bóng đá
+CLB Bóng chuyền
+CLB Cầu lông
+CLB Taekwondo
+CLB Võ thuật mở rộng - CLB EMA
+CLB Thể thao ngoài trời - CLB Street Workout
+CLB Thể thao điện tử
+5. Văn hoá nghệ thuật
+CLB Sách và Hành động PTIT
+CLB Guitar
+CLB Văn hoá nghệ thuật
+Nhóm nhảy MOMUS Crew
+Nhóm nhảy Dff",học viện,học viện
+các câu lạc bộ có ở học viện có hiểu không,Các câu lạc bộ có ở học viện?,"Các câu lạc bộ tại học viện:
+1. CLB học thuật
+CLB Multimedia
+CLB IT - ITPTIT
+CLB Lập trình - ProPTIT
+CLB Kế toán - CLB ASC
+CLB Tiếng Anh - CLB ELFs
+CLB An toàn thông tin - CLB ISP
+CLB Điện tử PTIT - CLB EIE
+2. Hoạt động Xã hội Cộng đồng
+CLB Sinh viên tình nguyện PTIT - CLB SVTN PTIT
+Đội máu PTIT
+Đội Cờ đỏ
+3. Truyền thông Sự kiện
+CDA - CLB Những nhà quản trị năng động sáng tạo
+S4C - CLB Truyền thông & Kỹ năng mềm
+Sổ Media
+4. Thể thao
+CLB Bóng đá
+CLB Bóng chuyền
+CLB Cầu lông
+CLB Taekwondo
+CLB Võ thuật mở rộng - CLB EMA
+CLB Thể thao ngoài trời - CLB Street Workout
+CLB Thể thao điện tử
+5. Văn hoá nghệ thuật
+CLB Sách và Hành động PTIT
+CLB Guitar
+CLB Văn hoá nghệ thuật
+Nhóm nhảy MOMUS Crew
+Nhóm nhảy Dff",học viện,học viện
+Điều kiện tuyển sinh vào PTIT là gì?,Điều kiện tuyển sinh vào học viện là gì?,Điều kiện tuyển sinh bao gồm tốt nghiệp THPT và đạt điểm xét tuyển theo quy định.,học viện,học viện
+Văn hóa sinh viên tại PTIT như thế nào?,Học viện có cơ sở vật chất như thế nào?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
+Các dự án nghiên cứu lớn tại PTIT là gì?,Có những kiểu đào tạo nào tại học viện?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,tuyển sinh,ngành đào tạo
+Sinh viên có thể tham gia nghiên cứu khoa học không?,Sinh viên có thể tham gia nghiên cứu khoa học không?,Sinh viên có thể tham gia vào các dự án nghiên cứu khoa học dưới sự hướng dẫn của giảng viên.,học viện,học viện
+Học phí của các ngành tại PTIT hiện nay là bao nhiêu?,Học phí của Ngành Kế toán năm 2024 là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học phí,học phí
+Có chính sách giảm học phí cho sinh viên có hoàn cảnh khó khăn không?,Những câu hỏi liên quan đến hình ảnh,Hiện tại chatbot không thể tạo ra được ảnh. Bạn vui lòng đặt câu hỏi khác.,học viện,học viện
+Trường có hỗ trợ sinh viên quốc tế trong quá trình học tập không?,Học viện có tổ chức các chương trình giao lưu với sinh viên quốc tế không?,"Học viện có nhiều chương trình giao lưu với sinh viên từ các quốc gia khác, giúp sinh viên mở rộng mối quan hệ và tìm hiểu văn hóa đa dạng.",học viện,học viện
+học viện có tổ chức các chương trình giao lưu với sinh viên quốc tế không PTIT có các dịch vụ tư vấn tâm lý hay hỗ trợ sinh viên gặp khó khăn không?,Học viện có tổ chức các chương trình giao lưu với sinh viên quốc tế không?,"Học viện có nhiều chương trình giao lưu với sinh viên từ các quốc gia khác, giúp sinh viên mở rộng mối quan hệ và tìm hiểu văn hóa đa dạng.",học viện,học viện
+học viện có tổ chức các chương trình giao lưu với sinh viên quốc tế không Làm sao để tham gia các buổi tư vấn nghề nghiệp hoặc hướng dẫn kỹ năng mềm tại PTIT?,Học viện có tổ chức các chương trình giao lưu với sinh viên quốc tế không?,"Học viện có nhiều chương trình giao lưu với sinh viên từ các quốc gia khác, giúp sinh viên mở rộng mối quan hệ và tìm hiểu văn hóa đa dạng.",học viện,học viện
+Có những kiểu đào tạo nào tại học viện?,Có những kiểu đào tạo nào tại học viện?,"Hiện tại học viện đang đào tạo các phương thức như đại học chính quy, đào tạo sau đại học, hệ vừa học vừa làm và hệ từ xa.",tuyển sinh,tuyển sinh
+Trụ sở chính của học viện ở đâu?,Trụ sở chính của học viện ở đâu,"Trụ sở chính của học viện nằm ở 122 đường Hoàng Quốc Việt, Phường Nghĩa Tân, Quận Cầu Giấy, Thành phố Hà Nội.",địa chỉ,địa chỉ
+Thời gian đào tạo của ngành Công nghệ thông tin là bao lâu?,Thời gian học của Ngành Công nghệ thông tin là bao lâu?,"Ngành Công nghệ thông tin có thời gian học là: 4,5 năm",ngành đào tạo,ngành đào tạo
+Mã ngành của chương trình Công nghệ thông tin (định hướng ứng dụng) là bao nhiêu?,Mã ngành của Chương trình Công nghệ thông tin (định hướng ứng dụng) là bao nhiêu?,Chương trình Công nghệ thông tin (định hướng ứng dụng) có mã ngành là: 7480201_UDU,ngành đào tạo,ngành đào tạo
+Chỉ tiêu của Ngành Công nghệ thông tin là bao nhiêu?,Chỉ tiêu của Ngành Công nghệ thông tin là bao nhiêu?,"Bạn muốn hỏi chỉ tiêu dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, xét tuyển tài năng, thi thpt, đánh giá năng lực, đánh giá tư duy.",ngành đào tạo,ngành đào tạo
+học viện tuyển sinh vào thời gian nào,Thời gian nộp hồ sơ tuyển sinh là khi nào?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,tuyển sinh
 Các mốc thời gian quan trọng trong việc tuyển sinh?,Các mốc thời gian quan trọng,"Mốc thí sinh đăng ký, điều chỉnh nguyện vọng xét tuyển diễn ra vào: 2024-07-10
 Mốc nộp lệ phí xét tuyển trực tuyến diễn ra vào: 2024-07-28
 Mốc thông báo thí sinh trúng tuyển đợt 1 diễn ra vào: 2024-08-12
@@ -154,6 +296,11 @@ Quy chế 7: Thí sinh chỉ trúng tuyển vào 1 nguyện vọng ưu tiên cao
 Quy chế 8: Đối với các thí sinh bằng điểm xét tuyển ở cuối danh sách, nếu vẫn còn vượt chỉ tiêu thì ưu tiên thí sinh có nguyện vọng cao hơn theo Quy chế tuyển sinh của Bộ Giáo dục và Đào tạo, Học viện không sử dụng tiêu chí phụ riêng để xét tuyển.
 Quy chế 9: Các điều kiện khác thực hiện theo Quy chế tuyển sinh đại học hệ chính quy hiện hành của Bộ Giáo dục và Đào tạo.",tuyển sinh,tuyển sinh
 Những ngành học mới trong học viện năm 2024?,Những ngành học mới trong học viện năm 2024?,Bạn muốn hỏi ngành mới của học viện ở cơ sở miền bắc hay miền nam.,ngành đào tạo,ngành đào tạo
+những ngành học mới trong học viện năm 2024 bắc,Những ngành học mới trong học viện năm 2024 tại cơ sở miền bắc?,"Cơ sở miền bắc có đào tạo thêm các ngành mới so với năm trước là:
+1.Ngành quan hệ công chúng (Ngành Marketing)
+2.Thiết kế và phát triển Game (Ngành Công nghệ đa phương tiện)
+3.Công nghệ thông tin Việt Nhật
+Những ngành học này được thiết kế để đáp ứng như cầu ngày càng cao của thị học viện lao động và xu hướng công nghệ hiện đại.",ngành đào tạo,ngành đào tạo
 Ngành Công nghệ thông tin xét tuyển theo tổ hợp nào?,Ngành Công nghệ thông tin xét tuyển theo tổ hợp nào?,Ngành Công nghệ thông tin xét tuyển theo tổ hợp: A00 A01 ,ngành đào tạo,ngành đào tạo
 Các trang web chính thức của học viện?,Các trang web chính thức của học viện?,"Các trang web chính thức của học viện là:
 1. Cổng thông tin học viện: https://portal.ptit.edu.vn/
@@ -163,19 +310,137 @@ Các trang web chính thức của học viện?,Các trang web chính thức c�
 5. Cổng thông tin tuyển sinh: https://tuyensinh.ptit.edu.vn/
 6. Fanpage: https://facebook.com/HocvienPTIT
 7. Youtube:  https://www.youtube.com/@PChannels",học viện,học viện
-Những ngành học mới trong học viện năm 2024?,Những ngành học mới trong học viện năm 2024?,Bạn muốn hỏi ngành mới của học viện ở cơ sở miền bắc hay miền nam.,ngành đào tạo,ngành đào tạo
-miền trung,Tôi muốn tìm hiểu các ngành ở cơ sở miền nam?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
-những ngành học mới trong học viện năm 2024 miền trung,Những ngành học mới trong học viện năm 2024?,Bạn muốn hỏi ngành mới của học viện ở cơ sở miền bắc hay miền nam.,ngành đào tạo,ngành đào tạo
-miền nam,Tôi muốn tìm hiểu các ngành ở cơ sở miền nam?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
-những ngành học mới trong học viện năm 2024 miền nam,Ngành học mới trong học viện năm 2024 tại cơ sở miền nam?,Cơ sở miền nam có đào tạo 2 ngành mới so với năm trước là ngành công nghệ thông tin chất lượng cao và marketing chất lượng cao.,ngành đào tạo,ngành đào tạo
-miền bắc,Miền bắc đào tạo những ngành mới nào?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
-những ngành học mới trong học viện năm 2024 miền bắc,Những ngành học mới trong học viện năm 2024 tại cơ sở miền bắc?,"Cơ sở miền bắc có đào tạo thêm các ngành mới so với năm trước là:
-1.Ngành quan hệ công chúng (Ngành Marketing)
-2.Thiết kế và phát triển Game (Ngành Công nghệ đa phương tiện)
-3.Công nghệ thông tin Việt Nhật
-Những ngành học này được thiết kế để đáp ứng như cầu ngày càng cao của thị học viện lao động và xu hướng công nghệ hiện đại.",ngành đào tạo,ngành đào tạo
-Điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm nay tại cơ sở miền bắc là bao nhiêu?,Điểm chuẩn ngành công nghệ thông tin việt nhật theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là bao nhiêu?,Điểm chuẩn ngành công nghệ thông tin việt nhật theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là 24.25,điểm,điểm
+Điểm chuẩn tất cả các ngành năm nay?,Điểm chuẩn tất cả các ngành năm 2024?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
+Điểm chuẩn tất cả các ngành năm 2022?,Điểm chuẩn tất cả các ngành năm 2022?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
+bắc,Miền bắc đào tạo những ngành nào?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,chào hỏi
+điểm chuẩn tất cả các ngành năm 2022 phương thức xét tuyển bằng điểm thi trung học phổ thông quốc gia- cơ sở miền bắc ,Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2022 tại cơ sở miền bắc?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2022 tại cơ sở miền bắc là:
+Kỹ thuật điện tử viễn thông: 25.6
+Công nghệ kỹ thuật điện, điện tử: 25.1
+Công nghệ thông tin: 27.25
+An toàn thông tin: 26.7
+Khoa học máy tính: 26.9
+Công nghệ đa phương tiện: 26.45
+Truyền thông đa phương tiện: 26.2
+Báo chí: 24.4
+Quản trị kinh doanh: 25.55
+Thương mại điện tử: 26.35
+Marketing: 26.1
+Kế toán: 25.35
+Công nghệ tài chính (fintech): 25.85",điểm,điểm
+Điểm chuẩn tất cả các ngành năm 2023?,Điểm chuẩn tất cả các ngành năm 2023?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
+điểm chuẩn tất cả các ngành năm 2023 dựa trên xét tuyển bằng đánh giá năng lực- cơ sở miền nam,"Điểm chuẩn tất cả các ngành theo phương thức thi đánh giá năng lực, đánh giá tư duy năm 2023 tại cơ sở miền nam?","Điểm chuẩn tất cả các ngành theo phương thức thi đánh giá năng lực, đánh giá tư duy năm 2023 tại cơ sở miền nam là:
+Kỹ thuật điện tử viễn thông: 19.18
+Kỹ thuật điều khiển và tự động hóa: 16.5
+Công nghệ internet vạn vật: 18.93
+Công nghệ thông tin: 17.1
+An toàn thông tin: 18.38
+Công nghệ đa phương tiện: 17.65
+Marketing: 18.2",điểm,điểm
+Điểm chuẩn tất cả các ngành năm 2021?,Điểm chuẩn tất cả các ngành năm 2021?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt.",điểm,điểm
+dựa trên xét tuyển bằng đánh giá tư duy _cơ sở miền bắc,Chỉ tiêu của ngành quan hệ công chúng theo phương thức thi đánh giá tư duy tại cơ sở miền bắc là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
+"điểm chuẩn tất cả các ngành năm 2021 dựa trên xét tuyển kết hợp, cơ sở miền bắc",Điểm chuẩn tất cả các ngành theo phương thức xét tuyển kết hợp năm 2021 tại cơ sở miền bắc?,"Điểm chuẩn tất cả các ngành theo phương thức xét tuyển kết hợp năm 2021 tại cơ sở miền bắc là:
+Kỹ thuật điện tử viễn thông: 25.32
+Công nghệ kt điện, điện tử: 23.58
+Công nghệ thông tin: 27.44
+An toàn thông tin: 27.21
+Công nghệ đa phương tiện: 25.81
+Truyền thông đa phương tiện: 26.93
+Quản trị kinh doanh: 24.97
+Marketing: 25.97
+Thương mại điện tử: 26.42
+Kế toán: 23.46
+Công nghệ tài chính (fintech): 26.24",điểm,điểm
+Ngành Công nghệ Internet vạn vật (IoT) được đào tạo ở cơ sở nào?,Ngành Công nghệ Internet vạn vật (IoT) được đào tạo ở cơ sở nào?,Ngành Công nghệ Internet vạn vật (IoT) được đào tạo ở cơ sở TP Hồ Chí Minh,ngành đào tạo,ngành đào tạo
+Học phí của Chương trình Công nghệ thông tin (định hướng ứng dụng) là bao nhiêu?,Học phí của Chương trình Công nghệ thông tin (định hướng ứng dụng) là bao nhiêu?,Chương trình Công nghệ thông tin (định hướng ứng dụng) có học phí 900.000/1 tín chỉ,học phí,học phí
+Học viện đào tạo những ngành nào ở cơ sở miền bắc?,Học viện đào tạo những ngành nào ở cơ sở miền bắc?,"Miền bắc Học Viện hiện tại đào tạo các ngành như:
+Ngành Công nghệ thông tin
+Ngành An toàn thông tin
+Ngành Kỹ thuật Điện tử viễn thông
+Ngành Công nghệ kỹ thuật Điện điện tử
+Ngành Công nghệ đa phương tiện
+Ngành Truyền thông đa phương tiện
+Ngành Marketing
+Ngành Quản trị kinh doanh
+Ngành Kế toán
+Ngành Thương mại điện tử
+Ngành Công nghệ thông tin (cử nhân, định hướng ứng dụng)
+Ngành Công nghệ tài chính Fintech
+Ngành Kỹ thuật Điều khiển và Tự động hoá
+Ngành Khoa học máy tính
+Ngành Báo chí
+Ngành Công nghệ thông tin (chương trình chất lượng cao)
+Ngành Mạng máy tính và truyền thông dữ liệu (CT Kỹ thuật dữ liệu)
+Ngành Marketing chương trình chất lượng cao
+Ngành Kế toán chương trình chất lượng cao
+Ngành Thiết kế và phát triển Game
+Ngành Công nghệ thông tin Việt - Nhật
+Ngành Quan hệ công chúng",ngành đào tạo,ngành đào tạo
+Điểm chuẩn ngành công nghệ thông tin năm nay?,Điểm chuẩn của ngành công nghệ thông tin năm 2024 là bao nhiêu?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
+Chỉ tiêu của Ngành Công nghệ thông tin là bao nhiêu?,Chỉ tiêu của Ngành Công nghệ thông tin là bao nhiêu?,"Bạn muốn hỏi chỉ tiêu dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, xét tuyển tài năng, thi thpt, đánh giá năng lực, đánh giá tư duy.",ngành đào tạo,ngành đào tạo
+"chỉ tiêu của ngành công nghệ thông tin là bao nhiêu phương thức đánh giá tư duy, miền bắc",Chỉ tiêu của ngành công nghệ thông tin theo phương thức thi đánh giá tư duy tại cơ sở miền bắc là bao nhiêu?,Chỉ tiêu của ngành công nghệ thông tin theo phương thức thi đánh giá tư duy tại cơ sở miền bắc là: 90,ngành đào tạo,ngành đào tạo
+Mã ngành của chương trình Công nghệ thông tin (định hướng ứng dụng) là bao nhiêu?,Mã ngành của Chương trình Công nghệ thông tin (định hướng ứng dụng) là bao nhiêu?,Chương trình Công nghệ thông tin (định hướng ứng dụng) có mã ngành là: 7480201_UDU,ngành đào tạo,ngành đào tạo
+Thời gian đào tạo của ngành Công nghệ thông tin là bao lâu?,Thời gian học của Ngành Công nghệ thông tin là bao lâu?,"Ngành Công nghệ thông tin có thời gian học là: 4,5 năm",ngành đào tạo,ngành đào tạo
+Cơ sở đào tạo của học viện tại cơ sở miền bắc ở đâu?,Cơ sở đào tạo của học viện tại cơ sở miền bắc ở đâu,"Địa chỉ: Km10, đường Nguyễn Trãi, Phường Mộ Lao, Quận Hà Đông, Thành phố Hà Nội.",địa chỉ,địa chỉ
 Trụ sở chính của học viện ở đâu?,Trụ sở chính của học viện ở đâu,"Trụ sở chính của học viện nằm ở 122 đường Hoàng Quốc Việt, Phường Nghĩa Tân, Quận Cầu Giấy, Thành phố Hà Nội.",địa chỉ,địa chỉ
+Học tại học viện có nhàn không?,Học tại học viện có nhàn không?,Nhàn hay không tùy bản thân bạn. Bạn chăm học thì NHÀN.,học viện,học viện
+nếu không chăm thì saooo, Nếu sinh viên không đạt ở một học phần thì sao?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
+Quy trình đăng ký nhập học của trường như thế nào?,"Quy định, quy chế tuyển sinh của học viện?",Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,tuyển sinh,tuyển sinh
+quy trình về việc chuẩn bị hồ sơ đăng ký nhập học của học viện cơ sở miền bắc như thế nào,Hồ sơ nhập học cần chuẩn bị những gì?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,tuyển sinh,tuyển sinh
+học viện ở cơ sở miền Bắc có kí túc xá cho sinh viên không?,Học viện có ký túc xá cho sinh viên không?,"Ký túc xá của học viện được trang bị đầy đủ tiện nghi, tạo môi học viện sống và học tập thuận lợi cho sinh viên.",học viện,học viện
+thủ tục đăng ký kí túc xá bao gồm những hồ sơ gì,Hồ sơ nhập học gồm những gì?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,tuyển sinh,học viện
+cơ sở miền Bắc có bao nhiêu đợt xét tuyển trong năm,Điểm chuẩn ngành công nghệ thông tin theo phương thức xét tuyển kết hợp năm 2022 tại cơ sở miền bắc là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,điểm,ngành đào tạo
+học viện có xét tuyển bằng chứng chỉ SAT không,Học viện có xét học bạ không?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
+học viện có tổ chức xét tuyển bổ sung không,Học viện có tổ chức các hoạt động ngoại khóa không?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,tuyển sinh
+"điểm xét tuyển ngành Kế toán của học viện, cơ sở miền Bắc năm 2024 là bao nhiêu",Điểm chuẩn ngành kế toán theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là bao nhiêu?,Điểm chuẩn ngành kế toán theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là 25.29,điểm,điểm
+"Quy định, quy chế tuyển sinh của học viện?","Quy định, quy chế tuyển sinh của học viện?","Quy chế 1: Xét tuyển theo ngành và theo tổ hợp môn thi xét tuyển.
+Quy chế 2: Điểm trúng tuyển của các tổ hợp môn thi trong cùng một ngành là bằng nhau.
+Quy chế 3: Xét trúng tuyển từ thí sinh có kết quả cao xuống và đảm bảo chất lượng tuyển sinh.
+Quy chế 4: Điểm trúng tuyển được tính theo thang điểm 10, tổng điểm tối đa của 3 bài thi trong tổ hợp xét tuyển là 30 điểm.
+Quy chế 5: Xét tuyển các nguyện vọng bình đẳng theo kết quả thi (điểm trúng tuyển giữa các nguyện vọng là bằng nhau), nếu thí sinh không trúng tuyển nguyện vọng ở thứ tự ưu tiên thứ nhất (nguyện vọng 1) thì sẽ được tự động xét tuyển ở nguyện vọng ưu tiên thứ hai (nguyện vọng 2) và kế tiếp.
+Quy chế 6: Học viện không sử dụng kết quả miễn thi bài thi môn ngoại ngữ và điểm thi được bảo lưu để xét tuyển.
+Quy chế 7: Thí sinh chỉ trúng tuyển vào 1 nguyện vọng ưu tiên cao nhất trong danh sách các nguyện vọng đã đăng ký, khi đã trúng tuyển ở nguyện vọng nào thì không được xét tuyển tiếp ở nguyện vọng sau.
+Quy chế 8: Đối với các thí sinh bằng điểm xét tuyển ở cuối danh sách, nếu vẫn còn vượt chỉ tiêu thì ưu tiên thí sinh có nguyện vọng cao hơn theo Quy chế tuyển sinh của Bộ Giáo dục và Đào tạo, Học viện không sử dụng tiêu chí phụ riêng để xét tuyển.
+Quy chế 9: Các điều kiện khác thực hiện theo Quy chế tuyển sinh đại học hệ chính quy hiện hành của Bộ Giáo dục và Đào tạo.",tuyển sinh,tuyển sinh
+Các mốc thời gian quan trọng trong việc tuyển sinh?,Các mốc thời gian quan trọng,"Mốc thí sinh đăng ký, điều chỉnh nguyện vọng xét tuyển diễn ra vào: 2024-07-10
+Mốc nộp lệ phí xét tuyển trực tuyến diễn ra vào: 2024-07-28
+Mốc thông báo thí sinh trúng tuyển đợt 1 diễn ra vào: 2024-08-12
+Mốc hoàn thành xác nhận nhập học trực tuyến đợt 1 trên hệ thống diễn ra vào: 2024-08-18",tuyển sinh,tuyển sinh
+Quy trình nộp hồ sơ trực tuyến như nào?,Quy trình nộp hồ sơ trực tuyến như nào?,"B1: Đăng ký tài khoản
+B2: Khai báo thông tin
+B3: Đăng ký nguyện vọng
+B4: Thanh toán trực tuyến
+B5: Nộp hồ sơ về Học viện
+B6: Nhận thông tin kết quả",tuyển sinh,tuyển sinh
+Hồ sơ nhập học cần chuẩn bị những gì?,Hồ sơ nhập học cần chuẩn bị những gì?,"Hồ sơ nhập học cần chuẩn bị các thứ sau:
+1. Bản sao hợp lệ Học bạ THPT
+2. Bản sao hợp lệ Bằng tốt nghiệp hoặc Giấy chứng nhận tốt nghiệp THPT tạm thời 
+3. Bản sao hợp lệ Giấy khai sinh
+4. Bản sao hợp lệ các giấy tờ pháp lý minh chứng đối tượng ưu tiên được hưởng (nếu có)
+5. Giấy triệu tập trúng tuyển của Học viện Công nghệ Bưu chính Viễn thông (bản gốc).
+6. Bản chính Giấy chứng nhận học sinh giỏi quốc gia hoặc cấp tỉnh, thành phố trực thuộc TW; Chứng chỉ quốc tế, Giấy chứng nhận kết quả thi đánh giá năng lực năm 2023 (đối với các thí sinh thuộc đối tượng xét trúng tuyển sớm – Xét tuyển kết hợp hoặc Đánh giá năng lực).
+7. Hồ sơ sinh viên (In từ hệ thống - đóng dấu giáp lai và xác nhận của UBND xã/phường)
+8. Giấy chuyển sinh hoạt Đảng, Đoàn (nếu là Đảng viên, Đoàn viên) về Đảng bộ hoặc Đoàn Thanh niên Cộng sản Hồ Chí Minh của Học viện Công nghệ Bưu chính Viễn thông.
+9. Giấy giới thiệu di chuyển đăng ký nghĩa vụ quân sự (đối với Nam giới) do Ban chỉ huy quân sự quận, huyện nơi đăng ký hộ khẩu thường trú cấp.
+10. Bản chụp Thẻ bảo hiểm y tế.
+11. 06 ảnh cỡ 3×4, chụp trong vòng 6 tháng trở lại đây (ghi họ tên và ngày sinh vào mặt sau).",tuyển sinh,tuyển sinh
+"Quy định, quy chế tuyển sinh của học viện?","Quy định, quy chế tuyển sinh của học viện?","Quy chế 1: Xét tuyển theo ngành và theo tổ hợp môn thi xét tuyển.
+Quy chế 2: Điểm trúng tuyển của các tổ hợp môn thi trong cùng một ngành là bằng nhau.
+Quy chế 3: Xét trúng tuyển từ thí sinh có kết quả cao xuống và đảm bảo chất lượng tuyển sinh.
+Quy chế 4: Điểm trúng tuyển được tính theo thang điểm 10, tổng điểm tối đa của 3 bài thi trong tổ hợp xét tuyển là 30 điểm.
+Quy chế 5: Xét tuyển các nguyện vọng bình đẳng theo kết quả thi (điểm trúng tuyển giữa các nguyện vọng là bằng nhau), nếu thí sinh không trúng tuyển nguyện vọng ở thứ tự ưu tiên thứ nhất (nguyện vọng 1) thì sẽ được tự động xét tuyển ở nguyện vọng ưu tiên thứ hai (nguyện vọng 2) và kế tiếp.
+Quy chế 6: Học viện không sử dụng kết quả miễn thi bài thi môn ngoại ngữ và điểm thi được bảo lưu để xét tuyển.
+Quy chế 7: Thí sinh chỉ trúng tuyển vào 1 nguyện vọng ưu tiên cao nhất trong danh sách các nguyện vọng đã đăng ký, khi đã trúng tuyển ở nguyện vọng nào thì không được xét tuyển tiếp ở nguyện vọng sau.
+Quy chế 8: Đối với các thí sinh bằng điểm xét tuyển ở cuối danh sách, nếu vẫn còn vượt chỉ tiêu thì ưu tiên thí sinh có nguyện vọng cao hơn theo Quy chế tuyển sinh của Bộ Giáo dục và Đào tạo, Học viện không sử dụng tiêu chí phụ riêng để xét tuyển.
+Quy chế 9: Các điều kiện khác thực hiện theo Quy chế tuyển sinh đại học hệ chính quy hiện hành của Bộ Giáo dục và Đào tạo.",tuyển sinh,tuyển sinh
+Làm sao để kiếm người yêu khi học đại học?,Làm sao để kiếm người yêu khi học đại học,"Việc tìm kiếm người yêu khi đang học đại học có thể là một trải nghiệm thú vị, nhưng đôi khi cũng có thể gặp khó khăn. Đây là vài gợi ý:
+1. Tham gia các hoạt động ngoại khóa: Tham gia câu lạc bộ, tổ chức hoặc các hoạt động ngoại khóa khác giúp bạn gặp gỡ nhiều người mới, có cơ hội tìm kiếm những người có sở thích chung.
+2. Kết bạn qua học tập: Tạo dựng mối quan hệ với các bạn cùng lớp hoặc nhóm học tập. Bạn có thể gặp gỡ người khác qua các buổi học nhóm, dự án chung, hoặc các hoạt động học tập khác.
+3. Sử dụng các ứng dụng hẹn hò: Các ứng dụng như Tinder, Bumble, hay các mạng xã hội khác cũng là nơi để bạn có thể gặp gỡ những người mới.
+4. Học tập và giao tiếp tự nhiên: Hãy tự nhiên trong việc học tập và giao tiếp với bạn bè, đồng nghiệp. Cơ hội gặp gỡ người thích hợp có thể đến từ những mối quan hệ này.
+5. Thời gian cho bản thân: Hãy dành thời gian để phát triển bản thân, điều này cũng giúp bạn gặp gỡ được những người có cùng sở thích và mục tiêu.
+Chúc bạn thành công và tìm được một mối quan hệ ý nghĩa!.",học viện,học viện
+Mình muốn đăng ký ký túc xá thì như nào?,Mình muốn đăng ký ký túc xá thì như nào?,Bạn đăng ký ký túc xá trong ngày nhập học luôn nhé! Liên hệ với ban quản lý của ký túc xá để làm việc.,học viện,học viện
+Mình muốn đăng ký ký túc xá thì như nào?,Mình muốn đăng ký ký túc xá thì như nào?,Bạn đăng ký ký túc xá trong ngày nhập học luôn nhé! Liên hệ với ban quản lý của ký túc xá để làm việc.,học viện,học viện
 Các câu lạc bộ có ở học viện?,Các câu lạc bộ có ở học viện?,"Các câu lạc bộ tại học viện:
 1. CLB học thuật
 CLB Multimedia
@@ -207,8 +472,19 @@ CLB Guitar
 CLB Văn hoá nghệ thuật
 Nhóm nhảy MOMUS Crew
 Nhóm nhảy Dff",học viện,học viện
-Có CLB wibu không,Các câu lạc bộ có ở học viện?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
-các câu lạc bộ có ở học viện Có CLB wibu không,Các câu lạc bộ có ở học viện?,"Các câu lạc bộ tại học viện:
+Trụ sở chính của học viện ở đâu?,Trụ sở chính của học viện ở đâu,"Trụ sở chính của học viện nằm ở 122 đường Hoàng Quốc Việt, Phường Nghĩa Tân, Quận Cầu Giấy, Thành phố Hà Nội.",địa chỉ,địa chỉ
+Trụ sở chính của học viện ở đâu?,Trụ sở chính của học viện ở đâu,"Trụ sở chính của học viện nằm ở 122 đường Hoàng Quốc Việt, Phường Nghĩa Tân, Quận Cầu Giấy, Thành phố Hà Nội.",địa chỉ,địa chỉ
+1 năm có bao nhiêu kì thi tại ptit,Có bao nhiêu ký túc xá trong học viện?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
+bình thường mọi năm tuyển sinh vào ngày bao nhiêu ?,Học phí bình thường là bao nhiêu,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học phí,học viện
+các mốc thời gian trong kì tuyển sinh của trường PTIT là gì ?,Thời gian học ở học viện là bao lâu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
+các mốc thời gian quan trọng ?,Các mốc thời gian quan trọng,"Mốc thí sinh đăng ký, điều chỉnh nguyện vọng xét tuyển diễn ra vào: 2024-07-10
+Mốc nộp lệ phí xét tuyển trực tuyến diễn ra vào: 2024-07-28
+Mốc thông báo thí sinh trúng tuyển đợt 1 diễn ra vào: 2024-08-12
+Mốc hoàn thành xác nhận nhập học trực tuyến đợt 1 trên hệ thống diễn ra vào: 2024-08-18",tuyển sinh,tuyển sinh
+Ngành công nghệ thông tin mã ngành là gì ?,Mã ngành của Ngành Công nghệ thông tin là bao nhiêu?,Ngành Công nghệ thông tin có mã ngành là: 7480201,ngành đào tạo,ngành đào tạo
+Trụ sở chính của học viện ở đâu?,Trụ sở chính của học viện ở đâu,"Trụ sở chính của học viện nằm ở 122 đường Hoàng Quốc Việt, Phường Nghĩa Tân, Quận Cầu Giấy, Thành phố Hà Nội.",địa chỉ,địa chỉ
+Có những kiểu đào tạo nào tại học viện?,Có những kiểu đào tạo nào tại học viện?,"Hiện tại học viện đang đào tạo các phương thức như đại học chính quy, đào tạo sau đại học, hệ vừa học vừa làm và hệ từ xa.",tuyển sinh,tuyển sinh
+Các câu lạc bộ có ở học viện?,Các câu lạc bộ có ở học viện?,"Các câu lạc bộ tại học viện:
 1. CLB học thuật
 CLB Multimedia
 CLB IT - ITPTIT
@@ -239,85 +515,25 @@ CLB Guitar
 CLB Văn hoá nghệ thuật
 Nhóm nhảy MOMUS Crew
 Nhóm nhảy Dff",học viện,học viện
-Muốn vào CLB bóng đá thì làm như nào,Làm thế nào để đăng ký tham gia các câu lạc bộ?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
-?,Các hình thức xét tuyển là gì?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,tuyển sinh,ngành đào tạo
-các câu lạc bộ có ở học viện ?,Các câu lạc bộ có ở học viện?,"Các câu lạc bộ tại học viện:
-1. CLB học thuật
-CLB Multimedia
-CLB IT - ITPTIT
-CLB Lập trình - ProPTIT
-CLB Kế toán - CLB ASC
-CLB Tiếng Anh - CLB ELFs
-CLB An toàn thông tin - CLB ISP
-CLB Điện tử PTIT - CLB EIE
-2. Hoạt động Xã hội Cộng đồng
-CLB Sinh viên tình nguyện PTIT - CLB SVTN PTIT
-Đội máu PTIT
-Đội Cờ đỏ
-3. Truyền thông Sự kiện
-CDA - CLB Những nhà quản trị năng động sáng tạo
-S4C - CLB Truyền thông & Kỹ năng mềm
-Sổ Media
-4. Thể thao
-CLB Bóng đá
-CLB Bóng chuyền
-CLB Cầu lông
-CLB Taekwondo
-CLB Võ thuật mở rộng - CLB EMA
-CLB Thể thao ngoài trời - CLB Street Workout
-CLB Thể thao điện tử
-5. Văn hoá nghệ thuật
-CLB Sách và Hành động PTIT
-CLB Guitar
-CLB Văn hoá nghệ thuật
-Nhóm nhảy MOMUS Crew
-Nhóm nhảy Dff",học viện,học viện
-Học tại học viện có nhàn không?,Học tại học viện có nhàn không?,Nhàn hay không tùy bản thân bạn. Bạn chăm học thì NHÀN.,học viện,học viện
-điểm chuẩn năm 2024 ngành CNTT là bao nhiêu,Điểm chuẩn của ngành công nghệ thông tin năm 2024 là bao nhiêu?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
-"cơ sở miền bắc, phương thức thi thpt",Chỉ tiêu của ngành an toàn thông tin theo phương thức thi thpt tại cơ sở miền bắc là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
-"điểm chuẩn của ngành công nghệ thông tin năm 2024 cơ sở miền bắc, phương thức thi thpt",Điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là bao nhiêu?,Điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là 26.4,điểm,điểm
-trường còn chế độ trao học bổng cho các sinh viên thi có điểm trên 27 không,Học viện có chương trình hỗ trợ việc làm cho sinh viên không?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
-Khóa 2020 khi điểm thi THPT trên 27 điểm sẽ được học bổng cho năm học đầu tiên. Năm nay còn chế độ đó không,Điểm chuẩn ngành báo chí theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,điểm,học viện
-fuck,Tôi yêu học viện,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,chào hỏi
-điểm chuẩn của ngành công nghệ thông tin năm 2024 fuck,Điểm chuẩn của ngành công nghệ thông tin năm 2024 là bao nhiêu?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
-tôi yêu học viện,Tôi yêu học viện,"Thật tuyệt vời khi bạn yêu Học Viện Công Nghệ Bưu Chính Viễn Thông (PTIT)! Việc yêu thích và tự hào về nơi mình học tập giúp tạo động lực và tạo ra nhiều kỉ niệm đẹp thời sinh viên.
-Nếu bạn có câu hỏi gì liên quan đến học viện, hãy cho mình biết nhé! <3",học viện,học viện
-điểm chuẩn các năm gần đây đăng tăng hay giảm,Điểm chuẩn tất cả các ngành năm 2021?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,điểm,điểm
-Làm sao để kiếm người yêu khi học đại học?,Làm sao để kiếm người yêu khi học đại học,"Việc tìm kiếm người yêu khi đang học đại học có thể là một trải nghiệm thú vị, nhưng đôi khi cũng có thể gặp khó khăn. Đây là vài gợi ý:
-1. Tham gia các hoạt động ngoại khóa: Tham gia câu lạc bộ, tổ chức hoặc các hoạt động ngoại khóa khác giúp bạn gặp gỡ nhiều người mới, có cơ hội tìm kiếm những người có sở thích chung.
-2. Kết bạn qua học tập: Tạo dựng mối quan hệ với các bạn cùng lớp hoặc nhóm học tập. Bạn có thể gặp gỡ người khác qua các buổi học nhóm, dự án chung, hoặc các hoạt động học tập khác.
-3. Sử dụng các ứng dụng hẹn hò: Các ứng dụng như Tinder, Bumble, hay các mạng xã hội khác cũng là nơi để bạn có thể gặp gỡ những người mới.
-4. Học tập và giao tiếp tự nhiên: Hãy tự nhiên trong việc học tập và giao tiếp với bạn bè, đồng nghiệp. Cơ hội gặp gỡ người thích hợp có thể đến từ những mối quan hệ này.
-5. Thời gian cho bản thân: Hãy dành thời gian để phát triển bản thân, điều này cũng giúp bạn gặp gỡ được những người có cùng sở thích và mục tiêu.
-Chúc bạn thành công và tìm được một mối quan hệ ý nghĩa!.",học viện,học viện
-Cách thức xét duyệt học bổng cho từng kì là như nào,Mình muốn đăng ký ký túc xá thì như nào?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,tuyển sinh
-Điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm nay tại cơ sở miền bắc là bao nhiêu?,Điểm chuẩn ngành công nghệ thông tin việt nhật theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là bao nhiêu?,Điểm chuẩn ngành công nghệ thông tin việt nhật theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là 24.25,điểm,điểm
-điểm chuẩn ngành cntt năm nay,Điểm chuẩn của ngành công nghệ thông tin năm 2024 là bao nhiêu?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
-"miền bắc, thpt",Chỉ tiêu của ngành báo chí theo phương thức thi thpt tại cơ sở miền bắc là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
-"điểm chuẩn của ngành công nghệ thông tin năm 2024 miền bắc, thpt",Điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là bao nhiêu?,Điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là 26.4,điểm,điểm
-"miền bắc, xtkh",Chỉ tiêu ngành công nghệ internet vạn vật năm 2024 theo xét tuyển kết hợp tại cơ sở miền bắc là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
-"điểm chuẩn của ngành công nghệ thông tin năm 2024 miền bắc, xtkh",Điểm chuẩn ngành công nghệ thông tin theo phương thức xét tuyển kết hợp năm 2024 tại cơ sở miền bắc là bao nhiêu?,Điểm chuẩn ngành công nghệ thông tin theo phương thức xét tuyển kết hợp năm 2024 tại cơ sở miền bắc là 27.01,điểm,điểm
-"miền nam, tư duy",Chỉ tiêu của Marketing chương trình chất lượng cao theo phương thức thi đánh giá tư duy tại cơ sở miền nam là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
-"điểm chuẩn của ngành công nghệ thông tin năm 2024 miền nam, tư duy",Điểm chuẩn ngành công nghệ thông tin theo phương thức thi đánh giá tư duy năm 2024 tại cơ sở miền nam là bao nhiêu?,Điểm chuẩn ngành công nghệ thông tin theo phương thức thi đánh giá tư duy năm 2024 tại cơ sở miền nam là 18.01,điểm,điểm
-điểm chuẩn của năm 2024 là bao nhiêu tại cơ sở miền bắc ngành CNTT,Điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là bao nhiêu?,Điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là 26.4,điểm,điểm
-Ngành Công nghệ thông tin xét tuyển theo tổ hợp nào?,Ngành Công nghệ thông tin xét tuyển theo tổ hợp nào?,Ngành Công nghệ thông tin xét tuyển theo tổ hợp: A00 A01 ,ngành đào tạo,ngành đào tạo
-còn cơ sở miền nam,Các ngành và điểm chuẩn tại cơ sở miền nam?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,điểm,ngành đào tạo
-Những ngành học mới trong học viện năm 2024?,Những ngành học mới trong học viện năm 2024?,Bạn muốn hỏi ngành mới của học viện ở cơ sở miền bắc hay miền nam.,ngành đào tạo,ngành đào tạo
-miền bắc,Miền bắc đào tạo những ngành mới nào?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
-những ngành học mới trong học viện năm 2024 miền bắc,Những ngành học mới trong học viện năm 2024 tại cơ sở miền bắc?,"Cơ sở miền bắc có đào tạo thêm các ngành mới so với năm trước là:
-1.Ngành quan hệ công chúng (Ngành Marketing)
-2.Thiết kế và phát triển Game (Ngành Công nghệ đa phương tiện)
-3.Công nghệ thông tin Việt Nhật
-Những ngành học này được thiết kế để đáp ứng như cầu ngày càng cao của thị học viện lao động và xu hướng công nghệ hiện đại.",ngành đào tạo,ngành đào tạo
-"Quy định, quy chế tuyển sinh của học viện như nào","Quy định, quy chế tuyển sinh của học viện?","Quy chế 1: Xét tuyển theo ngành và theo tổ hợp môn thi xét tuyển.
-Quy chế 2: Điểm trúng tuyển của các tổ hợp môn thi trong cùng một ngành là bằng nhau.
-Quy chế 3: Xét trúng tuyển từ thí sinh có kết quả cao xuống và đảm bảo chất lượng tuyển sinh.
-Quy chế 4: Điểm trúng tuyển được tính theo thang điểm 10, tổng điểm tối đa của 3 bài thi trong tổ hợp xét tuyển là 30 điểm.
-Quy chế 5: Xét tuyển các nguyện vọng bình đẳng theo kết quả thi (điểm trúng tuyển giữa các nguyện vọng là bằng nhau), nếu thí sinh không trúng tuyển nguyện vọng ở thứ tự ưu tiên thứ nhất (nguyện vọng 1) thì sẽ được tự động xét tuyển ở nguyện vọng ưu tiên thứ hai (nguyện vọng 2) và kế tiếp.
-Quy chế 6: Học viện không sử dụng kết quả miễn thi bài thi môn ngoại ngữ và điểm thi được bảo lưu để xét tuyển.
-Quy chế 7: Thí sinh chỉ trúng tuyển vào 1 nguyện vọng ưu tiên cao nhất trong danh sách các nguyện vọng đã đăng ký, khi đã trúng tuyển ở nguyện vọng nào thì không được xét tuyển tiếp ở nguyện vọng sau.
-Quy chế 8: Đối với các thí sinh bằng điểm xét tuyển ở cuối danh sách, nếu vẫn còn vượt chỉ tiêu thì ưu tiên thí sinh có nguyện vọng cao hơn theo Quy chế tuyển sinh của Bộ Giáo dục và Đào tạo, Học viện không sử dụng tiêu chí phụ riêng để xét tuyển.
-Quy chế 9: Các điều kiện khác thực hiện theo Quy chế tuyển sinh đại học hệ chính quy hiện hành của Bộ Giáo dục và Đào tạo.",tuyển sinh,tuyển sinh
+Học viện có bao nhiêu loại học bổng?,Học viện có bao nhiêu loại học bổng,"Có 3 loại học bổng là: học bổng đặc biệt, học bổng toàn phần và học bổng cho thí sinh đạt thành tích cao",học bổng,học bổng
+chi tiết về loại học bổng đặc biệt,Chi tiết về loại học bổng đặc biệt,"Năm 2024, Học viện Công nghệ Bưu chính Viễn thông cấp tối đa 30 suất học bổng đặc biệt, giá trị mỗi suất tới 500 triệu đồng cho các thí sinh xuất sắc (gồm miễn học phí toàn thời gian học, chi phí ăn ở, kinh phí nghiên cứu khoa học, thực tập ở nước ngoài, kinh phí hỗ trợ từ doanh nghiệp đối tác và các hỗ trợ khác).
+Đối tượng xét cấp học bổng đặc biệt là các thí sinh tham dự kỳ thi chọn đội tuyển quốc gia dự thi Olympic quốc tế, thí sinh đạt giải Nhất, Nhì, Ba trong kỳ thi chọn học sinh giỏi quốc gia các môn Toán, Lý và Tin học; thí sinh có điểm thi tốt nghiệp THPT từ 29,0 điểm trở lên. Ngoài ra, người được nhận học bổng còn phải đảm bảo điểm trung bình chung tích lũy năm học liên tục đạt từ loại Giỏi trở lên.",học bổng,học bổng
+chi tiết về loại học bổng đặc biệt học bổng toàn phần như nào,Chi tiết về loại học bổng đặc biệt,"Năm 2024, Học viện Công nghệ Bưu chính Viễn thông cấp tối đa 30 suất học bổng đặc biệt, giá trị mỗi suất tới 500 triệu đồng cho các thí sinh xuất sắc (gồm miễn học phí toàn thời gian học, chi phí ăn ở, kinh phí nghiên cứu khoa học, thực tập ở nước ngoài, kinh phí hỗ trợ từ doanh nghiệp đối tác và các hỗ trợ khác).
+Đối tượng xét cấp học bổng đặc biệt là các thí sinh tham dự kỳ thi chọn đội tuyển quốc gia dự thi Olympic quốc tế, thí sinh đạt giải Nhất, Nhì, Ba trong kỳ thi chọn học sinh giỏi quốc gia các môn Toán, Lý và Tin học; thí sinh có điểm thi tốt nghiệp THPT từ 29,0 điểm trở lên. Ngoài ra, người được nhận học bổng còn phải đảm bảo điểm trung bình chung tích lũy năm học liên tục đạt từ loại Giỏi trở lên.",học bổng,học bổng
+chi tiết về học bổng toàn phần,Chi tiết về loại học bổng toàn phần,"Năm 2024, Học viện Công nghệ Bưu chính Viễn thông cấp tối đa 50 suất học bổng toàn phần với giá trị học bổng tới 250 triệu đồng (tương đương học phí toàn khóa học của chương trình chất lượng cao) cho các thí sinh đoạt giải Nhất trong kỳ thi học sinh giỏi cấp Tỉnh/Thành phố trực thuộc TW các môn Toán, Lý và Tin học. Người được nhận học bổng toàn phần phải đảm bảo điểm trung bình chung tích lũy năm học liên tục đạt từ loại Giỏi trở lên trong thời gian học tập.",học bổng,học bổng
+chi tiết học bổng cho thí sinh thành tích cao,Chi tiết về loại học bổng cho thí sinh đạt thành tích cao,"Học viện tiếp tục duy trì chính sách học bổng cho các thí sinh đạt thành tích cao:
++ Học bổng miễn 100% học phí trong năm học thứ nhất với tối đa 100 suất cho các thí sinh đạt giải trong kỳ thi học sinh giỏi quốc tế, quốc gia hoặc thí sinh đạt giải Nhất, Nhì trong kỳ thi học sinh giải cấp Tỉnh, Thành phố trực thuộc TW các môn Toán, Lý, Hóa và Tin học hoặc đạt kết quả cao trong kỳ thi tốt nghiệp THPT.
++ Học bổng miễn 50% học phí trong năm học thứ nhất với tối đa 300 suất cho các thí sinh đạt giải trong các kỳ thi học sinh giỏi và các thí sinh đạt kết quả cao trong kỳ thi tốt nghiệp THPT.
+Ghi chú: Thí sinh chỉ được xét và cấp một Loại học bổng trong chính sách học bổng nêu trên; xét cấp học bổng thực hiện xét từ trên xuống cho đến hết số suất học bổng.
+Ngoài ra, sinh viên còn có nhiều cơ hội để được nhận các xuất học bổng của các doanh nghiệp hàng đầu như VNPT, Mobifone, Viettel, Samsung, FPT, AGR, …",học bổng,học bổng
+Học viện có bao nhiêu loại học bổng?,Học viện có bao nhiêu loại học bổng,"Có 3 loại học bổng là: học bổng đặc biệt, học bổng toàn phần và học bổng cho thí sinh đạt thành tích cao",học bổng,học bổng
+học bổng đạt thành tích cao như nào,học bổng cho thí sinh đạt thành tích cao,"Học viện tiếp tục duy trì chính sách học bổng cho các thí sinh đạt thành tích cao:
++ Học bổng miễn 100% học phí trong năm học thứ nhất với tối đa 100 suất cho các thí sinh đạt giải trong kỳ thi học sinh giỏi quốc tế, quốc gia hoặc thí sinh đạt giải Nhất, Nhì trong kỳ thi học sinh giải cấp Tỉnh, Thành phố trực thuộc TW các môn Toán, Lý, Hóa và Tin học hoặc đạt kết quả cao trong kỳ thi tốt nghiệp THPT.
++ Học bổng miễn 50% học phí trong năm học thứ nhất với tối đa 300 suất cho các thí sinh đạt giải trong các kỳ thi học sinh giỏi và các thí sinh đạt kết quả cao trong kỳ thi tốt nghiệp THPT.
+Ghi chú: Thí sinh chỉ được xét và cấp một Loại học bổng trong chính sách học bổng nêu trên; xét cấp học bổng thực hiện xét từ trên xuống cho đến hết số suất học bổng.
+Ngoài ra, sinh viên còn có nhiều cơ hội để được nhận các xuất học bổng của các doanh nghiệp hàng đầu như VNPT, Mobifone, Viettel, Samsung, FPT, AGR, …",học bổng,học bổng
+học bổng đặc biệt như nào ?,học bổng đặc biệt,"Năm 2024, Học viện Công nghệ Bưu chính Viễn thông cấp tối đa 30 suất học bổng đặc biệt, giá trị mỗi suất tới 500 triệu đồng cho các thí sinh xuất sắc (gồm miễn học phí toàn thời gian học, chi phí ăn ở, kinh phí nghiên cứu khoa học, thực tập ở nước ngoài, kinh phí hỗ trợ từ doanh nghiệp đối tác và các hỗ trợ khác).
+Đối tượng xét cấp học bổng đặc biệt là các thí sinh tham dự kỳ thi chọn đội tuyển quốc gia dự thi Olympic quốc tế, thí sinh đạt giải Nhất, Nhì, Ba trong kỳ thi chọn học sinh giỏi quốc gia các môn Toán, Lý và Tin học; thí sinh có điểm thi tốt nghiệp THPT từ 29,0 điểm trở lên. Ngoài ra, người được nhận học bổng còn phải đảm bảo điểm trung bình chung tích lũy năm học liên tục đạt từ loại Giỏi trở lên.",học bổng,học bổng
 Các phương thức xét tuyển của học viện?,Các phương thức xét tuyển của học viện?," Xét tuyển tài năng
  Xét tuyển dựa vào kết quả thi THPT
  Xét tuyển kết hợp
@@ -335,26 +551,315 @@ Hồ sơ nhập học cần chuẩn bị những gì?,Hồ sơ nhập học cầ
 9. Giấy giới thiệu di chuyển đăng ký nghĩa vụ quân sự (đối với Nam giới) do Ban chỉ huy quân sự quận, huyện nơi đăng ký hộ khẩu thường trú cấp.
 10. Bản chụp Thẻ bảo hiểm y tế.
 11. 06 ảnh cỡ 3×4, chụp trong vòng 6 tháng trở lại đây (ghi họ tên và ngày sinh vào mặt sau).",tuyển sinh,tuyển sinh
-Học viện có bao nhiêu loại học bổng?,Học viện có bao nhiêu loại học bổng,"Có 3 loại học bổng là: học bổng đặc biệt, học bổng toàn phần và học bổng cho thí sinh đạt thành tích cao",học bổng,học bổng
-học bổng bao nhiêu tiền,Học phí bình thường là bao nhiêu,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học phí,học bổng
-học viện có loại học bổng học bổng bao nhiêu tiền,Học viện có bao nhiêu loại học bổng,"Có 3 loại học bổng là: học bổng đặc biệt, học bổng toàn phần và học bổng cho thí sinh đạt thành tích cao",học bổng,học bổng
-chi tiết hơn,Chi tiết về B2: Khai báo thông tin?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,tuyển sinh,tuyển sinh
-học viện có loại học bổng chi tiết hơn,Học viện có bao nhiêu loại học bổng,"Có 3 loại học bổng là: học bổng đặc biệt, học bổng toàn phần và học bổng cho thí sinh đạt thành tích cao",học bổng,học bổng
-chi tiết hơn về các loại học bổng,Chi tiết về loại học bổng đặc biệt,"Năm 2024, Học viện Công nghệ Bưu chính Viễn thông cấp tối đa 30 suất học bổng đặc biệt, giá trị mỗi suất tới 500 triệu đồng cho các thí sinh xuất sắc (gồm miễn học phí toàn thời gian học, chi phí ăn ở, kinh phí nghiên cứu khoa học, thực tập ở nước ngoài, kinh phí hỗ trợ từ doanh nghiệp đối tác và các hỗ trợ khác).
-Đối tượng xét cấp học bổng đặc biệt là các thí sinh tham dự kỳ thi chọn đội tuyển quốc gia dự thi Olympic quốc tế, thí sinh đạt giải Nhất, Nhì, Ba trong kỳ thi chọn học sinh giỏi quốc gia các môn Toán, Lý và Tin học; thí sinh có điểm thi tốt nghiệp THPT từ 29,0 điểm trở lên. Ngoài ra, người được nhận học bổng còn phải đảm bảo điểm trung bình chung tích lũy năm học liên tục đạt từ loại Giỏi trở lên.",học bổng,học bổng
+Các mốc thời gian quan trọng trong việc tuyển sinh?,Các mốc thời gian quan trọng,"Mốc thí sinh đăng ký, điều chỉnh nguyện vọng xét tuyển diễn ra vào: 2024-07-10
+Mốc nộp lệ phí xét tuyển trực tuyến diễn ra vào: 2024-07-28
+Mốc thông báo thí sinh trúng tuyển đợt 1 diễn ra vào: 2024-08-12
+Mốc hoàn thành xác nhận nhập học trực tuyến đợt 1 trên hệ thống diễn ra vào: 2024-08-18",tuyển sinh,tuyển sinh
+Điểm chuẩn tất cả các ngành năm nay?,Điểm chuẩn tất cả các ngành năm 2024?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
+"điểm chuẩn tất cả các ngành năm 2024 miền nam, xtkh",Điểm chuẩn tất cả các ngành theo phương thức xét tuyển kết hợp năm 2024 tại cơ sở miền nam?,"Điểm chuẩn tất cả các ngành theo phương thức xét tuyển kết hợp năm 2024 tại cơ sở miền nam là:
+Kỹ thuật điện tử viễn thông: 23.77
+Công nghệ kỹ thuật điện, điện tử: 24.36
+Kỹ thuật điều khiển và tự động hóa: 23.7
+Công nghệ internet vạn vật (iot): 24.83
+Công nghệ thông tin: 22.2
+An toàn thông tin: 21.89
+Công nghệ đa phương tiện: 23.46
+Marketing: 23.87
+Kế toán: 22.8
+Công nghệ thông tin chương trình chất lượng cao : 23.36
+Marketing chương trình chất lượng cao : 21.53",điểm,điểm
+"điểm chuẩn tất cả các ngành năm 2024 miền nam, thpt",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền nam?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền nam là:
+Kỹ thuật điện tử viễn thông: 23.23
+Công nghệ kỹ thuật điện, điện tử: 20.85
+Kỹ thuật điều khiển và tự động hóa: 19.65
+Công nghệ internet vạn vật (iot): 18.0
+Công nghệ thông tin: 25.17
+An toàn thông tin: 24.68
+Công nghệ đa phương tiện: 23.95
+Quản trị kinh doanh: 18.4
+Marketing: 24.24
+Kế toán: 20.95
+Công nghệ thông tin chương trình chất lượng cao: 23.25
+Marketing chương trình chất lượng cao: 18.0",điểm,điểm
+"điểm chuẩn tất cả các ngành năm 2024 miền bắc, thpt",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền bắc?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền bắc là:
+Kỹ thuật điện tử viễn thông: 25.75
+Công nghệ kỹ thuật điện, điện tử: 25.46
+Kỹ thuật điều khiển và tự động hóa: 26.08
+Công nghệ thông tin: 26.4
+An toàn thông tin: 25.85
+Khoa học máy tính: 26.31
+Kỹ thuật dữ liệu (ngành mạng máy tính và truyền thông dữ liệu): 25.59
+Công nghệ thông tin việt nhật: 24.25
+Công nghệ thông tin (cử nhân định hướng ứng dụng): 24.87
+Công nghệ đa phương tiện: 25.75
+Truyền thông đa phương tiện: 25.94
+Báo chí: 25.29
+Quản trị kinh doanh: 25.17
+Thương mại điện tử: 26.09
+Marketing: 25.85
+Kế toán: 25.29
+Công nghệ tài chính (fintech): 25.61
+Quan hệ công chúng: 25.15
+Thiết kế và phát triển game: 24.97
+Công nghệ thông tin chương trình chất lượng cao: 25.43
+Kế toán chương trình chất lượng cao: 22.5
+Marketing chương trình chất lượng cao: 24.25",điểm,điểm
+học phí các ngành thường thì như nào,Học phí của các ngành học là bao nhiêu?,"Học phí tùy theo từng ngành, trung bình khoảng 33.000.000đ đến 35.000.000đ/1 năm cho hệ thường, chất lượng cao > 40.000.000đ/1 năm",học phí,học phí
+học phí ngành kinh tế,Học phí các ngành kinh tế?,Các ngành kinh tế có học phí năm 2024: 820.000đ/tín chỉ.,học phí,học phí
+kỹ thuật,Học phí các ngành kỹ thuật?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học phí,chào hỏi
+học phí ngành kỹ thuật,Học phí các ngành kỹ thuật?,Các ngành kinh tế có học phí năm 2024: 880.000đ/tín chỉ.,học phí,học phí
+Học phí các ngành ở học viện như nào?,Học phí của các ngành học là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học phí,học phí
+Học phí các ngành ở học viện là bao nhiêu,Học phí của các ngành học là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học phí,học phí
+Các câu lạc bộ có ở học viện?,Các câu lạc bộ có ở học viện?,"Các câu lạc bộ tại học viện:
+1. CLB học thuật
+CLB Multimedia
+CLB IT - ITPTIT
+CLB Lập trình - ProPTIT
+CLB Kế toán - CLB ASC
+CLB Tiếng Anh - CLB ELFs
+CLB An toàn thông tin - CLB ISP
+CLB Điện tử PTIT - CLB EIE
+2. Hoạt động Xã hội Cộng đồng
+CLB Sinh viên tình nguyện PTIT - CLB SVTN PTIT
+Đội máu PTIT
+Đội Cờ đỏ
+3. Truyền thông Sự kiện
+CDA - CLB Những nhà quản trị năng động sáng tạo
+S4C - CLB Truyền thông & Kỹ năng mềm
+Sổ Media
+4. Thể thao
+CLB Bóng đá
+CLB Bóng chuyền
+CLB Cầu lông
+CLB Taekwondo
+CLB Võ thuật mở rộng - CLB EMA
+CLB Thể thao ngoài trời - CLB Street Workout
+CLB Thể thao điện tử
+5. Văn hoá nghệ thuật
+CLB Sách và Hành động PTIT
+CLB Guitar
+CLB Văn hoá nghệ thuật
+Nhóm nhảy MOMUS Crew
+Nhóm nhảy Dff",học viện,học viện
 Quy trình nộp hồ sơ trực tuyến như nào?,Quy trình nộp hồ sơ trực tuyến như nào?,"B1: Đăng ký tài khoản
 B2: Khai báo thông tin
 B3: Đăng ký nguyện vọng
 B4: Thanh toán trực tuyến
 B5: Nộp hồ sơ về Học viện
 B6: Nhận thông tin kết quả",tuyển sinh,tuyển sinh
-Các mốc thời gian quan trọng trong việc tuyển sinh?,Các mốc thời gian quan trọng,"Mốc thí sinh đăng ký, điều chỉnh nguyện vọng xét tuyển diễn ra vào: 2024-07-10
-Mốc nộp lệ phí xét tuyển trực tuyến diễn ra vào: 2024-07-28
-Mốc thông báo thí sinh trúng tuyển đợt 1 diễn ra vào: 2024-08-12
-Mốc hoàn thành xác nhận nhập học trực tuyến đợt 1 trên hệ thống diễn ra vào: 2024-08-18",tuyển sinh,tuyển sinh
+điểm chuẩn ngành cntt năm nay,Điểm chuẩn của ngành công nghệ thông tin năm 2024 là bao nhiêu?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
+"điểm chuẩn của ngành công nghệ thông tin năm 2024 là bao nhiêu miền bắc, thpt",Điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là bao nhiêu?,Điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là 26.4,điểm,điểm
+"điểm chuẩn của ngành công nghệ thông tin năm 2024 là bao nhiêu miền nam, thpt",Điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm 2024 tại cơ sở miền nam là bao nhiêu?,Điểm chuẩn ngành công nghệ thông tin theo phương thức thi thpt năm 2024 tại cơ sở miền nam là 25.17,điểm,điểm
+điểm chuẩn ngành cntt việt nhật,Điểm chuẩn của ngành công nghệ thông tin việt nhật là bao nhiêu?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
+"miền bắc, thpt",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền bắc?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,điểm,ngành đào tạo
+"miền bắc, năm nay theo phương thức thi thpt",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền bắc?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền bắc là:
+Kỹ thuật điện tử viễn thông: 25.75
+Công nghệ kỹ thuật điện, điện tử: 25.46
+Kỹ thuật điều khiển và tự động hóa: 26.08
+Công nghệ thông tin: 26.4
+An toàn thông tin: 25.85
+Khoa học máy tính: 26.31
+Kỹ thuật dữ liệu (ngành mạng máy tính và truyền thông dữ liệu): 25.59
+Công nghệ thông tin việt nhật: 24.25
+Công nghệ thông tin (cử nhân định hướng ứng dụng): 24.87
+Công nghệ đa phương tiện: 25.75
+Truyền thông đa phương tiện: 25.94
+Báo chí: 25.29
+Quản trị kinh doanh: 25.17
+Thương mại điện tử: 26.09
+Marketing: 25.85
+Kế toán: 25.29
+Công nghệ tài chính (fintech): 25.61
+Quan hệ công chúng: 25.15
+Thiết kế và phát triển game: 24.97
+Công nghệ thông tin chương trình chất lượng cao: 25.43
+Kế toán chương trình chất lượng cao: 22.5
+Marketing chương trình chất lượng cao: 24.25",điểm,điểm
+điểm chuẩn ngành cntt việt nhật năm nay?,Điểm chuẩn của ngành công nghệ thông tin việt nhật năm 2024 là bao nhiêu?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
+"điểm chuẩn của ngành công nghệ thông tin việt nhật năm 2024 là bao nhiêu miền bắc, thpt",Điểm chuẩn ngành công nghệ thông tin việt nhật theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là bao nhiêu?,Điểm chuẩn ngành công nghệ thông tin việt nhật theo phương thức thi thpt năm 2024 tại cơ sở miền bắc là 24.25,điểm,điểm
+Làm sao để kiếm người yêu khi học đại học?,Làm sao để kiếm người yêu khi học đại học,"Việc tìm kiếm người yêu khi đang học đại học có thể là một trải nghiệm thú vị, nhưng đôi khi cũng có thể gặp khó khăn. Đây là vài gợi ý:
+1. Tham gia các hoạt động ngoại khóa: Tham gia câu lạc bộ, tổ chức hoặc các hoạt động ngoại khóa khác giúp bạn gặp gỡ nhiều người mới, có cơ hội tìm kiếm những người có sở thích chung.
+2. Kết bạn qua học tập: Tạo dựng mối quan hệ với các bạn cùng lớp hoặc nhóm học tập. Bạn có thể gặp gỡ người khác qua các buổi học nhóm, dự án chung, hoặc các hoạt động học tập khác.
+3. Sử dụng các ứng dụng hẹn hò: Các ứng dụng như Tinder, Bumble, hay các mạng xã hội khác cũng là nơi để bạn có thể gặp gỡ những người mới.
+4. Học tập và giao tiếp tự nhiên: Hãy tự nhiên trong việc học tập và giao tiếp với bạn bè, đồng nghiệp. Cơ hội gặp gỡ người thích hợp có thể đến từ những mối quan hệ này.
+5. Thời gian cho bản thân: Hãy dành thời gian để phát triển bản thân, điều này cũng giúp bạn gặp gỡ được những người có cùng sở thích và mục tiêu.
+Chúc bạn thành công và tìm được một mối quan hệ ý nghĩa!.",học viện,học viện
+Học viện có bao nhiêu loại học bổng?,Học viện có bao nhiêu loại học bổng,"Có 3 loại học bổng là: học bổng đặc biệt, học bổng toàn phần và học bổng cho thí sinh đạt thành tích cao",học bổng,học bổng
+chi tiết về học bổng toàn phần,Chi tiết về loại học bổng toàn phần,"Năm 2024, Học viện Công nghệ Bưu chính Viễn thông cấp tối đa 50 suất học bổng toàn phần với giá trị học bổng tới 250 triệu đồng (tương đương học phí toàn khóa học của chương trình chất lượng cao) cho các thí sinh đoạt giải Nhất trong kỳ thi học sinh giỏi cấp Tỉnh/Thành phố trực thuộc TW các môn Toán, Lý và Tin học. Người được nhận học bổng toàn phần phải đảm bảo điểm trung bình chung tích lũy năm học liên tục đạt từ loại Giỏi trở lên trong thời gian học tập.",học bổng,học bổng
+Hồ sơ nhập học cần chuẩn bị những gì?,Hồ sơ nhập học cần chuẩn bị những gì?,"Hồ sơ nhập học cần chuẩn bị các thứ sau:
+1. Bản sao hợp lệ Học bạ THPT
+2. Bản sao hợp lệ Bằng tốt nghiệp hoặc Giấy chứng nhận tốt nghiệp THPT tạm thời 
+3. Bản sao hợp lệ Giấy khai sinh
+4. Bản sao hợp lệ các giấy tờ pháp lý minh chứng đối tượng ưu tiên được hưởng (nếu có)
+5. Giấy triệu tập trúng tuyển của Học viện Công nghệ Bưu chính Viễn thông (bản gốc).
+6. Bản chính Giấy chứng nhận học sinh giỏi quốc gia hoặc cấp tỉnh, thành phố trực thuộc TW; Chứng chỉ quốc tế, Giấy chứng nhận kết quả thi đánh giá năng lực năm 2023 (đối với các thí sinh thuộc đối tượng xét trúng tuyển sớm – Xét tuyển kết hợp hoặc Đánh giá năng lực).
+7. Hồ sơ sinh viên (In từ hệ thống - đóng dấu giáp lai và xác nhận của UBND xã/phường)
+8. Giấy chuyển sinh hoạt Đảng, Đoàn (nếu là Đảng viên, Đoàn viên) về Đảng bộ hoặc Đoàn Thanh niên Cộng sản Hồ Chí Minh của Học viện Công nghệ Bưu chính Viễn thông.
+9. Giấy giới thiệu di chuyển đăng ký nghĩa vụ quân sự (đối với Nam giới) do Ban chỉ huy quân sự quận, huyện nơi đăng ký hộ khẩu thường trú cấp.
+10. Bản chụp Thẻ bảo hiểm y tế.
+11. 06 ảnh cỡ 3×4, chụp trong vòng 6 tháng trở lại đây (ghi họ tên và ngày sinh vào mặt sau).",tuyển sinh,tuyển sinh
+chi tiết bước 1,Chi tiết về B1: Đăng ký tài khoản?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,tuyển sinh,tuyển sinh
+chi tiết b1 đăng ký tài khoản,Chi tiết về B1: Đăng ký tài khoản?,"Đăng ký tài khoản trên hệ thống https://xettuyen.ptit.edu.vn với địa chỉ email hoặc tài khoản Google, Facebook",tuyển sinh,tuyển sinh
+Các phương thức xét tuyển của học viện?,Các phương thức xét tuyển của học viện?," Xét tuyển tài năng
+ Xét tuyển dựa vào kết quả thi THPT
+ Xét tuyển kết hợp
+ Xét tuyển dựa vào kết quả thi đánh giá năng lực
+ Xét tuyển dựa vào kết quả thi đánh giá tư duy",tuyển sinh,tuyển sinh
+Học viện xét tuyển các phương thức nào,Các phương thức xét tuyển của học viện?," Xét tuyển tài năng
+ Xét tuyển dựa vào kết quả thi THPT
+ Xét tuyển kết hợp
+ Xét tuyển dựa vào kết quả thi đánh giá năng lực
+ Xét tuyển dựa vào kết quả thi đánh giá tư duy",tuyển sinh,tuyển sinh
+các hình thức xét tuyển là gì,Các hình thức xét tuyển là gì?,"Có 4 hình thức xét tuyển: xét tuyển dựa trên kết quả thi THPT, xét tuyển tài năng, xét tuyển kết hợp và xét tuyển dựa vào kết quả thi đánh giá năng lực, tư duy.",tuyển sinh,tuyển sinh
+Điểm chuẩn tất cả các ngành năm nay?,Điểm chuẩn tất cả các ngành năm 2024?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
+"điểm chuẩn tất cả các ngành năm 2024 miền bắc, xtkh",Điểm chuẩn tất cả các ngành theo xét tuyển kết hợp năm 2024 tại cơ sở miền bắc?,"Điểm chuẩn tất cả các ngành theo phương thức xét tuyển kết hợp năm 2024 tại cơ sở miền bắc là:
+Kỹ thuật điện tử viễn thông: 26.42
+Kỹ thuật điều khiển và tự động hóa: 27.71
+Công nghệ kỹ thuật điện, điện tử: 25.07
+Công nghệ thông tin: 27.01
+An toàn thông tin: 26.8
+Khoa học máy tính: 28.0
+Kỹ thuật dữ liệu (ngành mạng máy tính và truyên thông dừ liệu): 23.74
+Công nghệ thông tin (cử nhân, định hướng ứng dụng): 25.5
+Công nghệ đa phương tiện: 27.0
+Truyền thông đa phương tiện: 28.0
+Báo chí: 26.73
+Quản trị kinh doanh: 25.37
+Marketing: 26.97
+Thương mại điện tử: 27.26
+Kế toán: 25.77
+Công nghệ tài chính (fintech): 26.7
+Công nghệ thông tin chương trình chất lượng cao: 25.64
+Marketing chương trình chất lượng cao: 25.51
+Kế toán chương trình chất lượng cao: 23.36
+Công nghệ thông tin (liên kết với đại học la trobe. austraha): 23.67
+Cổng nghệ tài chính (liên kết với đại học hudderssield. vương quốc anh): 22.83
+Công nghệ đa phương tiện (liên kết với đại học canberra. australia): 24.3",điểm,điểm
+"điểm chuẩn tất cả các ngành năm 2024 miền bắc, tư duy","Điểm chuẩn tất cả các ngành theo phương thức thi đánh giá năng lực, đánh giá tư duy năm 2024 tại cơ sở miền bắc?","Điểm chuẩn tất cả các ngành theo phương thức thi đánh giá năng lực, đánh giá tư duy năm 2024 tại cơ sở miền bắc là:
+Kỹ thuật điện tử viễn thông: 20.65
+Kỹ thuật điều khiển và tự động hóa: 22.05
+Công nghệ kỹ thuật điện, điện tử: 19.84
+Công nghệ thông tin: 22.55
+An toàn thông tin: 21.6
+Khoa học máy tính: 23.5
+Kỹ thuật dữ liệu (ngành mạng máy tính và truyên thông dừ liệu): 19.45
+Công nghệ thông tin (cử nhân, định hướng ứng dụng): 17.1
+Công nghệ đa phương tiện: 20.21
+Truyền thông đa phương tiện: 20.7
+Báo chí: 18.5
+Quản trị kinh doanh: 18.3
+Marketing: 19.85
+Thương mại điện tử: 20.7
+Kế toán: 18.5
+Công nghệ tài chính (fintech): 19.45
+Công nghệ thông tin chương trình chất lượng cao: 19.4
+Marketing chương trình chất lượng cao: 17.45
+Kế toán chương trình chất lượng cao: 15.0
+Công nghệ thông tin (liên kết với đại học la trobe. austraha): 15.0
+Cổng nghệ tài chính (liên kết với đại học huddersísield. vương quốc anh): 15.0
+Công nghệ đa phương tiện (liên kết với đại học canberra. australia): 16.6",điểm,điểm
+"điểm chuẩn tất cả các ngành năm 2024 miền bắc, thpt",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền bắc?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền bắc là:
+Kỹ thuật điện tử viễn thông: 25.75
+Công nghệ kỹ thuật điện, điện tử: 25.46
+Kỹ thuật điều khiển và tự động hóa: 26.08
+Công nghệ thông tin: 26.4
+An toàn thông tin: 25.85
+Khoa học máy tính: 26.31
+Kỹ thuật dữ liệu (ngành mạng máy tính và truyền thông dữ liệu): 25.59
+Công nghệ thông tin việt nhật: 24.25
+Công nghệ thông tin (cử nhân định hướng ứng dụng): 24.87
+Công nghệ đa phương tiện: 25.75
+Truyền thông đa phương tiện: 25.94
+Báo chí: 25.29
+Quản trị kinh doanh: 25.17
+Thương mại điện tử: 26.09
+Marketing: 25.85
+Kế toán: 25.29
+Công nghệ tài chính (fintech): 25.61
+Quan hệ công chúng: 25.15
+Thiết kế và phát triển game: 24.97
+Công nghệ thông tin chương trình chất lượng cao: 25.43
+Kế toán chương trình chất lượng cao: 22.5
+Marketing chương trình chất lượng cao: 24.25",điểm,điểm
+"điểm chuẩn tất cả các ngành năm 2024 miền bắc, thpt",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền bắc?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền bắc là:
+Kỹ thuật điện tử viễn thông: 25.75
+Công nghệ kỹ thuật điện, điện tử: 25.46
+Kỹ thuật điều khiển và tự động hóa: 26.08
+Công nghệ thông tin: 26.4
+An toàn thông tin: 25.85
+Khoa học máy tính: 26.31
+Kỹ thuật dữ liệu (ngành mạng máy tính và truyền thông dữ liệu): 25.59
+Công nghệ thông tin việt nhật: 24.25
+Công nghệ thông tin (cử nhân định hướng ứng dụng): 24.87
+Công nghệ đa phương tiện: 25.75
+Truyền thông đa phương tiện: 25.94
+Báo chí: 25.29
+Quản trị kinh doanh: 25.17
+Thương mại điện tử: 26.09
+Marketing: 25.85
+Kế toán: 25.29
+Công nghệ tài chính (fintech): 25.61
+Quan hệ công chúng: 25.15
+Thiết kế và phát triển game: 24.97
+Công nghệ thông tin chương trình chất lượng cao: 25.43
+Kế toán chương trình chất lượng cao: 22.5
+Marketing chương trình chất lượng cao: 24.25",điểm,điểm
+Các câu lạc bộ có ở học viện?,Các câu lạc bộ có ở học viện?,"Các câu lạc bộ tại học viện:
+1. CLB học thuật
+CLB Multimedia
+CLB IT - ITPTIT
+CLB Lập trình - ProPTIT
+CLB Kế toán - CLB ASC
+CLB Tiếng Anh - CLB ELFs
+CLB An toàn thông tin - CLB ISP
+CLB Điện tử PTIT - CLB EIE
+2. Hoạt động Xã hội Cộng đồng
+CLB Sinh viên tình nguyện PTIT - CLB SVTN PTIT
+Đội máu PTIT
+Đội Cờ đỏ
+3. Truyền thông Sự kiện
+CDA - CLB Những nhà quản trị năng động sáng tạo
+S4C - CLB Truyền thông & Kỹ năng mềm
+Sổ Media
+4. Thể thao
+CLB Bóng đá
+CLB Bóng chuyền
+CLB Cầu lông
+CLB Taekwondo
+CLB Võ thuật mở rộng - CLB EMA
+CLB Thể thao ngoài trời - CLB Street Workout
+CLB Thể thao điện tử
+5. Văn hoá nghệ thuật
+CLB Sách và Hành động PTIT
+CLB Guitar
+CLB Văn hoá nghệ thuật
+Nhóm nhảy MOMUS Crew
+Nhóm nhảy Dff",học viện,học viện
+Ngành IoT có được đào tạo ở cơ sở miền bắc không?,Ngành công nghệ internet vạn vật được đào tạo ở miền bắc không?,Ngành công nghệ internet vạn vật chỉ đào tạo ở cơ sở miền nam của Học Viện.,ngành đào tạo,ngành đào tạo
+học phí ngành điện tử viễn thông là bao nhiêu,Học phí Ngành Kỹ thuật Điện tử viễn thông là bao nhiêu?,Ngành Kỹ thuật Điện tử viễn thông có học phí theo tín chỉ năm 2024: 880.000 đ/tín chỉ.,học phí,học phí
+học phí ngành cntt định hướng ứng dụng,Học phí Chương trình Công nghệ thông tin (định hướng ứng dụng) là bao nhiêu?,Chương trình Công nghệ thông tin (định hướng ứng dụng) có học phí 900.000/1 tín chỉ,học phí,học phí
+Hồ sơ nhập học cần chuẩn bị những gì?,Hồ sơ nhập học cần chuẩn bị những gì?,"Hồ sơ nhập học cần chuẩn bị các thứ sau:
+1. Bản sao hợp lệ Học bạ THPT
+2. Bản sao hợp lệ Bằng tốt nghiệp hoặc Giấy chứng nhận tốt nghiệp THPT tạm thời 
+3. Bản sao hợp lệ Giấy khai sinh
+4. Bản sao hợp lệ các giấy tờ pháp lý minh chứng đối tượng ưu tiên được hưởng (nếu có)
+5. Giấy triệu tập trúng tuyển của Học viện Công nghệ Bưu chính Viễn thông (bản gốc).
+6. Bản chính Giấy chứng nhận học sinh giỏi quốc gia hoặc cấp tỉnh, thành phố trực thuộc TW; Chứng chỉ quốc tế, Giấy chứng nhận kết quả thi đánh giá năng lực năm 2023 (đối với các thí sinh thuộc đối tượng xét trúng tuyển sớm – Xét tuyển kết hợp hoặc Đánh giá năng lực).
+7. Hồ sơ sinh viên (In từ hệ thống - đóng dấu giáp lai và xác nhận của UBND xã/phường)
+8. Giấy chuyển sinh hoạt Đảng, Đoàn (nếu là Đảng viên, Đoàn viên) về Đảng bộ hoặc Đoàn Thanh niên Cộng sản Hồ Chí Minh của Học viện Công nghệ Bưu chính Viễn thông.
+9. Giấy giới thiệu di chuyển đăng ký nghĩa vụ quân sự (đối với Nam giới) do Ban chỉ huy quân sự quận, huyện nơi đăng ký hộ khẩu thường trú cấp.
+10. Bản chụp Thẻ bảo hiểm y tế.
+11. 06 ảnh cỡ 3×4, chụp trong vòng 6 tháng trở lại đây (ghi họ tên và ngày sinh vào mặt sau).",tuyển sinh,tuyển sinh
+Các trang web chính thức của học viện?,Các trang web chính thức của học viện?,"Các trang web chính thức của học viện là:
+1. Cổng thông tin học viện: https://portal.ptit.edu.vn/
+2. Cổng thông tin đào tạo: https://daotao.ptit.edu.vn/
+3. Cổng thông tin hợp tác quốc tế: https://htqt.ptit.edu.vn/
+4. Cổng thông tin quản lý khoa học: https://qlkh.ptit.edu.vn/
+5. Cổng thông tin tuyển sinh: https://tuyensinh.ptit.edu.vn/
+6. Fanpage: https://facebook.com/HocvienPTIT
+7. Youtube:  https://www.youtube.com/@PChannels",học viện,học viện
 Điểm chuẩn tất cả các ngành năm 2023?,Điểm chuẩn tất cả các ngành năm 2023?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
-miền bắc tất cả các phương thức,Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền bắc?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,điểm,tuyển sinh
-điểm chuẩn tất cả các ngành năm 2023 miền bắc tất cả các phương thức,Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2023 tại cơ sở miền bắc?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2023 tại cơ sở miền bắc là:
+"điểm chuẩn tất cả các ngành năm 2023 miền bắc, thpt",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2023 tại cơ sở miền bắc?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2023 tại cơ sở miền bắc là:
 Kỹ thuật điện tử viễn thông: 25.68
 Công nghệ kỹ thuật điện, điện tử: 25.01
 Kỹ thuật điều khiển và tự động hóa: 25.4
@@ -372,71 +877,46 @@ Thương mại điện tử: 26.2
 Marketing: 25.8
 Kế toán: 25.05
 Công nghệ tài chính (fintech): 25.35",điểm,điểm
-Ngành Công nghệ Internet vạn vật (IoT) được đào tạo ở cơ sở nào?,Ngành Công nghệ Internet vạn vật (IoT) được đào tạo ở cơ sở nào?,Ngành Công nghệ Internet vạn vật (IoT) được đào tạo ở cơ sở TP Hồ Chí Minh,ngành đào tạo,ngành đào tạo
-Học phí của Chương trình Công nghệ thông tin (định hướng ứng dụng) là bao nhiêu?,Học phí Chương trình Công nghệ thông tin (định hướng ứng dụng) là bao nhiêu?,Chương trình Công nghệ thông tin (định hướng ứng dụng) có học phí 900.000/1 tín chỉ,học phí,học phí
-trường có những câu lạc bộ nào,Trong học viện có những câu lạc bộ nào?,"Các câu lạc bộ tại học viện:
-1. CLB học thuật
-CLB Multimedia
-CLB IT - ITPTIT
-CLB Lập trình - ProPTIT
-CLB Kế toán - CLB ASC
-CLB Tiếng Anh - CLB ELFs
-CLB An toàn thông tin - CLB ISP
-CLB Điện tử PTIT - CLB EIE
-2. Hoạt động Xã hội Cộng đồng
-CLB Sinh viên tình nguyện PTIT - CLB SVTN PTIT
-Đội máu PTIT
-Đội Cờ đỏ
-3. Truyền thông Sự kiện
-CDA - CLB Những nhà quản trị năng động sáng tạo
-S4C - CLB Truyền thông & Kỹ năng mềm
-Sổ Media
-4. Thể thao
-CLB Bóng đá
-CLB Bóng chuyền
-CLB Cầu lông
-CLB Taekwondo
-CLB Võ thuật mở rộng - CLB EMA
-CLB Thể thao ngoài trời - CLB Street Workout
-CLB Thể thao điện tử
-5. Văn hoá nghệ thuật
-CLB Sách và Hành động PTIT
-CLB Guitar
-CLB Văn hoá nghệ thuật
-Nhóm nhảy MOMUS Crew
-Nhóm nhảy Dff",học viện,học viện
-tại sao trường lại được gọi là học viện hoàng gia,Học viện có bao nhiêu loại học bổng,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học bổng,học viện
-trong học viện có những câu lạc bộ nào tại sao trường lại được gọi là học viện hoàng gia,Trong học viện có những câu lạc bộ nào?,"Các câu lạc bộ tại học viện:
-1. CLB học thuật
-CLB Multimedia
-CLB IT - ITPTIT
-CLB Lập trình - ProPTIT
-CLB Kế toán - CLB ASC
-CLB Tiếng Anh - CLB ELFs
-CLB An toàn thông tin - CLB ISP
-CLB Điện tử PTIT - CLB EIE
-2. Hoạt động Xã hội Cộng đồng
-CLB Sinh viên tình nguyện PTIT - CLB SVTN PTIT
-Đội máu PTIT
-Đội Cờ đỏ
-3. Truyền thông Sự kiện
-CDA - CLB Những nhà quản trị năng động sáng tạo
-S4C - CLB Truyền thông & Kỹ năng mềm
-Sổ Media
-4. Thể thao
-CLB Bóng đá
-CLB Bóng chuyền
-CLB Cầu lông
-CLB Taekwondo
-CLB Võ thuật mở rộng - CLB EMA
-CLB Thể thao ngoài trời - CLB Street Workout
-CLB Thể thao điện tử
-5. Văn hoá nghệ thuật
-CLB Sách và Hành động PTIT
-CLB Guitar
-CLB Văn hoá nghệ thuật
-Nhóm nhảy MOMUS Crew
-Nhóm nhảy Dff",học viện,học viện
+"điểm chuẩn tất cả các ngành năm 2023 miền nam, xtkh",Điểm chuẩn tất cả các ngành theo phương thức xét tuyển kết hợp năm 2023 tại cơ sở miền nam?,"Điểm chuẩn tất cả các ngành theo phương thức xét tuyển kết hợp năm 2023 tại cơ sở miền nam là:
+Kỹ thuật điều khiển và tự động hóa: 23.11
+Công nghệ internet vạn vật (iot): 26.46
+Công nghệ thông tin: 22.82
+An toàn thông tin: 24.04
+Công nghệ đa phương tiện: 22.53
+Marketing: 23.53
+Kế toán: 21.67",điểm,điểm
+Ngành Công nghệ thông tin xét tuyển theo tổ hợp nào?,Ngành Công nghệ thông tin xét tuyển theo tổ hợp nào?,Ngành Công nghệ thông tin xét tuyển theo tổ hợp: A00 A01 ,ngành đào tạo,ngành đào tạo
+Những ngành học mới trong học viện năm 2024?,Những ngành học mới trong học viện năm 2024?,Bạn muốn hỏi ngành mới của học viện ở cơ sở miền bắc hay miền nam.,ngành đào tạo,ngành đào tạo
+những ngành học mới trong học viện năm 2024 miền bắc,Những ngành học mới trong học viện năm 2024 tại cơ sở miền bắc?,"Cơ sở miền bắc có đào tạo thêm các ngành mới so với năm trước là:
+1.Ngành quan hệ công chúng (Ngành Marketing)
+2.Thiết kế và phát triển Game (Ngành Công nghệ đa phương tiện)
+3.Công nghệ thông tin Việt Nhật
+Những ngành học này được thiết kế để đáp ứng như cầu ngày càng cao của thị học viện lao động và xu hướng công nghệ hiện đại.",ngành đào tạo,ngành đào tạo
+Học viện có bao nhiêu loại học bổng?,Học viện có bao nhiêu loại học bổng,"Có 3 loại học bổng là: học bổng đặc biệt, học bổng toàn phần và học bổng cho thí sinh đạt thành tích cao",học bổng,học bổng
+chi tiết về học bổng đặc biệt,Chi tiết về loại học bổng đặc biệt,"Năm 2024, Học viện Công nghệ Bưu chính Viễn thông cấp tối đa 30 suất học bổng đặc biệt, giá trị mỗi suất tới 500 triệu đồng cho các thí sinh xuất sắc (gồm miễn học phí toàn thời gian học, chi phí ăn ở, kinh phí nghiên cứu khoa học, thực tập ở nước ngoài, kinh phí hỗ trợ từ doanh nghiệp đối tác và các hỗ trợ khác).
+Đối tượng xét cấp học bổng đặc biệt là các thí sinh tham dự kỳ thi chọn đội tuyển quốc gia dự thi Olympic quốc tế, thí sinh đạt giải Nhất, Nhì, Ba trong kỳ thi chọn học sinh giỏi quốc gia các môn Toán, Lý và Tin học; thí sinh có điểm thi tốt nghiệp THPT từ 29,0 điểm trở lên. Ngoài ra, người được nhận học bổng còn phải đảm bảo điểm trung bình chung tích lũy năm học liên tục đạt từ loại Giỏi trở lên.",học bổng,học bổng
+Các phương thức xét tuyển của học viện?,Các phương thức xét tuyển của học viện?," Xét tuyển tài năng
+ Xét tuyển dựa vào kết quả thi THPT
+ Xét tuyển kết hợp
+ Xét tuyển dựa vào kết quả thi đánh giá năng lực
+ Xét tuyển dựa vào kết quả thi đánh giá tư duy",tuyển sinh,tuyển sinh
+"Quy định, quy chế tuyển sinh của học viện?","Quy định, quy chế tuyển sinh của học viện?","Quy chế 1: Xét tuyển theo ngành và theo tổ hợp môn thi xét tuyển.
+Quy chế 2: Điểm trúng tuyển của các tổ hợp môn thi trong cùng một ngành là bằng nhau.
+Quy chế 3: Xét trúng tuyển từ thí sinh có kết quả cao xuống và đảm bảo chất lượng tuyển sinh.
+Quy chế 4: Điểm trúng tuyển được tính theo thang điểm 10, tổng điểm tối đa của 3 bài thi trong tổ hợp xét tuyển là 30 điểm.
+Quy chế 5: Xét tuyển các nguyện vọng bình đẳng theo kết quả thi (điểm trúng tuyển giữa các nguyện vọng là bằng nhau), nếu thí sinh không trúng tuyển nguyện vọng ở thứ tự ưu tiên thứ nhất (nguyện vọng 1) thì sẽ được tự động xét tuyển ở nguyện vọng ưu tiên thứ hai (nguyện vọng 2) và kế tiếp.
+Quy chế 6: Học viện không sử dụng kết quả miễn thi bài thi môn ngoại ngữ và điểm thi được bảo lưu để xét tuyển.
+Quy chế 7: Thí sinh chỉ trúng tuyển vào 1 nguyện vọng ưu tiên cao nhất trong danh sách các nguyện vọng đã đăng ký, khi đã trúng tuyển ở nguyện vọng nào thì không được xét tuyển tiếp ở nguyện vọng sau.
+Quy chế 8: Đối với các thí sinh bằng điểm xét tuyển ở cuối danh sách, nếu vẫn còn vượt chỉ tiêu thì ưu tiên thí sinh có nguyện vọng cao hơn theo Quy chế tuyển sinh của Bộ Giáo dục và Đào tạo, Học viện không sử dụng tiêu chí phụ riêng để xét tuyển.
+Quy chế 9: Các điều kiện khác thực hiện theo Quy chế tuyển sinh đại học hệ chính quy hiện hành của Bộ Giáo dục và Đào tạo.",tuyển sinh,tuyển sinh
+Các trang web chính thức của học viện?,Các trang web chính thức của học viện?,"Các trang web chính thức của học viện là:
+1. Cổng thông tin học viện: https://portal.ptit.edu.vn/
+2. Cổng thông tin đào tạo: https://daotao.ptit.edu.vn/
+3. Cổng thông tin hợp tác quốc tế: https://htqt.ptit.edu.vn/
+4. Cổng thông tin quản lý khoa học: https://qlkh.ptit.edu.vn/
+5. Cổng thông tin tuyển sinh: https://tuyensinh.ptit.edu.vn/
+6. Fanpage: https://facebook.com/HocvienPTIT
+7. Youtube:  https://www.youtube.com/@PChannels",học viện,học viện
 Làm sao để kiếm người yêu khi học đại học?,Làm sao để kiếm người yêu khi học đại học,"Việc tìm kiếm người yêu khi đang học đại học có thể là một trải nghiệm thú vị, nhưng đôi khi cũng có thể gặp khó khăn. Đây là vài gợi ý:
 1. Tham gia các hoạt động ngoại khóa: Tham gia câu lạc bộ, tổ chức hoặc các hoạt động ngoại khóa khác giúp bạn gặp gỡ nhiều người mới, có cơ hội tìm kiếm những người có sở thích chung.
 2. Kết bạn qua học tập: Tạo dựng mối quan hệ với các bạn cùng lớp hoặc nhóm học tập. Bạn có thể gặp gỡ người khác qua các buổi học nhóm, dự án chung, hoặc các hoạt động học tập khác.
@@ -444,82 +924,4 @@ Làm sao để kiếm người yêu khi học đại học?,Làm sao để kiế
 4. Học tập và giao tiếp tự nhiên: Hãy tự nhiên trong việc học tập và giao tiếp với bạn bè, đồng nghiệp. Cơ hội gặp gỡ người thích hợp có thể đến từ những mối quan hệ này.
 5. Thời gian cho bản thân: Hãy dành thời gian để phát triển bản thân, điều này cũng giúp bạn gặp gỡ được những người có cùng sở thích và mục tiêu.
 Chúc bạn thành công và tìm được một mối quan hệ ý nghĩa!.",học viện,học viện
-trường thành lập năm nào,Cơ sở vật chất của học viện như nào?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
-có bao nhiêu giảng viên,Tôi muốn có người yêu học tại học viện?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
-làm sao để kiếm người yêu khi học đại học có bao nhiêu giảng viên,Làm sao để kiếm người yêu khi học đại học,"Việc tìm kiếm người yêu khi đang học đại học có thể là một trải nghiệm thú vị, nhưng đôi khi cũng có thể gặp khó khăn. Đây là vài gợi ý:
-1. Tham gia các hoạt động ngoại khóa: Tham gia câu lạc bộ, tổ chức hoặc các hoạt động ngoại khóa khác giúp bạn gặp gỡ nhiều người mới, có cơ hội tìm kiếm những người có sở thích chung.
-2. Kết bạn qua học tập: Tạo dựng mối quan hệ với các bạn cùng lớp hoặc nhóm học tập. Bạn có thể gặp gỡ người khác qua các buổi học nhóm, dự án chung, hoặc các hoạt động học tập khác.
-3. Sử dụng các ứng dụng hẹn hò: Các ứng dụng như Tinder, Bumble, hay các mạng xã hội khác cũng là nơi để bạn có thể gặp gỡ những người mới.
-4. Học tập và giao tiếp tự nhiên: Hãy tự nhiên trong việc học tập và giao tiếp với bạn bè, đồng nghiệp. Cơ hội gặp gỡ người thích hợp có thể đến từ những mối quan hệ này.
-5. Thời gian cho bản thân: Hãy dành thời gian để phát triển bản thân, điều này cũng giúp bạn gặp gỡ được những người có cùng sở thích và mục tiêu.
-Chúc bạn thành công và tìm được một mối quan hệ ý nghĩa!.",học viện,học viện
-trường có bao nhiêu cơ sở,Tôi muốn có người yêu học tại học viện?,"Việc tìm kiếm người yêu khi đang học đại học có thể là một trải nghiệm thú vị, nhưng đôi khi cũng có thể gặp khó khăn. Đây là vài gợi ý:
-1. Tham gia các hoạt động ngoại khóa: Tham gia câu lạc bộ, tổ chức hoặc các hoạt động ngoại khóa khác giúp bạn gặp gỡ nhiều người mới, có cơ hội tìm kiếm những người có sở thích chung.
-2. Kết bạn qua học tập: Tạo dựng mối quan hệ với các bạn cùng lớp hoặc nhóm học tập. Bạn có thể gặp gỡ người khác qua các buổi học nhóm, dự án chung, hoặc các hoạt động học tập khác.
-3. Sử dụng các ứng dụng hẹn hò: Các ứng dụng như Tinder, Bumble, hay các mạng xã hội khác cũng là nơi để bạn có thể gặp gỡ những người mới.
-4. Học tập và giao tiếp tự nhiên: Hãy tự nhiên trong việc học tập và giao tiếp với bạn bè, đồng nghiệp. Cơ hội gặp gỡ người thích hợp có thể đến từ những mối quan hệ này.
-5. Thời gian cho bản thân: Hãy dành thời gian để phát triển bản thân, điều này cũng giúp bạn gặp gỡ được những người có cùng sở thích và mục tiêu.
-Chúc bạn thành công và tìm được một mối quan hệ ý nghĩa!.",học viện,học viện
-ngành nào được đánh giá là thế mạnh của trường,Thế mạnh của học viện là gì?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,ngành đào tạo
-trường có bao nhiêu khu kí túc xá,Có bao nhiêu ký túc xá trong học viện?,"Hiện nay cơ sở miền bắc học viện có 3 ký túc xá là B1, B2 và B5.",học viện,học viện
-thế mạnh của học viện là gì,Thế mạnh của học viện là gì?,"Học viện nổi bật với chương trình đào tạo chất lượng cao, đội ngũ giảng viên giàu kinh nghiệm và cơ sở vật chất hiện đại, đáp ứng nhu cầu học tập của sinh viên.",học viện,học viện
-trường có những chính sách nào để hỗ trợ sinh viên,Học viện có chương trình hỗ trợ việc làm cho sinh viên không?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
-chế độ ưu tiên để được vào ở kí túc xá,Điều kiện nào để được xét chuyển trường?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
-điểm chuẩn năm 2024,Điểm chuẩn tất cả các ngành năm 2024?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,điểm,điểm
-điểm chuẩn của học viện năm 2024,Điểm chuẩn của ngành kế toán năm 2024 là bao nhiêu?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,điểm,điểm
-Trụ sở chính của học viện ở đâu?,Trụ sở chính của học viện ở đâu,"Trụ sở chính của học viện nằm ở 122 đường Hoàng Quốc Việt, Phường Nghĩa Tân, Quận Cầu Giấy, Thành phố Hà Nội.",địa chỉ,địa chỉ
-điểm chuẩn tất cả các ngành của học viện năm 2024,Điểm chuẩn tất cả các ngành năm 2024?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
-miền nam,Tôi muốn tìm hiểu các ngành ở cơ sở miền nam?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
-điểm chuẩn tất cả các ngành năm 2024 miền nam,Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền nam?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền nam là:
-Kỹ thuật điện tử viễn thông: 23.23
-Công nghệ kỹ thuật điện, điện tử: 20.85
-Kỹ thuật điều khiển và tự động hóa: 19.65
-Công nghệ internet vạn vật (iot): 18.0
-Công nghệ thông tin: 25.17
-An toàn thông tin: 24.68
-Công nghệ đa phương tiện: 23.95
-Quản trị kinh doanh: 18.4
-Marketing: 24.24
-Kế toán: 20.95
-Công nghệ thông tin chương trình chất lượng cao: 23.25
-Marketing chương trình chất lượng cao: 18.0",điểm,điểm
-giới thiệu về cơ sở vật chất ở trường,Cơ sở vật chất của học viện như nào?,Cơ sở vật chất của học viện xứng danh với học viện hoàng gia.,học viện,học viện
-trường có tất cả bao nhiêu phòng thí nghiệm,Học viện có trung tâm nghiên cứu không?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
-Cẩm Vân xinh gái không,Tôi muốn có người yêu học tại học viện?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,học viện
-tại sao trường lại được gọi là học viện hoàng gia,Học viện có bao nhiêu loại học bổng,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học bổng,học viện
-Những ngành học mới trong học viện năm 2024?,Những ngành học mới trong học viện năm 2024?,Bạn muốn hỏi ngành mới của học viện ở cơ sở miền bắc hay miền nam.,ngành đào tạo,ngành đào tạo
-miền nam,Miền nam đào tạo những ngành nào?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,ngành đào tạo,ngành đào tạo
-những ngành học mới trong học viện năm 2024 miền nam,Ngành học mới trong học viện năm 2024 tại cơ sở miền nam?,Cơ sở miền nam có đào tạo 2 ngành mới so với năm trước là ngành công nghệ thông tin chất lượng cao và marketing chất lượng cao.,ngành đào tạo,ngành đào tạo
-Điểm chuẩn tất cả các ngành năm nay?,Điểm chuẩn tất cả các ngành năm 2024?,"Bạn muốn hỏi điểm chuẩn dựa trên phương thức xét tuyển nào, cơ sở miền bắc hay nam? Ví dụ về phương thức xét tuyển như xét tuyển kết hợp, thi thpt, đánh giá năng lực, đánh giá tư duy.",điểm,điểm
-"cơ sở miền nam, thi thpt",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền nam?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,điểm,ngành đào tạo
-"điểm chuẩn tất cả các ngành năm 2024 cơ sở miền nam, thi thpt",Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền nam?,"Điểm chuẩn tất cả các ngành theo phương thức thi thpt 2024 tại cơ sở miền nam là:
-Kỹ thuật điện tử viễn thông: 23.23
-Công nghệ kỹ thuật điện, điện tử: 20.85
-Kỹ thuật điều khiển và tự động hóa: 19.65
-Công nghệ internet vạn vật (iot): 18.0
-Công nghệ thông tin: 25.17
-An toàn thông tin: 24.68
-Công nghệ đa phương tiện: 23.95
-Quản trị kinh doanh: 18.4
-Marketing: 24.24
-Kế toán: 20.95
-Công nghệ thông tin chương trình chất lượng cao: 23.25
-Marketing chương trình chất lượng cao: 18.0",điểm,điểm
-"miền nam, xtkh",Điểm chuẩn tất cả các ngành xét tuyển kết hợp năm 2024 tại cơ sở miền nam?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,điểm,ngành đào tạo
-"điểm chuẩn tất cả các ngành năm 2024 miền nam, xtkh",Điểm chuẩn tất cả các ngành theo phương thức xét tuyển kết hợp năm 2024 tại cơ sở miền nam?,"Điểm chuẩn tất cả các ngành theo phương thức xét tuyển kết hợp năm 2024 tại cơ sở miền nam là:
-Kỹ thuật điện tử viễn thông: 23.77
-Công nghệ kỹ thuật điện, điện tử: 24.36
-Kỹ thuật điều khiển và tự động hóa: 23.7
-Công nghệ internet vạn vật (iot): 24.83
-Công nghệ thông tin: 22.2
-An toàn thông tin: 21.89
-Công nghệ đa phương tiện: 23.46
-Marketing: 23.87
-Kế toán: 22.8
-Công nghệ thông tin chương trình chất lượng cao : 23.36
-Marketing chương trình chất lượng cao : 21.53",điểm,điểm
-tại sao trường lại được gọi là học viện hoàng gia,Tại sao học viện lại được gọi là học viện hoàng gia?,Vì học viện có cơ sở vật chất cũng như môi trường đào tạo tương xứng với cái tên.,học viện,học viện
-học viện thành lập năm nào,Học viện thành lập năm nào?,"Học viện Công nghệ Bưu chính Viễn thông được thành lập theo quyết định số 516/TTg của Thủ tướng Chính phủ ngày 11 tháng 7 năm 1997 trên cơ sở sắp xếp lại 4 đơn vị thành viên thuộc Tổng Công ty Bưu chính Viễn thông Việt Nam, nay là Tập đoàn Bưu chính Viễn thông Việt Nam là Viện Khoa học Kỹ thuật Bưu điện, Viện Kinh tế Bưu điện, Trung tâm đào tạo Bưu chính Viễn thông 1 và 2. Các đơn vị tiền thân của Học viện là những đơn vị có bề dày lịch sử hình thành và phát triển với xuất phát điểm từ Trường Đại học Bưu điện 1953.",học viện,học viện
-thông tin chung về học viện,Thông tin giảng viên của học viện?,Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.,học viện,tuyển sinh
-trường có bao nhiêu cơ sở,Học viện có bao nhiêu cơ sở?,Học viện có 2 cơ sở là cơ sở miền bắc và cơ sở miền nam.,học viện,học viện
-ngành nào được đánh giá là thế mạnh của trường,Ngành nào được đánh giá là thế mạnh ở học viện?,"Học viện có thế mạnh đào tạo về các ngành liên quan đến kỹ thuật như công nghệ thông tin, khoa học máy tính, điện - điện tử...",học viện,ngành đào tạo
+các loại học bổng của trường ,Học viện có bao nhiêu loại học bổng,"Có 3 loại học bổng là: học bổng đặc biệt, học bổng toàn phần và học bổng cho thí sinh đạt thành tích cao",học bổng,học bổng
