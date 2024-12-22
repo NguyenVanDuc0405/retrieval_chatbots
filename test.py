@@ -7,10 +7,10 @@ model = CrossEncoder(
 )
 
 # Example query and documents
-query = "học bổng toàn phần như nào"
+query = "điểm chuẩn của ngành công nghệ thông tin năm 2024 miền nam năng lực"
 documents = [
-    "học bổng toàn phần",
-    "học bổng thành tích cao",
+    "điểm chuẩn của ngành công nghệ thông tin năm 2024 là miền nam năng lực",
+    "điểm chuẩn ngành công nghệ thông tin theo phương thức thi đánh giá năng lực năm 2024 tại miền nam là bao nhiêu",
     "học bổng đặc biệt",
     "chi tiết học bổng toàn phần",
 ]
