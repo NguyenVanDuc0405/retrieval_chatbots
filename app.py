@@ -191,7 +191,7 @@ async def handle_user_question(question):
 
         # Kiểm tra câu đầu tiên với ngưỡng 0.6
         if result and result[0]['relevance_score'] > 0.65:
-            await send_to_google_sheet(response_data)
+            # await send_to_google_sheet(response_data)
             previous_questions.append(result[0]['document'])
             return {
                 "response": response,
@@ -207,7 +207,7 @@ async def handle_user_question(question):
                 combined_result = combined_response_data["result"]
 
                 if combined_result and combined_result[0]['relevance_score'] > 0.80:
-                    await send_to_google_sheet(combined_response_data)
+                    # await send_to_google_sheet(combined_response_data)
                     return {
                         "response": combined_response_data["response"],
                         "tag": combined_response_data["tag"],
@@ -215,7 +215,7 @@ async def handle_user_question(question):
                         "query": combined_response_data["query"],
                     }
 
-            await send_to_google_sheet(response_data)
+            # await send_to_google_sheet(response_data)
         # Nếu không tìm được phản hồi hợp lệ
         return {
             "response": "Tôi không hiểu câu hỏi của bạn. Vui lòng đặt câu hỏi đầy đủ hơn.",
